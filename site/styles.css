@@ -45,6 +45,7 @@ body {
 
 /* ============ HERO ============ */
 .hero {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 96px 32px 72px;
@@ -79,8 +80,10 @@ body {
 }
 .service-brand {
   display: inline-flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
   line-height: 1.1;
 }
 .service-name {
@@ -99,12 +102,24 @@ body {
 }
 .service-sub svg { flex-shrink: 0; }
 
-/* ─── Brand actions (lang + GitHub, inline right) ────────────── */
+/* ─── Brand actions (top-right of hero, above claude logo) ─── */
 .brand-actions {
+  position: absolute;
+  top: 28px;
+  right: 32px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;
+  z-index: 5;
+}
+@media (max-width: 760px) {
+  .brand-actions { top: 16px; right: 16px; }
+}
+
+.service-brand-dot {
+  color: var(--soft);
+  font-size: 18px;
+  line-height: 1;
 }
 
 .lang-toggle {
