@@ -1,14 +1,14 @@
 <div align="center">
 
-# Weeklaude <sub><sup>위클로드</sup></sub>
+# 위클렌드 <sub><sup>위클로드</sup></sub>
 
 **Claude Code 생태계, 이번 주 뭐가 뜨고 뭐가 자리잡았나.**
 
 매주 월요일 자동 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션 인덱스.
 
-[🌐 **Weeklaude 둘러보기**](https://inno-hi.github.io/cc-trends/) ·
+[🌐 **위클렌드 둘러보기**](https://inno-hi.github.io/cc-trends/) ·
 [📡 RSS 구독](https://inno-hi.github.io/cc-trends/feed.xml) ·
-[⭐ Star](https://github.com/INNO-HI-Inc/claude-trend)
+[⭐ Star](https://github.com/INNO-HI/cc-trends)
 
 </div>
 
@@ -24,7 +24,7 @@ Claude Code가 터진 이후로 에이전트·스킬·하네스가 매일 수십
 
 ## 뭐가 다른가요
 
-| | 일반 awesome-list | **Weeklaude** |
+| | 일반 awesome-list | **위클렌드** |
 |---|---|---|
 | 갱신 주기 | PR 받을 때마다 (비정기) | **매주 월요일 자동** |
 | 수집 범위 | GitHub 링크만 | GitHub + HN + Reddit + dev.to + GeekNews + velog |
