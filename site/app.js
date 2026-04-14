@@ -404,4 +404,34 @@ function openCriteria() {
 }
 document.getElementById("open-criteria-top")?.addEventListener("click", openCriteria);
 
+/* ─── i18n toggle ─────────────────────────────────────────── */
+const I18N_KEY = "weeklaude:lang";
+function getLang() {
+  return localStorage.getItem(I18N_KEY) || "en";
+}
+function applyLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n-en]").forEach((el) => {
+    const val = el.getAttribute(`data-i18n-${lang}`);
+    if (val != null) el.textContent = val;
+  });
+  document.querySelectorAll("[data-i18n-en-html]").forEach((el) => {
+    const val = el.getAttribute(`data-i18n-${lang}-html`);
+    if (val != null) el.innerHTML = val;
+  });
+  document.querySelectorAll("[data-i18n-en-placeholder]").forEach((el) => {
+    const val = el.getAttribute(`data-i18n-${lang}-placeholder`);
+    if (val != null) el.placeholder = val;
+  });
+  document.querySelectorAll(".lang-toggle .lang-opt").forEach((el) => {
+    el.classList.toggle("active", el.dataset.lang === lang);
+  });
+}
+document.getElementById("lang-toggle")?.addEventListener("click", () => {
+  const next = getLang() === "en" ? "ko" : "en";
+  localStorage.setItem(I18N_KEY, next);
+  applyLang(next);
+});
+applyLang(getLang());
+
 load();

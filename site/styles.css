@@ -99,6 +99,85 @@ body {
 }
 .service-sub svg { flex-shrink: 0; }
 
+/* ─── Top nav (lang toggle + GitHub) ─────────────────────────── */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+@media (max-width: 640px) {
+  .top-nav { padding: 10px 16px; }
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .15s ease;
+  line-height: 1;
+}
+.lang-toggle:hover { border-color: var(--ink); color: var(--ink); }
+.lang-toggle .lang-opt {
+  padding: 2px 4px;
+  transition: color .15s;
+}
+.lang-toggle .lang-opt.active { color: var(--ink); }
+.lang-toggle .lang-sep { color: var(--soft); }
+
+.gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 8px rgba(14, 14, 14, 0.08);
+}
+.gh-btn:hover {
+  transform: translateY(-1px);
+  background: #1a1a1a;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06), 0 6px 18px rgba(14, 14, 14, 0.18);
+}
+.gh-btn:active { transform: translateY(0); }
+.gh-btn-icon { flex-shrink: 0; }
+.gh-btn-text { letter-spacing: -0.01em; }
+.gh-btn-star {
+  color: var(--hl-lemon);
+  font-size: 12px;
+  margin-left: 1px;
+}
+
+/* legacy — kept for compat */
 .top-link {
   display: inline-flex;
   align-items: center;
