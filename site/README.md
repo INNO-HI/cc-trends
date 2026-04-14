@@ -1,13 +1,13 @@
 <div align="center">
 
-# 클렌드 <sub><sup>Clend</sup></sub>
+# Weeklaude <sub><sup>위클로드</sup></sub>
 
 **Claude Code 생태계, 이번 주 뭐가 뜨고 뭐가 자리잡았나.**
 
 매주 월요일 자동 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션 인덱스.
 
-[🌐 **클렌드 둘러보기**](https://inno-hi-inc.github.io/claude-trend/) ·
-[📡 RSS 구독](https://inno-hi-inc.github.io/claude-trend/feed.xml) ·
+[🌐 **Weeklaude 둘러보기**](https://inno-hi.github.io/cc-trends/) ·
+[📡 RSS 구독](https://inno-hi.github.io/cc-trends/feed.xml) ·
 [⭐ Star](https://github.com/INNO-HI-Inc/claude-trend)
 
 </div>
@@ -24,7 +24,7 @@ Claude Code가 터진 이후로 에이전트·스킬·하네스가 매일 수십
 
 ## 뭐가 다른가요
 
-| | 일반 awesome-list | **클렌드** |
+| | 일반 awesome-list | **Weeklaude** |
 |---|---|---|
 | 갱신 주기 | PR 받을 때마다 (비정기) | **매주 월요일 자동** |
 | 수집 범위 | GitHub 링크만 | GitHub + HN + Reddit + dev.to + GeekNews + velog |
@@ -111,8 +111,8 @@ launchctl load ~/Library/LaunchAgents/com.flareon.cc-trends.weekly.plist
 
 ## 구독
 
-- **🌐 웹**: https://inno-hi-inc.github.io/claude-trend/ — 매주 월요일 갱신
-- **📡 RSS**: https://inno-hi-inc.github.io/claude-trend/feed.xml — Feedly · Inoreader · NetNewsWire 등에서 구독
+- **🌐 웹**: https://inno-hi.github.io/cc-trends/ — 매주 월요일 갱신
+- **📡 RSS**: https://inno-hi.github.io/cc-trends/feed.xml — Feedly · Inoreader · NetNewsWire 등에서 구독
 - **⭐ Star**: 이 repo 별 누르면 업데이트 notification 받음
 
 ## 기여
