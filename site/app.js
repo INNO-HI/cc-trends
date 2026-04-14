@@ -407,7 +407,7 @@ document.getElementById("open-criteria-top")?.addEventListener("click", openCrit
 /* ─── i18n toggle ─────────────────────────────────────────── */
 const I18N_KEY = "weeklaude:lang";
 function getLang() {
-  return localStorage.getItem(I18N_KEY) || "en";
+  return localStorage.getItem(I18N_KEY) || "ko";
 }
 function applyLang(lang) {
   document.documentElement.lang = lang;
