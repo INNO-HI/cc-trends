@@ -1,45 +1,104 @@
 {
-  "generated_at": "2026-04-13T16:51:30Z",
-  "version": "2026-W16",
+  "generated_at": "2026-04-20T00:22:46Z",
+  "version": "2026-W17",
   "rising": [
     {
+      "id": "JuliusBrussee/caveman",
+      "title_ko": "원시인 토큰 절약",
+      "catchphrase": "말투만 바꿔 토큰 65% 절감, 코드 정확도는 그대로",
+      "summary_ko": "AI 에이전트의 출력을 '원시인 말투'로 압축해 토큰 사용량을 65~87% 줄이는 스킬입니다. Reddit에서 10K 업보트를 기록하며 바이럴 된 기법을 체계화했고, Lite/Full/Ultra 3단계 강도를 선택할 수 있습니다. caveman-compress 도구로 세션 메모리까지 46% 추가 압축합니다.",
+      "key_features": [
+        "Lite/Full/Ultra 3단계 압축 강도, 코드 정확도 유지",
+        "caveman-compress로 세션 메모리 파일 46% 추가 압축",
+        "커밋 메시지, 코드 리뷰 등 특화 모드 내장"
+      ],
+      "use_case": "Claude Code API 비용이 부담스러울 때, 출력 품질을 유지하면서 토큰 사용량을 대폭 절감하고 싶을 때",
+      "install_hint": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+      "tags": [
+        "skill",
+        "token-optimization",
+        "cost-saving",
+        "viral"
+      ],
+      "thumbnail_url": "https://github.com/JuliusBrussee.png",
+      "official_url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 38967,
+      "category": "skill",
+      "trend_score": 92.6,
+      "badges": [
+        "🔥 Rising",
+        "📈 Trending",
+        "🔄 Cross-verified"
+      ],
+      "week_change": "up"
+    },
+    {
+      "id": "getagentseal/codeburn",
+      "title_ko": "AI 코딩 비용 분석기",
+      "catchphrase": "토큰이 어디서 새는지, 13개 카테고리로 추적",
+      "summary_ko": "Claude Code, Codex, Cursor 등 7개 AI 코딩 도구의 토큰 사용량을 로컬에서 분석하는 인터랙티브 TUI 대시보드입니다. 13개 작업 카테고리별 비용 분해, 원샷 성공률 추적, 낭비 패턴 자동 탐지까지 제공합니다. LLM 호출 없이 완전 결정론적으로 분류합니다.",
+      "key_features": [
+        "7개 AI 코딩 도구 지원 (Claude Code, Codex, Cursor 등), 13개 작업 카테고리 분류",
+        "낭비 패턴 자동 탐지 및 복사-붙여넣기 가능한 최적화 제안",
+        "프록시/API 키 불필요, 로컬 JSONL 직접 분석"
+      ],
+      "use_case": "월말에 AI 코딩 비용이 예상보다 많이 나왔을 때, 어디서 토큰이 새는지 정확히 파악하고 싶을 때",
+      "install_hint": "npx codeburn",
+      "tags": [
+        "tool",
+        "token-optimization",
+        "cost-analysis",
+        "tui"
+      ],
+      "thumbnail_url": "https://github.com/getagentseal.png",
+      "official_url": "https://github.com/getagentseal/codeburn",
+      "stars": 2866,
+      "category": "tool",
+      "trend_score": 81.6,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New",
+        "🔄 Cross-verified"
+      ],
+      "week_change": "new"
+    },
+    {
       "id": "santifer/career-ops",
-      "title_ko": "AI 취업 자동화 시스템",
-      "catchphrase": "URL 하나면 평가부터 이력서까지 한방에",
-      "summary_ko": "채용 공고 URL만 넣으면 직무 분석, 맞춤형 이력서 PDF 생성, 면접 준비까지 자동으로 처리하는 구직 파이프라인입니다. 45개 이상 채용 플랫폼 스캔과 병렬 배치 평가를 지원하며, Go 기반 터미널 대시보드로 파이프라인을 한눈에 관리할 수 있습니다.",
+      "title_ko": "AI 취업 자동화",
+      "catchphrase": "URL 하나면 평가부터 이력서까지 자동 처리",
+      "summary_ko": "채용 공고 URL만 넣으면 직무 분석, 맞춤형 이력서 PDF 생성, 면접 준비까지 자동으로 처리하는 Claude Code 기반 구직 파이프라인입니다. 45개 이상 채용 플랫폼 스캔과 병렬 배치 평가를 지원하며, Go 기반 터미널 대시보드로 전 과정을 관리합니다.",
       "key_features": [
         "채용 공고 URL 입력만으로 6단계 자동 평가 및 ATS 최적화 이력서 PDF 생성",
         "Ashby, Greenhouse, Lever 등 45개 이상 채용 플랫폼 자동 스캔",
-        "면접 스토리뱅크 자동 축적 및 Go 기반 터미널 대시보드 제공"
+        "면접 스토리뱅크 자동 축적 및 Go 기반 터미널 대시보드"
       ],
       "use_case": "이직 준비 중 여러 회사에 동시 지원하면서 맞춤 이력서와 면접 전략을 체계적으로 관리하고 싶을 때",
       "install_hint": "git clone https://github.com/santifer/career-ops.git && cd career-ops && npm install",
       "tags": [
-        "skill",
+        "agent",
         "job-search",
         "pdf-generation",
-        "automation",
-        "playwright"
+        "automation"
       ],
       "thumbnail_url": "https://github.com/santifer.png",
       "official_url": "https://github.com/santifer/career-ops",
-      "stars": 32023,
-      "category": "skill",
-      "trend_score": 92,
+      "stars": 36505,
+      "category": "agent",
+      "trend_score": 64.8,
       "badges": [
         "🔥 Rising",
-        "🆕 New",
         "📈 Trending"
-      ]
+      ],
+      "week_change": "down"
     },
     {
       "id": "safishamsi/graphify",
       "title_ko": "코드를 지식그래프로",
-      "catchphrase": "쿼리당 토큰 71배 절감, 코드베이스를 그래프로 검색",
-      "summary_ko": "코드, 문서, 논문, 이미지, 영상이 담긴 폴더를 토폴로지 기반 지식그래프로 변환합니다. 22개 언어를 지원하며, 임베딩 대신 커뮤니티 탐지 알고리즘으로 관계를 추출해 쿼리당 토큰을 71.5배 줄입니다. 인터랙티브 HTML 시각화와 Neo4j 내보내기도 지원합니다.",
+      "catchphrase": "쿼리당 토큰 71배 절감, 코드베이스를 그래프로",
+      "summary_ko": "코드, 문서, 논문, 영상이 담긴 폴더를 토폴로지 기반 지식그래프로 변환하는 스킬입니다. 22개 언어를 지원하며, 임베딩 대신 커뮤니티 탐지 알고리즘으로 관계를 추출해 쿼리당 토큰을 71.5배 줄입니다. 인터랙티브 HTML 시각화와 Neo4j 내보내기도 지원합니다.",
       "key_features": [
-        "22개 프로그래밍 언어 지원, 코드-문서-논문-영상 통합 그래프 생성",
-        "토폴로지 기반 커뮤니티 탐지로 관계 추출 (EXTRACTED/INFERRED/AMBIGUOUS 구분)",
+        "22개 프로그래밍 언어 지원, 코드-문서-논문-영상 통합 그래프",
+        "커뮤니티 탐지 기반 관계 추출 (EXTRACTED/INFERRED/AMBIGUOUS 구분)",
         "인터랙티브 HTML, SVG, Neo4j, 마크다운 등 다양한 출력 형식"
       ],
       "use_case": "대규모 레거시 코드베이스를 인수받았을 때, 구조를 빠르게 파악하고 모듈 간 의존성을 시각적으로 탐색하고 싶을 때",
@@ -53,112 +112,24 @@
       ],
       "thumbnail_url": "https://github.com/safishamsi.png",
       "official_url": "https://github.com/safishamsi/graphify",
-      "stars": 24115,
+      "stars": 30609,
       "category": "skill",
-      "trend_score": 90,
+      "trend_score": 64.8,
       "badges": [
         "🔥 Rising",
-        "🆕 New",
         "📈 Trending"
-      ]
-    },
-    {
-      "id": "JuliusBrussee/caveman",
-      "title_ko": "토큰 65% 절약 스킬",
-      "catchphrase": "원시인처럼 말해도 코드 품질은 그대로",
-      "summary_ko": "AI 에이전트의 출력을 극도로 간결한 '원시인 말투'로 압축해 토큰을 65~87% 절감하는 스킬입니다. Lite/Full/Ultra 3단계 강도를 선택할 수 있고, 세션 메모리 파일까지 압축하는 caveman-compress 도구도 포함되어 있습니다. 코드 정확도는 유지됩니다.",
-      "key_features": [
-        "Lite/Full/Ultra 3단계 압축 강도 선택 가능",
-        "caveman-compress로 세션 메모리 파일까지 46% 추가 압축",
-        "커밋 메시지, 코드 리뷰 등 특화 모드 내장"
       ],
-      "use_case": "Claude Code API 비용이 부담될 때, 출력 품질 저하 없이 토큰 사용량을 대폭 줄이고 싶을 때",
-      "install_hint": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
-      "tags": [
-        "skill",
-        "token-optimization",
-        "cost-saving",
-        "productivity"
-      ],
-      "thumbnail_url": "https://github.com/JuliusBrussee.png",
-      "official_url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 22749,
-      "category": "skill",
-      "trend_score": 88,
-      "badges": [
-        "🔥 Rising",
-        "🆕 New",
-        "📈 Trending"
-      ]
-    },
-    {
-      "id": "garrytan/gstack",
-      "title_ko": "YC CEO의 AI 팀 셋업",
-      "catchphrase": "CEO부터 QA까지, 6명의 전문가를 터미널에",
-      "summary_ko": "Y Combinator CEO Garry Tan이 실제 사용하는 Claude Code 셋업을 그대로 공개한 프로젝트입니다. CEO, 디자이너, 엔지니어링 매니저, 릴리스 매니저, 문서 엔지니어, QA 리드 6개 역할의 23개 전문 도구를 제공합니다. Playwright 기반 실제 브라우저 테스트까지 포함됩니다.",
-      "key_features": [
-        "/plan-ceo-review, /design-review, /qa 등 23개 역할별 전문 도구",
-        "Playwright 기반 실제 브라우저 QA 테스트 자동화",
-        "팀 배포 모드(--team)로 자동 업데이트 및 일괄 설치"
-      ],
-      "use_case": "1인 개발자가 기획-디자인-개발-QA-배포 전 과정을 AI 팀으로 커버하고 싶을 때",
-      "install_hint": "git clone --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
-      "tags": [
-        "tool",
-        "workflow",
-        "team-simulation",
-        "browser-testing",
-        "productivity"
-      ],
-      "thumbnail_url": "https://github.com/garrytan.png",
-      "official_url": "https://github.com/garrytan/gstack",
-      "stars": 70944,
-      "category": "tool",
-      "trend_score": 87,
-      "badges": [
-        "🔥 Rising",
-        "📈 Trending",
-        "🏆 Top Stars"
-      ]
-    },
-    {
-      "id": "slavingia/skills",
-      "title_ko": "린 창업 스킬 세트",
-      "catchphrase": "Gumroad 창업자의 창업 10단계를 AI 스킬로",
-      "summary_ko": "Gumroad 창업자 Sahil Lavingia의 저서 'The Minimalist Entrepreneur'의 창업 방법론을 10개 Claude Code 스킬로 구현했습니다. 커뮤니티 발굴, 아이디어 검증, MVP 빌드, 가격 책정, 마케팅 플랜, 지속 성장까지 단계별로 AI 코치를 받을 수 있습니다.",
-      "key_features": [
-        "Find Community부터 Grow Sustainably까지 창업 10단계 스킬",
-        "Minimalist Review 스킬로 의사결정에 린 원칙 적용",
-        "각 단계별 실행 가능한 아웃풋 생성 (MVP 명세, 가격표, 마케팅 플랜 등)"
-      ],
-      "use_case": "사이드 프로젝트를 실제 비즈니스로 키우고 싶은 개발자가 체계적인 창업 프레임워크를 적용하고 싶을 때",
-      "install_hint": "/plugin marketplace add slavingia/skills && /plugin install minimalist-entrepreneur",
-      "tags": [
-        "skill",
-        "entrepreneurship",
-        "startup",
-        "business",
-        "methodology"
-      ],
-      "thumbnail_url": "https://github.com/slavingia.png",
-      "official_url": "https://github.com/slavingia/skills",
-      "stars": 7784,
-      "category": "skill",
-      "trend_score": 82,
-      "badges": [
-        "🔥 Rising",
-        "🆕 New"
-      ]
+      "week_change": "down"
     },
     {
       "id": "yizhiyanhua-ai/fireworks-tech-graph",
-      "title_ko": "기술 다이어그램 자동 생성",
+      "title_ko": "기술 다이어그램 생성",
       "catchphrase": "말로 설명하면 논문급 SVG 다이어그램 완성",
-      "summary_ko": "자연어로 시스템을 설명하면 출판 수준의 SVG+PNG 기술 다이어그램을 자동 생성하는 스킬입니다. UML 전체 타입은 물론 RAG 아키텍처, 멀티에이전트 시스템, 메모리 구조 등 AI 특화 다이어그램까지 14종을 지원하며, 40개 이상의 제품 아이콘도 내장되어 있습니다.",
+      "summary_ko": "자연어 설명만으로 출판 수준의 SVG+PNG 기술 다이어그램을 자동 생성하는 스킬입니다. UML 전체 타입은 물론 RAG, 멀티에이전트, 메모리 구조 등 AI 특화 다이어그램까지 14종을 지원하며, 40개 이상 브랜드 컬러 제품 아이콘이 내장되어 있습니다.",
       "key_features": [
-        "14종 다이어그램 지원 (UML 전체 + RAG, 멀티에이전트, 툴콜 플로우 등)",
+        "14종 다이어그램 (UML 전체 + RAG, 멀티에이전트, 툴콜 플로우)",
         "40개 이상 브랜드 컬러 제품 아이콘 내장",
-        "영어/중국어 자연어 입력으로 SVG+PNG 동시 출력"
+        "영어/중국어 자연어 입력, SVG+PNG 동시 출력"
       ],
       "use_case": "기술 문서나 발표 자료에 넣을 아키텍처 다이어그램을 빠르게 만들어야 할 때",
       "install_hint": "npx skills add yizhiyanhua-ai/fireworks-tech-graph",
@@ -171,71 +142,13 @@
       ],
       "thumbnail_url": "https://github.com/yizhiyanhua-ai.png",
       "official_url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
-      "stars": 1728,
+      "stars": 3726,
       "category": "skill",
-      "trend_score": 78,
+      "trend_score": 64,
       "badges": [
-        "🔥 Rising",
-        "🆕 New"
-      ]
-    },
-    {
-      "id": "patoles/agent-flow",
-      "title_ko": "에이전트 실시간 시각화",
-      "catchphrase": "AI가 생각하고 분기하는 과정을 눈으로 확인",
-      "summary_ko": "Claude Code 에이전트의 의사결정, 도구 호출, 서브에이전트 간 협업 과정을 실시간 노드 그래프로 시각화합니다. 라이브 스트리밍과 JSONL 이벤트 로그 리플레이를 모두 지원하며, 타임라인 패널과 파일 어텐션 히트맵으로 에이전트가 어디에 집중하는지 파악할 수 있습니다.",
-      "key_features": [
-        "실시간 노드 그래프로 에이전트 오케스트레이션 시각화",
-        "타임라인 패널, 트랜스크립트 리뷰, 파일 어텐션 히트맵",
-        "VS Code 확장, npx 원클릭 실행, 소스 빌드 3가지 설치 방식"
+        "🔥 Rising"
       ],
-      "use_case": "멀티에이전트 워크플로우를 디버깅하거나, 에이전트가 왜 그런 결정을 내렸는지 추적하고 싶을 때",
-      "install_hint": "npx agent-flow-app",
-      "tags": [
-        "agent",
-        "visualization",
-        "debugging",
-        "orchestration",
-        "vscode"
-      ],
-      "thumbnail_url": "https://github.com/patoles.png",
-      "official_url": "https://github.com/patoles/agent-flow",
-      "stars": 655,
-      "category": "agent",
-      "trend_score": 75,
-      "badges": [
-        "🔥 Rising",
-        "🆕 New"
-      ]
-    },
-    {
-      "id": "dominikmartn/nothing-design-skill",
-      "title_ko": "Nothing UI 스킬",
-      "catchphrase": "모노크롬, 타이포, 인더스트리얼 UI를 한 줄로",
-      "summary_ko": "Nothing 브랜드의 디자인 언어(모노크롬, 타이포그래피 중심, 인더스트리얼)를 Claude Code에서 바로 적용할 수 있는 UI 생성 스킬입니다. 미니멀하면서도 독특한 디자인 시스템을 원하는 프로젝트에 즉시 활용할 수 있습니다.",
-      "key_features": [
-        "Nothing 브랜드의 모노크롬 디자인 언어 완벽 재현",
-        "타이포그래피 중심의 인더스트리얼 UI 컴포넌트 생성",
-        "Claude Code 스킬로 프로젝트에 바로 적용"
-      ],
-      "use_case": "미니멀 인더스트리얼 디자인의 랜딩 페이지나 대시보드를 빠르게 만들고 싶을 때",
-      "install_hint": "GitHub README 참조",
-      "tags": [
-        "skill",
-        "design",
-        "ui",
-        "nothing",
-        "monochrome"
-      ],
-      "thumbnail_url": "https://github.com/dominikmartn.png",
-      "official_url": "https://github.com/dominikmartn/nothing-design-skill",
-      "stars": 1694,
-      "category": "skill",
-      "trend_score": 74,
-      "badges": [
-        "🔥 Rising",
-        "🆕 New"
-      ]
+      "week_change": "down"
     },
     {
       "id": "zarazhangrui/codebase-to-course",
@@ -243,7 +156,7 @@
       "catchphrase": "코드베이스 통째로 넣으면 인터랙티브 강의 완성",
       "summary_ko": "아무 코드베이스든 넣으면 코드 해설, 데이터 플로우 애니메이션, 퀴즈, 용어 툴팁이 포함된 인터랙티브 싱글페이지 HTML 강의로 변환합니다. 의존성 없이 오프라인 배포 가능하며, 비개발자 대상 교육 콘텐츠 제작에 특화되어 있습니다.",
       "key_features": [
-        "코드와 평문 해설을 나란히 보여주는 Side-by-side 번역",
+        "코드와 해설을 나란히 보여주는 Side-by-side 번역 뷰",
         "데이터 흐름과 컴포넌트 상호작용 애니메이션 시각화",
         "의존성 제로 싱글 HTML 파일 출력, 오프라인 배포 가능"
       ],
@@ -258,112 +171,201 @@
       ],
       "thumbnail_url": "https://github.com/zarazhangrui.png",
       "official_url": "https://github.com/zarazhangrui/codebase-to-course",
-      "stars": 3415,
+      "stars": 3915,
       "category": "skill",
-      "trend_score": 73,
+      "trend_score": 63.8,
       "badges": [
-        "🔥 Rising",
-        "🆕 New"
-      ]
+        "🔥 Rising"
+      ],
+      "week_change": "down"
     },
     {
-      "id": "joyehuang/Learn-Open-Harness",
-      "title_ko": "하네스 엔지니어링 입문",
-      "catchphrase": "프로그래밍 몰라도 12챕터면 하네스 마스터",
-      "summary_ko": "Claude Code와 Cursor를 구동하는 OpenHarness 프레임워크를 12챕터로 배우는 인터랙티브 튜토리얼입니다. 에이전트 루프, 도구 시스템, 퍼미션, 훅, 스킬, 메모리, MCP, 멀티에이전트까지 단계별로 다루며, 애니메이션과 퀴즈, 시뮬레이터로 실습합니다.",
+      "id": "codeany-ai/open-agent-sdk-typescript",
+      "title_ko": "오픈 에이전트 SDK",
+      "catchphrase": "CLI 종속 없이 인프로세스로 에이전트 루프 실행",
+      "summary_ko": "CLI나 서브프로세스 없이 인프로세스로 에이전트 루프를 실행하는 오픈소스 TypeScript SDK입니다. Claude와 OpenAI 호환 모델을 모두 지원하며, 35개 이상 내장 도구, MCP 통합, 세션 포킹, 20개 라이프사이클 훅을 제공합니다. 서버리스/Docker/CI 어디든 배포 가능합니다.",
       "key_features": [
-        "기초(AI 에이전트 개념)부터 고급(멀티에이전트 풀플로우)까지 4단계 12챕터",
-        "각 챕터별 애니메이션, 다이어그램, 퀴즈, 핸즈온 시뮬레이터",
-        "프로그래밍 경험 없이도 시작 가능한 진입 장벽 제로 설계"
+        "인프로세스 에이전트 루프, CLI 서브프로세스 불필요",
+        "Claude + OpenAI 호환 모델 멀티 프로바이더 지원",
+        "35개 이상 내장 도구, 20개 라이프사이클 훅, 세션 포킹"
       ],
-      "use_case": "하네스 엔지니어링이 뭔지 궁금하지만 어디서부터 시작할지 모를 때",
-      "install_hint": "git clone https://github.com/joyehuang/Learn-Open-Harness.git && npm install && npm run dev",
+      "use_case": "자체 서비스에 에이전트 기능을 임베드하면서 특정 모델에 종속되고 싶지 않을 때",
+      "install_hint": "npm install @codeany/open-agent-sdk",
       "tags": [
-        "harness",
-        "education",
-        "tutorial",
-        "interactive",
-        "beginner-friendly"
+        "framework",
+        "agent-sdk",
+        "multi-model",
+        "open-source"
       ],
-      "thumbnail_url": "https://github.com/joyehuang.png",
-      "official_url": "https://github.com/joyehuang/Learn-Open-Harness",
-      "stars": 231,
-      "category": "harness",
-      "trend_score": 70,
+      "thumbnail_url": "https://github.com/codeany-ai.png",
+      "official_url": "https://github.com/codeany-ai/open-agent-sdk-typescript",
+      "stars": 2588,
+      "category": "framework",
+      "trend_score": 63.8,
       "badges": [
         "🔥 Rising",
         "🆕 New"
-      ]
+      ],
+      "week_change": "new"
     },
     {
-      "id": "gavraz/recon",
-      "title_ko": "tmux 에이전트 대시보드",
-      "catchphrase": "다마고치처럼 에이전트 상태를 한눈에",
-      "summary_ko": "tmux에서 실행 중인 여러 Claude Code 세션을 하나의 터미널 대시보드로 모니터링합니다. 세션 상태, git 브랜치, 토큰 사용량을 테이블 뷰로 보거나, 에이전트 상태를 픽셀 아트 캐릭터로 표현하는 다마고치 모드도 지원합니다.",
+      "id": "alchaincyf/darwin-skill",
+      "title_ko": "스킬 자동 진화",
+      "catchphrase": "스킬을 자동으로 평가하고 진화시키는 다윈 루프",
+      "summary_ko": "Karpathy의 autoresearch에서 영감을 받아 Claude Code 스킬을 자율 실험으로 최적화하는 도구입니다. 구조 분석(60점)과 실제 성능 테스트(40점)를 결합한 이중 평가 체계로, 점수가 오를 때만 변경을 유지하는 래칫 메커니즘을 적용합니다.",
       "key_features": [
-        "tmux 세션별 Claude Code 상태/토큰/모델 정보 테이블 뷰",
-        "에이전트 상태를 픽셀 아트로 보여주는 다마고치 비주얼 모드",
-        "tmux 키바인딩으로 팝업 오버레이 실행 가능"
+        "구조 분석 60점 + 실성능 테스트 40점, 이중 레이어 평가",
+        "점수 하락 시 자동 롤백하는 래칫(ratchet) 메커니즘",
+        "독립 에이전트가 평가해 편향 방지, 단계별 사용자 확인"
       ],
-      "use_case": "멀티에이전트를 tmux에서 동시에 돌리면서 각 세션의 진행 상황을 한 화면에서 관리하고 싶을 때",
-      "install_hint": "cargo install --path .",
+      "use_case": "직접 만든 스킬의 품질을 객관적으로 측정하고 자동으로 개선하고 싶을 때",
+      "install_hint": "npx skills add alchaincyf/darwin-skill",
+      "tags": [
+        "skill",
+        "optimization",
+        "autoresearch",
+        "evolutionary"
+      ],
+      "thumbnail_url": "https://github.com/alchaincyf.png",
+      "official_url": "https://github.com/alchaincyf/darwin-skill",
+      "stars": 1284,
+      "category": "skill",
+      "trend_score": 63.8,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "week_change": "new"
+    },
+    {
+      "id": "ghostwright/phantom",
+      "title_ko": "AI 동료 에이전트",
+      "catchphrase": "VM 위에서 24시간 돌아가는 자기진화 AI 동료",
+      "summary_ko": "전용 VM에서 24/7 독립 실행되는 자율 AI 에이전트입니다. 3계층 벡터 메모리로 세션 간 맥락을 기억하고, 런타임에 MCP 도구를 직접 만들어 등록합니다. Slack, Telegram, 이메일로 접근 가능하며, 6단계 자기진화 파이프라인으로 설정을 지속 개선합니다.",
+      "key_features": [
+        "전용 VM에서 24/7 독립 실행, 내 노트북과 완전 격리",
+        "3계층 벡터 메모리 + 런타임 MCP 도구 자동 생성/등록",
+        "6단계 자기진화 파이프라인, 버전별 롤백 가능"
+      ],
+      "use_case": "반복적인 인프라 작업이나 모니터링을 항시 가동 AI에 위임하고 싶을 때",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/ghostwright/phantom/main/docker-compose.user.yaml -o docker-compose.yaml && docker compose up -d",
       "tags": [
         "agent",
-        "tmux",
-        "dashboard",
-        "monitoring",
-        "rust"
+        "autonomous",
+        "memory",
+        "mcp",
+        "self-evolving"
       ],
-      "thumbnail_url": "https://github.com/gavraz.png",
-      "official_url": "https://github.com/gavraz/recon",
-      "stars": 198,
+      "thumbnail_url": "https://github.com/ghostwright.png",
+      "official_url": "https://github.com/ghostwright/phantom",
+      "stars": 1279,
       "category": "agent",
-      "trend_score": 68,
+      "trend_score": 63.8,
       "badges": [
         "🔥 Rising",
         "🆕 New"
-      ]
+      ],
+      "week_change": "new"
     },
     {
-      "id": "efij/secure-claude-code",
-      "title_ko": "CC 보안 가드레일",
-      "catchphrase": "소스 유출 사태 이후, 보안은 선택이 아니라 필수",
-      "summary_ko": "Claude Code, MCP 도구, 에이전트 워크플로우에 런타임 보안 가드레일을 설치합니다. 셸 명령 차단, 시크릿 유출 탐지, MCP 신뢰 검증, 네트워크 이그레스 통제, 프로덕션 접근 방어 등 16개 보호 패밀리를 YARA 스타일 모듈형 규칙으로 제공합니다.",
+      "id": "Manavarya09/design-extract",
+      "title_ko": "디자인 시스템 추출기",
+      "catchphrase": "URL 하나로 사이트의 디자인 토큰 8종 추출",
+      "summary_ko": "웹사이트 URL만 입력하면 헤드리스 브라우저로 크롤링해 레이아웃, 컬러, 타이포, 반응형 동작까지 완전한 디자인 시스템을 추출합니다. W3C 디자인 토큰 JSON, Tailwind 설정, React 테마, Figma 변수 등 8개 형식으로 출력하며, A~F 등급의 디자인 품질 채점까지 제공합니다.",
       "key_features": [
-        "위험 명령 실행 전 프리플라이트 체크 + 도구 반환값 사후 검사",
-        "Minimal/Balanced/Strict 3단계 프로필로 팀 상황에 맞게 적용",
-        "16개 보호 패밀리 (시크릿, 서플라이체인, Git, MCP 등) 모듈형 규칙"
+        "8개 출력 형식 (W3C 토큰 JSON, Tailwind, React 테마, Figma 변수 등)",
+        "4개 뷰포트 반응형 테스트 + hover/focus/active 인터랙션 상태 캡처",
+        "디자인 품질 A~F 채점 및 접근성 개선 제안"
       ],
-      "use_case": "Claude Code를 팀에 도입하면서 시크릿 유출이나 프로덕션 접근 같은 보안 리스크를 통제하고 싶을 때",
-      "install_hint": "claude plugin install runwall@runwall",
+      "use_case": "경쟁사 사이트의 디자인 시스템을 분석하거나, 기존 사이트의 디자인 토큰을 코드로 옮기고 싶을 때",
+      "install_hint": "npx designlang https://stripe.com",
+      "tags": [
+        "mcp",
+        "design",
+        "design-tokens",
+        "extraction",
+        "tailwind"
+      ],
+      "thumbnail_url": "https://github.com/Manavarya09.png",
+      "official_url": "https://github.com/Manavarya09/design-extract",
+      "stars": 1089,
+      "category": "mcp",
+      "trend_score": 63.8,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New",
+        "🔌 MCP"
+      ],
+      "week_change": "new"
+    },
+    {
+      "id": "phuryn/claude-usage",
+      "title_ko": "CC 사용량 대시보드",
+      "catchphrase": "Python 표준 라이브러리만으로 토큰 비용 시각화",
+      "summary_ko": "Claude Code의 로컬 로그를 읽어 토큰 사용량과 비용을 브라우저 대시보드로 보여주는 도구입니다. pip 설치 없이 Python 표준 라이브러리만으로 동작하며, CLI/VS Code/디스패치 세션 모두 추적합니다. Pro/Max 구독자의 실사용량 파악에 최적화되어 있습니다.",
+      "key_features": [
+        "Python 표준 라이브러리만 사용, 외부 의존성 제로",
+        "CLI, VS Code 확장, 디스패치 세션 모두 추적",
+        "모델별/프로젝트별/일별 비용 추정 및 자동 새로고침"
+      ],
+      "use_case": "Pro/Max 구독 중인데 실제 토큰을 얼마나 쓰는지 공식 UI보다 더 자세히 보고 싶을 때",
+      "install_hint": "git clone https://github.com/phuryn/claude-usage && cd claude-usage && python cli.py dashboard",
       "tags": [
         "tool",
-        "security",
-        "guardrails",
-        "mcp",
-        "enterprise"
+        "token-optimization",
+        "dashboard",
+        "python"
       ],
-      "thumbnail_url": "https://github.com/efij.png",
-      "official_url": "https://github.com/efij/secure-claude-code",
-      "stars": 88,
+      "thumbnail_url": "https://github.com/phuryn.png",
+      "official_url": "https://github.com/phuryn/claude-usage",
+      "stars": 1049,
       "category": "tool",
-      "trend_score": 65,
+      "trend_score": 63.8,
       "badges": [
         "🔥 Rising",
         "🆕 New"
-      ]
+      ],
+      "week_change": "new"
+    },
+    {
+      "id": "drona23/claude-token-efficient",
+      "title_ko": "군더더기 제거 스킬",
+      "catchphrase": "CLAUDE.md 한 장으로 출력 63% 압축",
+      "summary_ko": "CLAUDE.md 파일 하나를 프로젝트에 넣으면 Claude의 불필요한 서두, 맺음말, 과잉 설계를 자동 억제하는 스킬입니다. 코드 리뷰 기준 75% 단어 절감, 월 100회 사용 시 약 $0.86 절약됩니다. 코딩/리뷰/일반 프로필을 상황별로 전환할 수 있습니다.",
+      "key_features": [
+        "CLAUDE.md 드롭인 설치, 코드 변경 불필요",
+        "출력 63% 감소 (465 -> 170 단어), 코드 리뷰 75% 압축",
+        "coding/review/general 프로필별 최적화 규칙"
+      ],
+      "use_case": "Claude가 너무 장황하게 답변해서 핵심만 빨리 보고 싶을 때",
+      "install_hint": "curl -o CLAUDE.md https://raw.githubusercontent.com/drona23/claude-token-efficient/main/CLAUDE.md",
+      "tags": [
+        "skill",
+        "token-optimization",
+        "verbosity-reduction"
+      ],
+      "thumbnail_url": "https://github.com/drona23.png",
+      "official_url": "https://github.com/drona23/claude-token-efficient",
+      "stars": 4497,
+      "category": "skill",
+      "trend_score": 61.8,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "week_change": "new"
     }
   ],
   "classic": [
     {
       "id": "anthropics/claude-code",
       "title_ko": "CC 공식 에이전트",
-      "catchphrase": "터미널에 사는 코딩 에이전트, 생태계의 시작점",
-      "summary_ko": "Anthropic이 만든 공식 에이전트형 코딩 도구입니다. 터미널에서 실행되며 코드 작성, 리팩토링, 디버깅, 배포까지 전 개발 사이클을 커버합니다. 스킬, 훅, MCP, 멀티에이전트 등 풍부한 확장 생태계의 근간이 되는 프로젝트입니다.",
+      "catchphrase": "터미널 네이티브 코딩 에이전트, 생태계의 근간",
+      "summary_ko": "Anthropic이 만든 공식 에이전트형 코딩 도구입니다. 이번 주 Opus 4.7 출시(SWE-bench 87.6%), 데스크톱 병렬 세션 리디자인, Routines 클라우드 자동화까지 대형 업데이트가 연달아 발표되었습니다. 스킬, 훅, MCP, 멀티에이전트 생태계의 시작점입니다.",
       "key_features": [
-        "터미널 네이티브 에이전트형 코딩 도구",
-        "스킬, 훅, 슬래시 커맨드 등 풍부한 확장 시스템",
-        "MCP 통합 및 멀티에이전트 오케스트레이션 지원"
+        "Opus 4.7 기본 탑재, SWE-bench Verified 87.6% 달성",
+        "데스크톱 앱 병렬 세션 리디자인 (사이드바, 드래그앤드롭, 내장 터미널)",
+        "Routines 클라우드 자동화 (스케줄/API/GitHub 이벤트 트리거)"
       ],
       "use_case": "AI 코딩 도구를 처음 시작하거나, 생태계의 최신 기능을 공식 소스에서 확인하고 싶을 때",
       "install_hint": "npm install -g @anthropic-ai/claude-code",
@@ -376,25 +378,27 @@
       ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/claude-code",
-      "stars": 113171,
+      "stars": 115889,
       "category": "agent",
-      "trend_score": 95,
+      "trend_score": 94.7,
       "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
+        "🏛️ Classic",
+        "⭐ Popular",
+        "🔄 Cross-verified"
+      ],
+      "week_change": "stable"
     },
     {
       "id": "affaan-m/everything-claude-code",
       "title_ko": "하네스 올인원 최적화",
-      "catchphrase": "181개 스킬, 47개 서브에이전트, 하네스 끝판왕",
-      "summary_ko": "Claude Code, Cursor, Codex 등 AI 에이전트 하네스의 성능을 극대화하는 올인원 최적화 시스템입니다. 181개 스킬, 47개 전문 서브에이전트, 인스틴트 기반 자동 학습, AgentShield 보안 통합까지 포함하며, 언어별 린팅 규칙도 제공합니다.",
+      "catchphrase": "스킬, 보안, 메모리를 한 번에 세팅하는 끝판왕",
+      "summary_ko": "Claude Code, Cursor, Codex 등 AI 에이전트 하네스의 성능을 극대화하는 올인원 최적화 시스템입니다. 스킬, 인스틴트 기반 자동 학습, AgentShield 보안까지 통합하며 16만 스타로 생태계 최다 인기를 유지하고 있습니다.",
       "key_features": [
-        "181개 워크플로우 스킬 + 47개 전문 서브에이전트 (Go, Python, Rust 등)",
+        "스킬 + 인스틴트 + 메모리 + 보안 올인원 하네스 최적화",
         "세션에서 패턴을 자동 추출하는 인스틴트 기반 연속 학습",
         "AgentShield 보안 통합 및 프롬프트 인젝션 방어"
       ],
-      "use_case": "Claude Code를 프로덕션 수준으로 최적화하고, 언어별 전문 리뷰어가 필요할 때",
+      "use_case": "Claude Code를 프로덕션 수준으로 최적화하고 체계적 하네스를 한 번에 갖추고 싶을 때",
       "install_hint": "git clone https://github.com/affaan-m/everything-claude-code.git && ./install.sh --profile full",
       "tags": [
         "harness",
@@ -405,71 +409,105 @@
       ],
       "thumbnail_url": "https://github.com/affaan-m.png",
       "official_url": "https://github.com/affaan-m/everything-claude-code",
-      "stars": 153281,
+      "stars": 161155,
       "category": "harness",
-      "trend_score": 94,
+      "trend_score": 70.8,
       "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
+        "🏛️ Classic",
+        "⭐ Popular",
+        "🔄 Cross-verified"
+      ],
+      "week_change": "down"
     },
     {
-      "id": "modelcontextprotocol/servers",
-      "title_ko": "MCP 공식 서버 모음",
-      "catchphrase": "AI에 외부 도구를 연결하는 표준, MCP의 허브",
-      "summary_ko": "Model Context Protocol(MCP) 공식 서버 리포지터리입니다. AI 에이전트가 파일 시스템, 데이터베이스, API 등 외부 리소스에 접근할 수 있게 하는 표준 프로토콜의 레퍼런스 구현체들을 모아둔 곳입니다.",
+      "id": "garrytan/gstack",
+      "title_ko": "YC CEO의 AI 팀 셋업",
+      "catchphrase": "CEO부터 QA까지 6명의 전문가를 터미널에",
+      "summary_ko": "Y Combinator CEO Garry Tan이 실제 사용하는 Claude Code 셋업을 그대로 공개한 프로젝트입니다. CEO, 디자이너, 엔지니어링 매니저 등 6개 역할의 23개 전문 도구를 제공하며, Playwright 기반 브라우저 테스트까지 포함합니다.",
       "key_features": [
-        "파일, DB, API 등 주요 외부 리소스 연결을 위한 레퍼런스 서버",
-        "MCP 프로토콜 표준 스펙의 공식 구현",
-        "Claude Code, Cursor 등 다양한 에이전트와 호환"
+        "/plan-ceo-review, /design-review, /qa 등 23개 역할별 도구",
+        "Playwright 기반 실제 브라우저 QA 테스트 자동화",
+        "팀 배포 모드(--team)로 자동 업데이트 및 일괄 설치"
       ],
-      "use_case": "Claude Code에서 Notion, Slack, DB 등 외부 서비스를 연결하고 싶을 때",
-      "install_hint": "GitHub README 참조 (서버별 설치 방법 상이)",
+      "use_case": "1인 개발자가 기획-디자인-개발-QA-배포 전 과정을 AI 팀으로 커버하고 싶을 때",
+      "install_hint": "git clone --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
       "tags": [
-        "mcp",
-        "official",
-        "protocol",
-        "integration",
-        "infrastructure"
+        "harness",
+        "workflow",
+        "team-simulation",
+        "browser-testing"
       ],
-      "thumbnail_url": "https://github.com/modelcontextprotocol.png",
-      "official_url": "https://github.com/modelcontextprotocol/servers",
-      "stars": 83611,
-      "category": "mcp",
-      "trend_score": 92,
+      "thumbnail_url": "https://github.com/garrytan.png",
+      "official_url": "https://github.com/garrytan/gstack",
+      "stars": 77498,
+      "category": "harness",
+      "trend_score": 65,
       "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
+        "🏛️ Classic",
+        "⭐ Popular",
+        "📈 Trending"
+      ],
+      "week_change": "down"
     },
     {
-      "id": "openclaw/openclaw",
-      "title_ko": "멀티플랫폼 AI 비서",
-      "catchphrase": "15개 메신저를 하나로, 내 기기에서 도는 AI",
-      "summary_ko": "자체 기기에서 돌아가는 개인용 AI 비서 프레임워크입니다. WhatsApp, Telegram, Slack, Discord 등 15개 이상 메시징 플랫폼을 지원하며, WebSocket 기반 로컬 게이트웨이로 세션과 도구를 관리합니다. macOS/iOS/Android 네이티브 앱과 음성 인식도 포함됩니다.",
+      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "title_ko": "프로급 UI/UX 스킬",
+      "catchphrase": "디자이너 없이 프로급 UI를 뽑는 비결",
+      "summary_ko": "AI에 디자인 인텔리전스를 부여해 전문가 수준의 UI/UX를 구현하는 스킬입니다. 레이아웃, 컬러, 타이포그래피, 접근성 등 디자인 원칙을 코드 생성에 자동 반영하며, 개별 스킬 중 최고 인기(67.8K stars)를 유지하고 있습니다.",
       "key_features": [
-        "15개 이상 메시징 플랫폼 통합 (WhatsApp, Telegram, Slack 등)",
-        "로컬 퍼스트 WebSocket 게이트웨이로 프라이버시 보장",
-        "macOS 메뉴바, iOS, Android 네이티브 앱 및 음성 제어"
+        "레이아웃, 컬러 팔레트, 타이포그래피 등 디자인 원칙 자동 적용",
+        "접근성 기준 준수 UI 컴포넌트 생성",
+        "프로토타이핑부터 프로덕션 UI까지 커버"
       ],
-      "use_case": "여러 메신저를 하나의 AI 비서로 통합하면서 데이터를 내 기기에 보관하고 싶을 때",
-      "install_hint": "npm install -g openclaw@latest && openclaw onboard --install-daemon",
+      "use_case": "전문 디자이너 없이 프론트엔드를 개발하면서 디자인 퀄리티를 높이고 싶을 때",
+      "install_hint": "GitHub README 참조",
       "tags": [
-        "framework",
-        "multi-platform",
-        "self-hosted",
-        "messaging",
-        "voice"
+        "skill",
+        "ui-ux",
+        "design",
+        "frontend",
+        "accessibility"
       ],
-      "thumbnail_url": "https://github.com/openclaw.png",
-      "official_url": "https://github.com/openclaw/openclaw",
-      "stars": 355956,
-      "category": "framework",
-      "trend_score": 90,
+      "thumbnail_url": "https://github.com/nextlevelbuilder.png",
+      "official_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 67813,
+      "category": "skill",
+      "trend_score": 64.8,
       "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
+        "🏛️ Classic",
+        "⭐ Popular"
+      ],
+      "week_change": "down"
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "title_ko": "AI 세션 메모리 관리",
+      "catchphrase": "세션을 넘나드는 장기 기억, 자동 압축 저장",
+      "summary_ko": "Claude Code의 모든 세션 활동을 자동 캡처하고, AI로 압축한 뒤 다음 세션에 관련 컨텍스트를 주입하는 플러그인입니다. Agent SDK 기반으로 동작하며, 이번 주 +12,343 stars로 폭발적 관심을 받고 있습니다.",
+      "key_features": [
+        "세션 활동 자동 캡처 및 AI 기반 컨텍스트 압축",
+        "다음 세션에 관련 메모리 자동 주입",
+        "Agent SDK 기반, Claude Code 네이티브 통합"
+      ],
+      "use_case": "장기 프로젝트에서 이전 세션의 결정 사항과 컨텍스트를 자동으로 이어가고 싶을 때",
+      "install_hint": "GitHub README 참조",
+      "tags": [
+        "agent",
+        "memory",
+        "context-management",
+        "agent-sdk"
+      ],
+      "thumbnail_url": "https://github.com/thedotmack.png",
+      "official_url": "https://github.com/thedotmack/claude-mem",
+      "stars": 63303,
+      "category": "agent",
+      "trend_score": 64.8,
+      "badges": [
+        "🏛️ Classic",
+        "⭐ Popular",
+        "📈 Trending"
+      ],
+      "week_change": "down"
     },
     {
       "id": "ComposioHQ/awesome-claude-skills",
@@ -492,51 +530,24 @@
       ],
       "thumbnail_url": "https://github.com/ComposioHQ.png",
       "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "stars": 53368,
+      "stars": 54965,
       "category": "awesome-list",
-      "trend_score": 88,
+      "trend_score": 65,
       "badges": [
-        "⭐ Classic",
+        "🏛️ Classic",
+        "⭐ Popular",
         "🏆 awesome"
-      ]
-    },
-    {
-      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "title_ko": "프로급 UI/UX 스킬",
-      "catchphrase": "디자이너 없이 프로급 UI를 뽑는 비결",
-      "summary_ko": "AI에 디자인 인텔리전스를 부여해 전문가 수준의 UI/UX를 구현하는 스킬입니다. 개별 스킬 중 최고 인기(63.9K stars)를 자랑하며, 레이아웃, 컬러, 타이포그래피, 접근성 등 디자인 원칙을 코드 생성에 자동 반영합니다.",
-      "key_features": [
-        "레이아웃, 컬러 팔레트, 타이포그래피 등 디자인 원칙 자동 적용",
-        "접근성 기준 준수 UI 컴포넌트 생성",
-        "프로토타이핑부터 프로덕션 UI까지 커버"
       ],
-      "use_case": "전문 디자이너 없이 프론트엔드를 개발하면서 디자인 퀄리티를 높이고 싶을 때",
-      "install_hint": "GitHub README 참조",
-      "tags": [
-        "skill",
-        "ui-ux",
-        "design",
-        "frontend",
-        "accessibility"
-      ],
-      "thumbnail_url": "https://github.com/nextlevelbuilder.png",
-      "official_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 63926,
-      "category": "skill",
-      "trend_score": 86,
-      "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
+      "week_change": "down"
     },
     {
       "id": "hesreallyhim/awesome-claude-code",
       "title_ko": "CC 생태계 총정리",
-      "catchphrase": "스킬, 훅, 에이전트 오케스트레이터 총정리",
-      "summary_ko": "Claude Code의 스킬, 훅, 슬래시 커맨드, 에이전트 오케스트레이터를 체계적으로 정리한 Awesome 리스트입니다. 약 1년간 꾸준히 업데이트되어 생태계의 변천사를 추적할 수 있는 참조 자료입니다.",
+      "catchphrase": "스킬, 훅, 오케스트레이터까지 한눈에",
+      "summary_ko": "Claude Code의 스킬, 훅, 슬래시 커맨드, 에이전트 오케스트레이터를 체계적으로 정리한 Awesome 리스트입니다. 지속 업데이트되어 생태계의 변천사를 추적할 수 있는 참조 자료입니다.",
       "key_features": [
         "스킬, 훅, 슬래시 커맨드, 오케스트레이터 카테고리별 분류",
-        "약 1년간 지속 업데이트된 생태계 변천 기록",
+        "지속 업데이트되는 생태계 변천 기록",
         "커뮤니티 검증된 도구들의 큐레이션"
       ],
       "use_case": "Claude Code 생태계의 전체 그림을 파악하고 카테고리별 대표 도구를 찾고 싶을 때",
@@ -550,28 +561,118 @@
       ],
       "thumbnail_url": "https://github.com/hesreallyhim.png",
       "official_url": "https://github.com/hesreallyhim/awesome-claude-code",
-      "stars": 38373,
+      "stars": 39754,
       "category": "awesome-list",
-      "trend_score": 85,
+      "trend_score": 65,
       "badges": [
-        "⭐ Classic",
+        "🏛️ Classic",
         "🏆 awesome"
-      ]
+      ],
+      "week_change": "down"
+    },
+    {
+      "id": "rtk-ai/rtk",
+      "title_ko": "CLI 토큰 프록시",
+      "catchphrase": "Rust 바이너리 하나로 LLM 토큰 60~90% 절감",
+      "summary_ko": "개발 명령어의 출력을 LLM에 전달하기 전에 압축하는 CLI 프록시입니다. 단일 Rust 바이너리, 의존성 제로로 설치가 간편하며, 일반적인 개발 커맨드에서 토큰 소비를 60~90% 줄여줍니다.",
+      "key_features": [
+        "단일 Rust 바이너리, 외부 의존성 제로",
+        "일반 개발 커맨드에서 토큰 60~90% 절감",
+        "Claude Code, Codex 등 다양한 에이전트와 호환"
+      ],
+      "use_case": "에이전트가 긴 빌드/테스트 로그를 읽느라 토큰을 낭비할 때, 출력을 자동 압축하고 싶을 때",
+      "install_hint": "GitHub README 참조",
+      "tags": [
+        "framework",
+        "token-optimization",
+        "rust",
+        "cli-proxy"
+      ],
+      "thumbnail_url": "https://github.com/rtk-ai.png",
+      "official_url": "https://github.com/rtk-ai/rtk",
+      "stars": 30016,
+      "category": "framework",
+      "trend_score": 64.8,
+      "badges": [
+        "🏛️ Classic",
+        "📈 Trending"
+      ],
+      "week_change": "down"
+    },
+    {
+      "id": "qwibitai/nanoclaw",
+      "title_ko": "경량 AI 비서 프레임워크",
+      "catchphrase": "OpenClaw 50만줄을 컨테이너 격리로 대체",
+      "summary_ko": "OpenClaw의 핵심 기능을 경량으로 재구현한 AI 비서 프레임워크입니다. Docker/Apple Container에서 에이전트를 격리 실행하며, WhatsApp/Telegram/Discord/Slack/Gmail 멀티채널 메시징과 예약 작업을 지원합니다. OS 수준 컨테이너 격리로 보안을 확보합니다.",
+      "key_features": [
+        "Docker/Apple Container 기반 OS 수준 에이전트 격리",
+        "WhatsApp, Telegram, Discord, Slack, Gmail 5개 채널 통합",
+        "그룹별 독립 메모리 + 예약 작업 + 에이전트 스웜"
+      ],
+      "use_case": "메시징 플랫폼 연동 AI 비서를 원하지만, OpenClaw의 복잡성 없이 가볍게 시작하고 싶을 때",
+      "install_hint": "gh repo fork qwibitai/nanoclaw --clone && cd nanoclaw && claude",
+      "tags": [
+        "agent",
+        "messaging",
+        "container",
+        "security",
+        "lightweight"
+      ],
+      "thumbnail_url": "https://github.com/qwibitai.png",
+      "official_url": "https://github.com/qwibitai/nanoclaw",
+      "stars": 27531,
+      "category": "agent",
+      "trend_score": 64.8,
+      "badges": [
+        "🏛️ Classic",
+        "🆕 New"
+      ],
+      "week_change": "new"
+    },
+    {
+      "id": "forrestchang/andrej-karpathy-skills",
+      "title_ko": "카파시 코딩 원칙",
+      "catchphrase": "카파시가 지적한 LLM 코딩 함정 4가지를 스킬로",
+      "summary_ko": "Andrej Karpathy가 관찰한 LLM 코딩 실패 패턴을 4가지 원칙(먼저 생각하기, 단순하게, 수술적 변경, 목표 중심 실행)으로 정리한 CLAUDE.md 스킬입니다. 100줄이면 될 것을 1000줄로 만드는 과잉 설계를 방지합니다.",
+      "key_features": [
+        "Think/Simplicity/Surgical/Goal-Driven 4원칙 기반 코딩 규칙",
+        "CLAUDE.md 드롭인 또는 플러그인 마켓플레이스 설치",
+        "Cursor 호환 규칙 파일도 제공"
+      ],
+      "use_case": "Claude가 과잉 설계하거나 무관한 코드를 건드리는 습관을 교정하고 싶을 때",
+      "install_hint": "curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md",
+      "tags": [
+        "skill",
+        "coding-principles",
+        "karpathy",
+        "simplicity"
+      ],
+      "thumbnail_url": "https://github.com/forrestchang.png",
+      "official_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "stars": 61277,
+      "category": "skill",
+      "trend_score": 63,
+      "badges": [
+        "🏛️ Classic",
+        "⭐ Popular",
+        "🆕 New"
+      ],
+      "week_change": "new"
     },
     {
       "id": "shareAI-lab/learn-claude-code",
       "title_ko": "하네스를 밑바닥부터",
-      "catchphrase": "Bash만으로 에이전트 하네스를 밑바닥부터",
-      "summary_ko": "Bash 스크립트만으로 Claude Code와 유사한 에이전트 하네스를 처음부터 구현하는 학습 프로젝트입니다. 에이전트 루프, 도구 시스템, 컨텍스트 관리 등 하네스의 핵심 메커니즘을 단계별로 직접 만들면서 배울 수 있습니다.",
+      "catchphrase": "Bash만으로 에이전트 하네스를 처음부터 구현",
+      "summary_ko": "Bash 스크립트만으로 Claude Code와 유사한 에이전트 하네스를 처음부터 구현하는 학습 프로젝트입니다. 에이전트 루프, 도구 시스템, 컨텍스트 관리 등 핵심 메커니즘을 직접 만들면서 배울 수 있습니다.",
       "key_features": [
         "Bash만으로 0부터 1까지 에이전트 하네스 구현",
         "에이전트 루프, 도구 시스템, 컨텍스트 관리 단계별 구축",
         "Claude Code 내부 구조를 이해하기 위한 최적의 학습 리소스"
       ],
-      "use_case": "Claude Code의 내부 동작 원리를 깊이 이해하고, 커스텀 하네스를 직접 만들고 싶을 때",
+      "use_case": "Claude Code의 내부 동작 원리를 깊이 이해하고 커스텀 하네스를 직접 만들고 싶을 때",
       "install_hint": "GitHub README 참조",
       "tags": [
-        "harness",
+        "framework",
         "education",
         "bash",
         "from-scratch",
@@ -579,126 +680,44 @@
       ],
       "thumbnail_url": "https://github.com/shareAI-lab.png",
       "official_url": "https://github.com/shareAI-lab/learn-claude-code",
-      "stars": 52457,
+      "stars": 54806,
+      "category": "framework",
+      "trend_score": 62.8,
+      "badges": [
+        "🏛️ Classic",
+        "⭐ Popular"
+      ],
+      "week_change": "down"
+    },
+    {
+      "id": "gsd-build/get-shit-done",
+      "title_ko": "스펙 드리븐 자동화",
+      "catchphrase": "아이디어만 던지면 리서치-계획-구현-검증까지 자동",
+      "summary_ko": "메타 프롬프팅과 컨텍스트 엔지니어링으로 Claude Code를 스펙 기반 개발 파이프라인으로 운용하는 시스템입니다. 리서치-계획-실행-검증 파이프라인을 웨이브 기반 병렬 실행하며, 서브에이전트에 신선한 컨텍스트를 부여해 품질 저하를 방지합니다.",
+      "key_features": [
+        "질문-리서치-요구사항-로드맵-계획-실행-검증 8단계 파이프라인",
+        "웨이브 기반 병렬 실행, 메인 세션 30~40% 활용률 유지",
+        "태스크별 원자적 커밋 + 스키마 드리프트/보안 게이트"
+      ],
+      "use_case": "복잡한 프로젝트를 체계적으로 쪼개서 AI에 위임하고, 컨텍스트 품질 저하 없이 진행하고 싶을 때",
+      "install_hint": "npx get-shit-done-cc@latest",
+      "tags": [
+        "harness",
+        "spec-driven",
+        "meta-prompting",
+        "context-engineering"
+      ],
+      "thumbnail_url": "https://github.com/gsd-build.png",
+      "official_url": "https://github.com/gsd-build/get-shit-done",
+      "stars": 54970,
       "category": "harness",
-      "trend_score": 84,
+      "trend_score": 58,
       "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
-    },
-    {
-      "id": "musistudio/claude-code-router",
-      "title_ko": "모델 라우터",
-      "catchphrase": "작업별로 다른 모델 자동 배정, 비용은 반으로",
-      "summary_ko": "Claude Code의 요청을 작업 유형에 따라 다른 AI 모델로 라우팅하는 프록시입니다. 일반/배경/추론/장문/검색 5가지 카테고리별로 최적 모델을 지정할 수 있으며, OpenRouter, DeepSeek, Ollama, Gemini 등 다양한 프로바이더를 지원합니다.",
-      "key_features": [
-        "Default/Background/Think/Long Context/Web Search 5가지 라우팅 카테고리",
-        "OpenRouter, DeepSeek, Ollama, Gemini 등 멀티 프로바이더 지원",
-        "/model 커맨드로 실시간 모델 전환 가능"
+        "🏛️ Classic",
+        "⭐ Popular",
+        "🆕 New"
       ],
-      "use_case": "단순 작업은 저렴한 모델로, 복잡한 추론은 고성능 모델로 분배해 비용을 최적화하고 싶을 때",
-      "install_hint": "npm install -g @musistudio/claude-code-router && ccr code",
-      "tags": [
-        "tool",
-        "routing",
-        "multi-model",
-        "cost-optimization",
-        "proxy"
-      ],
-      "thumbnail_url": "https://github.com/musistudio.png",
-      "official_url": "https://github.com/musistudio/claude-code-router",
-      "stars": 32102,
-      "category": "tool",
-      "trend_score": 82,
-      "badges": [
-        "⭐ Classic"
-      ]
-    },
-    {
-      "id": "modelcontextprotocol/python-sdk",
-      "title_ko": "MCP Python SDK",
-      "catchphrase": "Python으로 MCP 서버 만들기, 공식 SDK",
-      "summary_ko": "Model Context Protocol의 공식 Python SDK입니다. MCP 서버와 클라이언트를 Python으로 구축할 수 있으며, AI 에이전트가 외부 도구와 데이터에 접근하는 표준 인터페이스를 제공합니다. MCP 생태계 개발의 필수 라이브러리입니다.",
-      "key_features": [
-        "MCP 서버/클라이언트 구축을 위한 공식 Python 라이브러리",
-        "AI 에이전트-외부 도구 간 표준 인터페이스 제공",
-        "비동기 지원 및 타입 안전성 내장"
-      ],
-      "use_case": "커스텀 MCP 서버를 Python으로 개발해 자체 도구나 데이터를 AI 에이전트에 연결하고 싶을 때",
-      "install_hint": "pip install mcp",
-      "tags": [
-        "mcp",
-        "python",
-        "sdk",
-        "official",
-        "infrastructure"
-      ],
-      "thumbnail_url": "https://github.com/modelcontextprotocol.png",
-      "official_url": "https://github.com/modelcontextprotocol/python-sdk",
-      "stars": 22617,
-      "category": "mcp",
-      "trend_score": 80,
-      "badges": [
-        "⭐ Classic"
-      ]
-    },
-    {
-      "id": "thedotmack/claude-mem",
-      "title_ko": "AI 세션 메모리 관리",
-      "catchphrase": "세션 넘나드는 장기 기억, 토큰 10배 절약",
-      "summary_ko": "Claude Code의 모든 작업을 자동 캡처하고 AI로 압축한 뒤, 다음 세션에서 관련 컨텍스트를 자동 주입하는 영속 메모리 시스템입니다. SQLite + Chroma 벡터 DB 하이브리드 검색으로 토큰 사용량을 약 10배 줄이면서도 정확한 컨텍스트를 제공합니다.",
-      "key_features": [
-        "세션 간 영속 메모리 자동 캡처 및 AI 압축",
-        "SQLite + Chroma 벡터 DB 하이브리드 시맨틱/키워드 검색",
-        "Search-Timeline-Detail 3계층 토큰 절약 아키텍처"
-      ],
-      "use_case": "장기 프로젝트에서 이전 세션의 맥락을 매번 다시 설명하지 않고 이어서 작업하고 싶을 때",
-      "install_hint": "npx claude-mem install",
-      "tags": [
-        "agent",
-        "memory",
-        "persistence",
-        "vector-db",
-        "token-optimization"
-      ],
-      "thumbnail_url": "https://github.com/thedotmack.png",
-      "official_url": "https://github.com/thedotmack/claude-mem",
-      "stars": 50960,
-      "category": "agent",
-      "trend_score": 79,
-      "badges": [
-        "⭐ Classic",
-        "🏆 Top Stars"
-      ]
-    },
-    {
-      "id": "rtk-ai/rtk",
-      "title_ko": "CLI 토큰 프록시",
-      "catchphrase": "git status 2000토큰이 200으로 줄어든다",
-      "summary_ko": "개발 명령어 출력을 AI 에이전트에 전달하기 전에 스마트하게 필터링/압축하는 CLI 프록시입니다. Rust 싱글 바이너리로 의존성 제로이며, git status, cargo test 등 일상 명령어의 토큰을 60~90% 줄입니다. 자동 리라이트 훅으로 기존 워크플로우 변경 없이 적용됩니다.",
-      "key_features": [
-        "스마트 필터링, 그룹핑, 트렁케이션, 중복 제거 4단계 압축",
-        "Rust 싱글 바이너리, 의존성 제로, brew/cargo 설치",
-        "자동 리라이트 훅으로 기존 명령어에 투명하게 적용"
-      ],
-      "use_case": "Claude Code API 비용을 줄이고 싶은데, 워크플로우를 바꾸기는 귀찮을 때",
-      "install_hint": "brew install rtk && rtk init -g",
-      "tags": [
-        "tool",
-        "token-optimization",
-        "rust",
-        "cli",
-        "cost-saving"
-      ],
-      "thumbnail_url": "https://github.com/rtk-ai.png",
-      "official_url": "https://github.com/rtk-ai/rtk",
-      "stars": 24845,
-      "category": "tool",
-      "trend_score": 78,
-      "badges": [
-        "⭐ Classic"
-      ]
+      "week_change": "new"
     }
   ]
 }
