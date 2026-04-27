@@ -71,6 +71,26 @@
   </div>
 </header>
 
+<div class="update-bar" id="update-bar" role="status" aria-live="polite">
+  <span class="update-meta">
+    <span class="update-dot"></span>
+    <span data-i18n-en="Updated" data-i18n-ko="갱신">갱신</span>
+    <strong id="updated-at">—</strong>
+    <span class="update-sep">·</span>
+    <span data-i18n-en="Next" data-i18n-ko="다음">다음</span>
+    <strong id="next-at">—</strong>
+    <span class="version-pill" id="version-pill"></span>
+  </span>
+  <div class="archive-wrap">
+    <button class="archive-btn" id="archive-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18v3H3zM5 10v10h14V10M9 14h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span data-i18n-en="Past weeks" data-i18n-ko="지난 주차">지난 주차</span>
+      <span class="archive-caret">▾</span>
+    </button>
+    <ul class="archive-menu" id="archive-menu" role="listbox" hidden></ul>
+  </div>
+</div>
+
 <nav class="controls">
   <div class="tabs" role="tablist">
     <button class="tab active" data-tab="rising" role="tab" aria-selected="true">
@@ -90,6 +110,8 @@
   </div>
   <button class="ctrl-link" id="open-criteria-top" data-i18n-en="Ranking criteria" data-i18n-ko="순위 기준">순위 기준</button>
 </nav>
+
+<nav class="cat-filter" id="cat-filter" role="tablist" aria-label="Category filter"></nav>
 
 <main>
   <div class="grid" id="grid"></div>

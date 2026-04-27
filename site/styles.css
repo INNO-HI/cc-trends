@@ -321,6 +321,170 @@ body {
 }
 .hero-stats .dot { color: var(--soft); }
 
+/* ============ UPDATE BAR ============ */
+.update-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.update-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.update-meta strong {
+  color: var(--ink-2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.update-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  animation: pulse-dot 2.4s ease-out infinite;
+  margin-right: 4px;
+}
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+  70%  { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+.update-sep { color: var(--soft); }
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--pill);
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+.version-pill:empty { display: none; }
+.version-pill.is-archive {
+  background: #fff3d6;
+  color: #8a6500;
+}
+
+/* ── archive menu ── */
+.archive-wrap { position: relative; }
+.archive-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .15s;
+  line-height: 1;
+}
+.archive-btn:hover { border-color: var(--ink); color: var(--ink); }
+.archive-btn svg { opacity: 0.75; }
+.archive-caret { font-size: 10px; opacity: 0.6; }
+.archive-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 30;
+  min-width: 220px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(14, 14, 14, 0.12);
+}
+.archive-menu li { margin: 0; }
+.archive-menu button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--ink-2);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+.archive-menu button:hover { background: var(--card-hover); color: var(--ink); }
+.archive-menu button.is-active { background: var(--pill); color: var(--ink); font-weight: 600; }
+.archive-menu .ar-ver { font-weight: 600; }
+.archive-menu .ar-date {
+  font-size: 11.5px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============ CATEGORY FILTER ============ */
+.cat-filter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4px 32px 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .15s ease;
+  line-height: 1;
+}
+.cat-chip:hover { border-color: var(--ink); color: var(--ink); }
+.cat-chip.is-active {
+  background: var(--ink);
+  color: #ffffff;
+  border-color: var(--ink);
+  font-weight: 600;
+}
+.cat-chip.is-active .cat-count { color: rgba(255, 255, 255, 0.65); }
+.cat-emoji { font-size: 13px; }
+.cat-count {
+  font-size: 11px;
+  color: var(--soft);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .update-bar { padding: 0 16px 8px; font-size: 12px; }
+  .cat-filter { padding: 4px 16px 8px; }
+}
+
 /* ============ CONTROLS ============ */
 .controls {
   max-width: 1200px;

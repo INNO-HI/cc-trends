@@ -27,9 +27,14 @@ claude \
 echo "--- Pipeline finished. Regenerating RSS feed ---"
 node "$PROJECT_DIR/scripts/generate-rss.js" || echo "⚠ RSS generation failed (continuing)"
 
+echo "--- Mirroring archive snapshots into site/ ---"
+mkdir -p "$SITE_DIR/public/data/archive"
+cp -n "$PROJECT_DIR"/data/archive/2026-*.json "$SITE_DIR/public/data/archive/" 2>/dev/null || true
+node "$PROJECT_DIR/scripts/build-archive-index.js" || echo "⚠ archive index gen failed (continuing)"
+
 echo "--- Checking for data changes ---"
 cd "$SITE_DIR"
-git add public/data/latest.json feed.xml
+git add public/data/latest.json public/data/archive feed.xml
 if ! git diff --cached --quiet; then
   git -c user.email="noreply@anthropic.com" -c user.name="cc-trends-bot" \
       commit -m "Weekly update · $(date +%Y-%m-%d)"

@@ -2,17 +2,44 @@ const STATE = {
   data: null,
   tab: "rising",
   query: "",
+  category: "all",
+  source: "latest", // "latest" or filename like "2026-04-20.json"
+  archives: [],
 };
 
-async function load() {
+const CATEGORIES = [
+  { id: "all",     emoji: "✨", label_ko: "전체",   label_en: "All" },
+  { id: "agent",   emoji: "🤖", label_ko: "에이전트", label_en: "Agents" },
+  { id: "skill",   emoji: "⚡", label_ko: "스킬",     label_en: "Skills" },
+  { id: "harness", emoji: "🔧", label_ko: "하네스",   label_en: "Harness" },
+  { id: "mcp",     emoji: "🔌", label_ko: "MCP",      label_en: "MCP" },
+];
+
+async function load(source) {
+  STATE.source = source || "latest";
+  const url = STATE.source === "latest"
+    ? "public/data/latest.json"
+    : `public/data/archive/${STATE.source}`;
   try {
-    const res = await fetch("public/data/latest.json", { cache: "no-store" });
+    const res = await fetch(url, { cache: "no-store" });
     STATE.data = await res.json();
   } catch (e) {
     STATE.data = { generated_at: null, rising: [], classic: [] };
   }
-  updateMeta();
+  renderUpdateBar();
+  renderCategoryFilter();
   render();
+}
+
+async function loadArchives() {
+  try {
+    const res = await fetch("public/data/archive/index.json", { cache: "no-store" });
+    const j = await res.json();
+    STATE.archives = j.archives || [];
+  } catch (e) {
+    STATE.archives = [];
+  }
+  renderArchiveMenu();
 }
 
 function nextMonday(from) {
@@ -28,6 +55,92 @@ function fmtDate(d) {
 }
 
 function updateMeta() { /* hero stats removed */ }
+
+function fmtKDate(d) {
+  return `${d.getMonth()+1}/${d.getDate()}`;
+}
+function fmtKFull(d) {
+  return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}`;
+}
+function dayLabel(d, lang) {
+  const k = ["일","월","화","수","목","금","토"];
+  const e = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  return (lang === "en" ? e : k)[d.getDay()];
+}
+function renderUpdateBar() {
+  const d = STATE.data || {};
+  const ts = d.generated_at ? new Date(d.generated_at) : null;
+  const lang = getLang();
+  const updEl = document.getElementById("updated-at");
+  const nxtEl = document.getElementById("next-at");
+  const verEl = document.getElementById("version-pill");
+  if (!updEl) return;
+  if (ts) {
+    updEl.textContent = `${fmtKFull(ts)} (${dayLabel(ts, lang)})`;
+    if (STATE.source === "latest") {
+      const nm = nextMonday(ts);
+      nxtEl.textContent = `${fmtKDate(nm)} (${dayLabel(nm, lang)})`;
+      nxtEl.style.display = "";
+      nxtEl.previousElementSibling.style.display = "";
+      nxtEl.previousElementSibling.previousElementSibling.style.display = "";
+    } else {
+      nxtEl.style.display = "none";
+      nxtEl.previousElementSibling.style.display = "none";
+      nxtEl.previousElementSibling.previousElementSibling.style.display = "none";
+    }
+  } else {
+    updEl.textContent = "—";
+    nxtEl.textContent = "—";
+  }
+  if (verEl) {
+    verEl.textContent = d.version || "";
+    if (STATE.source !== "latest") {
+      verEl.classList.add("is-archive");
+      verEl.title = lang === "en" ? "Viewing archive" : "아카이브 보기";
+    } else {
+      verEl.classList.remove("is-archive");
+      verEl.title = "";
+    }
+  }
+}
+
+function renderArchiveMenu() {
+  const ul = document.getElementById("archive-menu");
+  if (!ul) return;
+  const lang = getLang();
+  const latestLabel = lang === "en" ? "Latest week" : "최신 주차";
+  const items = [
+    `<li><button data-source="latest" class="${STATE.source === "latest" ? "is-active" : ""}">
+       <span class="ar-ver">${latestLabel}</span>
+     </button></li>`
+  ];
+  for (const a of STATE.archives) {
+    const dt = a.generated_at ? fmtKFull(new Date(a.generated_at)) : a.file;
+    items.push(`<li><button data-source="${escapeHTML(a.file)}" class="${STATE.source === a.file ? "is-active" : ""}">
+      <span class="ar-ver">${escapeHTML(a.version || a.file)}</span>
+      <span class="ar-date">${dt}</span>
+    </button></li>`);
+  }
+  ul.innerHTML = items.join("");
+}
+
+function renderCategoryFilter() {
+  const wrap = document.getElementById("cat-filter");
+  if (!wrap) return;
+  const lang = getLang();
+  const list = (STATE.data?.[STATE.tab] || []);
+  wrap.innerHTML = CATEGORIES.map(c => {
+    const count = c.id === "all" ? list.length : list.filter(x => x.category === c.id).length;
+    if (c.id !== "all" && count === 0) return "";
+    const label = lang === "en" ? c.label_en : c.label_ko;
+    const active = STATE.category === c.id ? "is-active" : "";
+    return `<button class="cat-chip ${active}" data-cat="${c.id}" type="button">
+      <span class="cat-emoji">${c.emoji}</span>
+      <span>${label}</span>
+      <span class="cat-count">${count}</span>
+    </button>`;
+  }).join("");
+}
 
 function updateTabCounts() {
   const d = STATE.data || {};
@@ -241,11 +354,19 @@ function closeModal() {
 
 function render() {
   const d = STATE.data || {};
-  const list = (d[STATE.tab] || []).filter(matches);
+  const base = d[STATE.tab] || [];
+  const list = base
+    .filter(it => STATE.category === "all" || it.category === STATE.category)
+    .filter(matches);
   const el = document.getElementById("grid");
   updateTabCounts();
+  renderCategoryFilter();
   if (list.length === 0) {
-    el.innerHTML = `<div class="empty">검색 결과 없음</div>`;
+    const lang = getLang();
+    const msg = lang === "en"
+      ? "No matches. Try a different category or clear the search."
+      : "조건에 맞는 항목이 없어요. 카테고리·검색어를 바꿔보세요.";
+    el.innerHTML = `<div class="empty">${msg}</div>`;
   } else {
     el.innerHTML = list.map((it, i) => cardHTML(it, i)).join("");
   }
@@ -264,8 +385,38 @@ document.querySelectorAll(".tab").forEach(btn => {
     btn.classList.add("active");
     btn.setAttribute("aria-selected", "true");
     STATE.tab = btn.dataset.tab;
+    STATE.category = "all";
     render();
   });
+});
+
+document.getElementById("cat-filter")?.addEventListener("click", e => {
+  const btn = e.target.closest(".cat-chip");
+  if (!btn) return;
+  STATE.category = btn.dataset.cat;
+  render();
+});
+
+const archiveBtn = document.getElementById("archive-btn");
+const archiveMenu = document.getElementById("archive-menu");
+archiveBtn?.addEventListener("click", e => {
+  e.stopPropagation();
+  const open = !archiveMenu.hidden;
+  archiveMenu.hidden = open;
+  archiveBtn.setAttribute("aria-expanded", String(!open));
+});
+archiveMenu?.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-source]");
+  if (!btn) return;
+  archiveMenu.hidden = true;
+  archiveBtn.setAttribute("aria-expanded", "false");
+  load(btn.dataset.source);
+});
+document.addEventListener("click", e => {
+  if (archiveMenu && !archiveMenu.hidden && !e.target.closest(".archive-wrap")) {
+    archiveMenu.hidden = true;
+    archiveBtn?.setAttribute("aria-expanded", "false");
+  }
 });
 
 document.getElementById("grid").addEventListener("click", e => {
@@ -431,7 +582,11 @@ document.getElementById("lang-toggle")?.addEventListener("click", () => {
   const next = getLang() === "en" ? "ko" : "en";
   localStorage.setItem(I18N_KEY, next);
   applyLang(next);
+  renderUpdateBar();
+  renderArchiveMenu();
+  renderCategoryFilter();
 });
 applyLang(getLang());
 
+loadArchives();
 load();
