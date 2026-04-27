@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 20 Apr 2026 00:22:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 15:00:00 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-04-27 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-04-27</link>
+      <guid isPermaLink="false">cc-trends-2026-04-27</guid>
+      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-04-27 업데이트&lt;/strong&gt; · 총 24개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/JuliusBrussee/caveman&quot;&gt;&lt;strong&gt;원시인 토큰 절약 스킬&lt;/strong&gt;&lt;/a&gt; — 말투만 바꿔 토큰 75% 절감 &lt;em&gt;(JuliusBrussee/caveman · ★47162)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/openai/codex-plugin-cc&quot;&gt;&lt;strong&gt;Codex 코드리뷰 플러그인&lt;/strong&gt;&lt;/a&gt; — Claude 안에서 Codex로 리뷰를 돌린다 &lt;em&gt;(openai/codex-plugin-cc · ★16193)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/getagentseal/codeburn&quot;&gt;&lt;strong&gt;AI 코딩 비용 분석기&lt;/strong&gt;&lt;/a&gt; — 토큰이 어디서 새는지 13개 카테고리로 추적 &lt;em&gt;(getagentseal/codeburn · ★4132)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/santifer/career-ops&quot;&gt;&lt;strong&gt;AI 취업 자동화 파이프라인&lt;/strong&gt;&lt;/a&gt; — URL 하나면 평가부터 이력서까지 자동 &lt;em&gt;(santifer/career-ops · ★39999)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/forrestchang/andrej-karpathy-skills&quot;&gt;&lt;strong&gt;카파시의 코딩 원칙 스킬&lt;/strong&gt;&lt;/a&gt; — CLAUDE.md 한 장으로 LLM 코딩 습관 교정 &lt;em&gt;(forrestchang/andrej-karpathy-skills · ★90668)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;Claude Code 공식 에이전트&lt;/a&gt; — 터미널 네이티브 코딩 에이전트, 생태계의 시작점 &lt;em&gt;(★118168)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/hesreallyhim/awesome-claude-code&quot;&gt;CC 생태계 Awesome 리스트&lt;/a&gt; — 스킬, 훅, 오케스트레이터까지 한눈에 &lt;em&gt;(★41284)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/shanraisshan/claude-code-best-practice&quot;&gt;CC 베스트 프랙티스 가이드&lt;/a&gt; — 바이브 코딩에서 에이전틱 엔지니어링으로 &lt;em&gt;(★48246)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-04-20 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-04-20</link>
