@@ -28,6 +28,44 @@ description: "GitHub + 커뮤니티 원시 데이터를 분석해 '최신 화제
 - 여러 awesome 리스트에 수록
 - 지속적 업데이트 (최근 30일 내 커밋 존재)
 
+## 카테고리별 정원제 (Adaptive Quota)
+
+**고정 12개 채우기 금지.** 카테고리별 자연 공급량을 따른다.
+점수 임계치를 통과한 후보만 카테고리 정원 내에서 선별.
+
+### 정원 (상한)
+| 카테고리 | rising 최대 | classic 최대 |
+|---|---|---|
+| `skill`   | 8 | 6 |
+| `mcp`     | 6 | 4 |
+| `agent`   | 4 | 4 |
+| `harness` | 2 | 2 |
+| **합계 상한** | **20** | **16** |
+
+### 임계치 (정원보다 우선)
+- **rising**: trend_score ≥ 60 OR (생성 30일 이내 + 다중 출처 검증)
+- **classic**: stars ≥ 500 + trend_score ≥ 50
+
+### 운영 원칙
+- 정원은 **상한**일 뿐, 임계치 미달이면 정원이 비어도 추가하지 않는다
+- 예: harness가 한 주에 1개만 임계치 통과 → 1개만 출력 (자연 공급량 존중)
+- 예: skill이 25개 통과 → 점수 상위 8개만 (정원 컷)
+- 임계치 통과한 모든 후보를 점수 내림차순으로 정렬한 후 카테고리 정원 적용
+
+### 보고 의무
+- `_workspace/03_analysis.json` 메타에 카테고리별 채워진 개수와 후보 풀 크기 기록
+  ```json
+  "quota_report": {
+    "rising": {
+      "skill":   { "filled": 8, "candidates": 23 },
+      "mcp":     { "filled": 6, "candidates": 14 },
+      "agent":   { "filled": 4, "candidates":  9 },
+      "harness": { "filled": 1, "candidates":  1 }
+    },
+    "classic": { ... }
+  }
+  ```
+
 ## 교차 검증 규칙
 - github-scout이 발견한 repo가 community-scout 언급에도 있으면 신뢰도↑
 - 한쪽에만 있을 때는 증거가 약하면 보류 목록으로

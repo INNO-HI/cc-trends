@@ -29,7 +29,9 @@ Claude Code 에이전트·하네스·스킬 트렌드 홈페이지를 자동 갱
 수집 완료 후 trend-analyzer 작업 시작.
 - 입력: `01_*.json` + `02_*.json`
 - 스킬: `trend-scoring`
-- 출력: `_workspace/03_analysis.json` (Rising 12 + Classic 12)
+- 출력: `_workspace/03_analysis.json` (**카테고리별 정원제** — rising 최대 20, classic 최대 16)
+  - skill 8/6, mcp 6/4, agent 4/4, harness 2/2 상한
+  - 임계치 미달이면 정원이 비어도 강제로 채우지 않음 (자연 공급량 존중)
 
 ### Phase 3: 큐레이션
 content-curator가 각 아이템에 WebFetch로 README 확인 후 한글 콘텐츠 작성.
@@ -66,7 +68,7 @@ site-builder가 latest.json 교체, 빌드 검증, 변경 요약 보고.
 ### 정상 흐름
 1. 사용자: "cc-trends 업데이트해줘"
 2. 팀 생성 → Phase 1~4 실행 → 5~10분 내 사이트 갱신
-3. 리더가 "Rising 12건(신규 3), Classic 12건 업데이트 완료" 보고
+3. 리더가 "Rising 18건(skill 8/mcp 6/agent 4/harness 0, 신규 5), Classic 14건 업데이트 완료" 형식으로 카테고리별 보고
 
 ### 에러 흐름
 1. community-scout가 Reddit 차단으로 0건 수집

@@ -56,8 +56,10 @@ buzz = min(100, sum(log(upvotes + comments + 1)) * 10)
 - 한국어 README/블로그는 buzz 가중 +10 (영어 커뮤니티 규모 차 보정)
 - Anthropic 공식/임직원 프로젝트는 별도 `official` 태그, 점수는 동일하게 매김
 
-## 최종 정렬
-- Rising 상위 12개, Classic 상위 12개를 기본 선별
+## 최종 정렬 (카테고리별 정원제)
+- 임계치 통과 후보를 점수 내림차순 정렬
+- 카테고리별 상한(skill 8/6, mcp 6/4, agent 4/4, harness 2/2) 안에서 컷
+- 정원이 비어도 임계치 미달이면 강제로 채우지 않음 (자연 공급량 존중)
 - 동점 시 `updated_at` 최신순
 
 ## 출력
