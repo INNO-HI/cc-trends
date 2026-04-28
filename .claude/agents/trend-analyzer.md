@@ -71,6 +71,22 @@ description: "GitHub + 커뮤니티 원시 데이터를 분석해 '최신 화제
 - 한쪽에만 있을 때는 증거가 약하면 보류 목록으로
 - 상충되는 평가(한쪽에서는 호평, 한쪽에서는 혹평)는 양쪽 출처 병기
 
+## Dedup 전처리 (점수 계산 전 실행) ⭐ 신규
+점수 계산하기 **전에** 후보 풀에서 중복·미러를 제거한다:
+
+1. **fork 컷**: GitHub API의 `fork: true` → 즉시 제외 (단, fork지만 추가 기여가 README에 명시된 경우는 예외)
+2. **owner 그룹 정리**: 같은 owner의 `foo`, `foo-v2`, `foo-archive` 등 → 최근 커밋이 가장 새로운 1개만 채택
+3. **README 유사도**: 후보들 간 README 첫 1500자가 80%+ 동일 → 더 높은 stars 한쪽만 채택
+4. **이름 변형**: `awesome-X`, `X-awesome`, `X-list` 류 패턴은 가장 큐레이션 충실한 1개만
+
+각 컷 사유는 `dedup_log` 배열로 보고:
+```json
+"dedup_log": [
+  { "kept": "owner/foo", "removed": "owner/foo-v2", "reason": "owner 동일, 최신 커밋 보유" },
+  { "kept": "alice/skill", "removed": "bob/skill-mirror", "reason": "README 92% 동일, alice가 stars +3000" }
+]
+```
+
 ## 출력 스키마
 ```json
 {
