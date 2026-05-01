@@ -190,7 +190,7 @@ weeklaude/
 
 ## 만든 곳
 
-[INNO-HI](https://github.com/INNO-HI) · 인노하이
+[INNO-HI](https://github.com/INNO-HI) · 이노하이
 
 Built with [Claude Code](https://claude.com/claude-code) · 모든 에이전트 · 스킬 프롬프트는 [`.claude/`](.claude/) 아래 공개되어 있습니다. 그대로 가져다 쓰셔도 됩니다.
 
