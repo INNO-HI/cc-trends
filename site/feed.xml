@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 27 Apr 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 16:00:00 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-05-04 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-05-04</link>
+      <guid isPermaLink="false">cc-trends-2026-05-04</guid>
+      <pubDate>Mon, 04 May 2026 16:00:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-05-04 업데이트&lt;/strong&gt; · 총 17개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 1&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ultraworkers/claw-code&quot;&gt;&lt;strong&gt;Claw Code: Rust 에이전트&lt;/strong&gt;&lt;/a&gt; — Claude Code를 Rust로 다시 만들면 이렇게 된다 &lt;em&gt;(ultraworkers/claw-code · ★189831)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/affaan-m/everything-claude-code&quot;&gt;하네스 올인원 최적화&lt;/a&gt; — 스킬, 보안, 메모리를 한 번에 세팅하는 끝판왕 &lt;em&gt;(★172663)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/shanraisshan/claude-code-best-practice&quot;&gt;CC 베스트 프랙티스 가이드&lt;/a&gt; — 바이브 코딩에서 에이전틱 엔지니어링으로 &lt;em&gt;(★50738)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/hesreallyhim/awesome-claude-code&quot;&gt;CC 생태계 Awesome 리스트&lt;/a&gt; — 스킬, 훅, 오케스트레이터까지 한눈에 &lt;em&gt;(★42382)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-04-27 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-04-27</link>
