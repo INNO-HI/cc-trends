@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 04 May 2026 16:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 15:30:00 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-05-18 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-05-18</link>
+      <guid isPermaLink="false">cc-trends-2026-05-18</guid>
+      <pubDate>Mon, 18 May 2026 15:30:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-05-18 업데이트&lt;/strong&gt; · 총 20개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;&lt;strong&gt;Claude Code 공식 에이전트&lt;/strong&gt;&lt;/a&gt; — v2.1.143 릴리스, 주간 2,706 스타 상승세 유지 &lt;em&gt;(anthropics/claude-code · ★125000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/nexu-io/open-design&quot;&gt;&lt;strong&gt;Open Design: 로컬 퍼스트 디자인 에이전트&lt;/strong&gt;&lt;/a&gt; — 129개 디자인 시스템 + 31개 스킬, 16개 에이전트 호환 &lt;em&gt;(nexu-io/open-design · ★42300)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/HKUDS/OpenHarness&quot;&gt;&lt;strong&gt;OpenHarness: 오픈소스 에이전트 프레임워크&lt;/strong&gt;&lt;/a&gt; — 43개 도구 + 개인 에이전트 Ohmo 내장 &lt;em&gt;(HKUDS/OpenHarness · ★13000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ChrisWiles/claude-code-showcase&quot;&gt;&lt;strong&gt;Claude Code 설정 쇼케이스&lt;/strong&gt;&lt;/a&gt; — 훅, 스킬, 에이전트, 명령어 구성 실전 예제 &lt;em&gt;(ChrisWiles/claude-code-showcase · ★5571)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/supermemoryai/claude-supermemory&quot;&gt;&lt;strong&gt;Claude Supermemory 팀 메모리&lt;/strong&gt;&lt;/a&gt; — 세션 자동 저장 + 팀 공유 메모리 &lt;em&gt;(supermemoryai/claude-supermemory · ★2500)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/thedotmack/claude-mem&quot;&gt;AI 세션 메모리 시스템&lt;/a&gt; — 주간 +2,987 스타, 77.5K 돌파한 메모리 표준 &lt;em&gt;(★77500)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/affaan-m/everything-claude-code&quot;&gt;하네스 올인원 최적화&lt;/a&gt; — 183K 스타, 주간 +4,676으로 성장세 지속 &lt;em&gt;(★183000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ComposioHQ/awesome-claude-skills&quot;&gt;1000+ 스킬 + 500앱 연동&lt;/a&gt; — 주간 +1,408 스타, 60.5K로 꾸준한 상승 &lt;em&gt;(★60500)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-05-11 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-05-11</link>
