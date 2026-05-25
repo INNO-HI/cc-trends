@@ -1,0 +1,812 @@
+{
+  "generated_at": "2026-05-18T15:30:00Z",
+  "version": "2026-W21",
+  "rising": [
+    {
+      "id": "anthropics/claude-code",
+      "title_ko": "Claude Code 공식 에이전트",
+      "catchphrase": "v2.1.143 릴리스, 주간 2,706 스타 상승세 유지",
+      "summary_ko": "Anthropic이 만든 터미널 네이티브 코딩 에이전트입니다. 코드베이스를 이해하고 자연어로 루틴 작업 실행, 코드 설명, git 워크플로우를 처리합니다. 이번 주 v2.1.142~143 연속 릴리스가 나왔고, 7일간 +2,706 스타를 기록하며 총 125K 스타를 돌파했습니다. 블로그, dev.to, GeekNews, HN 등 10건의 커뮤니티 언급이 있었으며, 요금제 리셋 소식과 숨겨진 신기능 정리 글이 화제였습니다. 스킬/훅/MCP/서브에이전트 확장 생태계의 핵심 플랫폼입니다.",
+      "key_features": [
+        "터미널/IDE/GitHub(@claude) 멀티 인터페이스 지원",
+        "스킬, 훅, 플러그인, MCP, 서브에이전트 확장 생태계",
+        "v2.1.142~143 연속 릴리스로 빠른 업데이트 주기"
+      ],
+      "use_case": "AI 코딩 에이전트를 처음 도입하거나, 확장 생태계를 활용해 개발 워크플로우를 자동화하고 싶을 때",
+      "install_hint": "curl -fsSL https://claude.ai/install.sh | bash",
+      "tags": [
+        "agent",
+        "official",
+        "anthropic",
+        "terminal",
+        "core-platform"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "official_url": "https://github.com/anthropics/claude-code",
+      "stars": 125000,
+      "category": "agent",
+      "trend_score": 100,
+      "badges": [
+        "🔥 Rising",
+        "⭐ 100K+",
+        "🔗 Cross-verified",
+        "🏢 Official"
+      ],
+      "week_change": "up",
+      "sources": [
+        "blog",
+        "clien",
+        "devto",
+        "geeknews",
+        "github",
+        "hackernews",
+        "official"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +2706 stars"
+        },
+        {
+          "source": "blog",
+          "label": "Claude Resets Rate Limits: ClaudeDevs Flushes 5-Hour and Weekly Counters for Eve"
+        },
+        {
+          "source": "official",
+          "label": "Claude Code v2.1.143 Release"
+        },
+        {
+          "source": "official",
+          "label": "Claude Code v2.1.142 Release"
+        },
+        {
+          "source": "devto",
+          "label": "Reflections of Claude Code from CHANGELOG"
+        },
+        {
+          "source": "blog",
+          "label": "I Tested 7 Claude Code (New) Features You Likely Missed (In the Last 10 Days)"
+        }
+      ]
+    },
+    {
+      "id": "nexu-io/open-design",
+      "title_ko": "Open Design: 로컬 퍼스트 디자인 에이전트",
+      "catchphrase": "129개 디자인 시스템 + 31개 스킬, 16개 에이전트 호환",
+      "summary_ko": "Claude Design의 오픈소스 대안으로, 로컬에서 웹/모바일/데스크톱 프로토타입과 슬라이드, 이미지, 동영상을 생성하는 디자인 에이전트입니다. Linear, Stripe, Vercel, Airbnb 등 129개 브랜드급 디자인 시스템을 번들로 제공하며, 31개 스킬(프로토타입 27 + 덱 4)을 조합해 작업합니다. Claude Code, Codex, Cursor, Gemini CLI 등 16개 코딩 에이전트 CLI를 자동 감지하고, 샌드박스 iframe 미리보기와 HTML/PDF/PPTX/MP4 내보내기를 지원합니다. 42.3K 스타로 신규 추적 시작.",
+      "key_features": [
+        "129개 브랜드 디자인 시스템 번들 (Linear, Stripe, Vercel 등)",
+        "31개 스킬: 프로토타입 27개 + 프레젠테이션 덱 4개",
+        "16개 코딩 에이전트 CLI 자동 감지 + 샌드박스 미리보기"
+      ],
+      "use_case": "디자이너 없이 브랜드 수준의 UI 프로토타입이나 발표 자료를 AI로 빠르게 만들고 싶을 때",
+      "install_hint": "pnpm tools-dev",
+      "tags": [
+        "skill",
+        "design",
+        "prototype",
+        "local-first",
+        "multi-agent"
+      ],
+      "thumbnail_url": "https://github.com/nexu-io.png",
+      "official_url": "https://github.com/nexu-io/open-design",
+      "stars": 42300,
+      "category": "skill",
+      "trend_score": 65.4,
+      "badges": [
+        "🔥 Rising",
+        "⭐ 10K+",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 42300 stars (신규 추적)"
+        }
+      ]
+    },
+    {
+      "id": "HKUDS/OpenHarness",
+      "title_ko": "OpenHarness: 오픈소스 에이전트 프레임워크",
+      "catchphrase": "43개 도구 + 개인 에이전트 Ohmo 내장",
+      "summary_ko": "에이전트의 핵심 인프라(도구 사용, 스킬, 메모리, 멀티에이전트 협업)를 경량으로 구현한 오픈소스 Python 프레임워크입니다. 43개 이상의 내장 도구, CLAUDE.md 기반 컨텍스트 관리, 세션 이어하기, 다단계 권한 제어를 제공합니다. 내장 개인 에이전트 Ohmo는 Feishu, Slack, Telegram, Discord와 연동되어 브랜치 생성부터 PR까지 자동화합니다. Claude API, OpenAI, GitHub Copilot 등 멀티 프로바이더를 지원하며, 114개 테스트를 통과합니다. 13K 스타로 신규 추적 시작.",
+      "key_features": [
+        "43+ 내장 도구 + 스트리밍 에이전트 루프 + 토큰 추적",
+        "개인 에이전트 Ohmo: Slack/Discord/Telegram 연동 자동화",
+        "다단계 권한 제어 + 경로/명령어 규칙 + 승인 다이얼로그"
+      ],
+      "use_case": "Python 기반으로 커스텀 에이전트를 구축하면서 도구/메모리/권한 인프라를 직접 제어하고 싶을 때",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/install.sh | bash && oh setup",
+      "tags": [
+        "harness",
+        "python",
+        "multi-agent",
+        "open-source",
+        "framework"
+      ],
+      "thumbnail_url": "https://github.com/HKUDS.png",
+      "official_url": "https://github.com/HKUDS/OpenHarness",
+      "stars": 13000,
+      "category": "harness",
+      "trend_score": 64.4,
+      "badges": [
+        "🔥 Rising",
+        "⭐ 10K+",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 13000 stars (신규 추적)"
+        }
+      ]
+    },
+    {
+      "id": "ChrisWiles/claude-code-showcase",
+      "title_ko": "Claude Code 설정 쇼케이스",
+      "catchphrase": "훅, 스킬, 에이전트, 명령어 구성 실전 예제",
+      "summary_ko": "Claude Code의 훅, 스킬, 에이전트, 슬래시 명령어, GitHub Actions 워크플로우를 체계적으로 구성한 실전 프로젝트 예제입니다. 사전 실행 검증(main 브랜치 편집 차단), 사후 자동화(포매팅, 테스트, 린트), 도메인별 스킬 문서, 코드 리뷰 에이전트, /ticket(JIRA 연동), /onboard, /pr-review 명령어를 포함합니다. MCP 설정으로 JIRA, GitHub, Slack, PostgreSQL 연동 예시도 제공합니다. 5.5K 스타로 신규 추적 시작.",
+      "key_features": [
+        "훅: main 브랜치 편집 차단, 자동 포매팅/테스트/린트",
+        "슬래시 명령어: /ticket(JIRA), /onboard, /pr-review",
+        "월간 문서 동기화, 주간 코드리뷰, 격주 의존성 감사 자동화"
+      ],
+      "use_case": "Claude Code를 팀 프로젝트에 도입하면서 훅/스킬/명령어 구성의 모범 사례를 참고하고 싶을 때",
+      "install_hint": "mkdir -p .claude/{agents,commands,hooks,skills} && git clone https://github.com/ChrisWiles/claude-code-showcase",
+      "tags": [
+        "harness",
+        "showcase",
+        "hooks",
+        "skills",
+        "github-actions",
+        "best-practice"
+      ],
+      "thumbnail_url": "https://github.com/ChrisWiles.png",
+      "official_url": "https://github.com/ChrisWiles/claude-code-showcase",
+      "stars": 5571,
+      "category": "harness",
+      "trend_score": 63.8,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 5571 stars (신규 추적)"
+        }
+      ]
+    },
+    {
+      "id": "supermemoryai/claude-supermemory",
+      "title_ko": "Claude Supermemory 팀 메모리",
+      "catchphrase": "세션 자동 저장 + 팀 공유 메모리",
+      "summary_ko": "Claude Code에 영구 메모리를 부여하는 플러그인으로, 세션이 끝날 때 대화를 자동 캡처하고 다음 세션에 관련 컨텍스트를 주입합니다. super-search로 과거 작업을 검색하고 super-save로 중요 정보를 저장하며, 팀 레벨 메모리 공유와 프로젝트별 설정을 지원합니다. 개인 메모리와 팀 지식을 분리 관리하는 점이 다른 메모리 솔루션과의 차별점입니다. 2.5K 스타로 신규 추적 시작.",
+      "key_features": [
+        "세션 종료 시 대화 자동 캡처 + 다음 세션에 컨텍스트 주입",
+        "super-search/super-save로 과거 작업 검색 및 저장",
+        "팀 메모리 공유 + 레포별 개별 설정"
+      ],
+      "use_case": "팀원 간 세션 지식을 공유하면서 프로젝트별로 메모리를 분리 관리하고 싶을 때",
+      "install_hint": "/plugin marketplace add supermemoryai/claude-supermemory && /plugin install claude-supermemory",
+      "tags": [
+        "skill",
+        "memory",
+        "team-collaboration",
+        "persistent-context"
+      ],
+      "thumbnail_url": "https://github.com/supermemoryai.png",
+      "official_url": "https://github.com/supermemoryai/claude-supermemory",
+      "stars": 2500,
+      "category": "skill",
+      "trend_score": 43.3,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 2500 stars (신규 추적)"
+        }
+      ]
+    },
+    {
+      "id": "coleam00/claude-memory-compiler",
+      "title_ko": "메모리 컴파일러: 세션을 지식으로",
+      "catchphrase": "Karpathy식 LLM 지식 베이스, 벡터 DB 없이 동작",
+      "summary_ko": "Claude Code 세션을 자동으로 캡처해 검색 가능한 지식 베이스로 컴파일하는 시스템입니다. 세션 종료 훅이 대화를 기록하면, Agent SDK가 결정과 패턴을 추출하고, LLM 컴파일러가 컨셉 아티클로 조직합니다. Karpathy의 'LLM Knowledge Base' 아이디어에서 영감을 받아, 500개 이하 아티클 규모에서는 벡터 DB 대신 구조화된 인덱스를 LLM이 직접 읽는 방식을 사용합니다. 7가지 린트 검사(깨진 링크, 고아 문서, 모순, 오래된 내용)로 지식 베이스 건강도를 관리합니다. 950 스타로 신규 추적 시작.",
+      "key_features": [
+        "세션 훅 → flush → compile → index 자동 파이프라인",
+        "벡터 DB 불필요: 구조화된 인덱스 기반 LLM 직접 읽기",
+        "7가지 린트 검사로 지식 베이스 건강도 자동 관리"
+      ],
+      "use_case": "에이전트의 과거 결정과 패턴을 코드베이스에 축적해 세션마다 나아지는 메모리를 만들고 싶을 때",
+      "install_hint": "git clone https://github.com/coleam00/claude-memory-compiler && uv sync",
+      "tags": [
+        "skill",
+        "memory",
+        "knowledge-base",
+        "hooks",
+        "no-vector-db"
+      ],
+      "thumbnail_url": "https://github.com/coleam00.png",
+      "official_url": "https://github.com/coleam00/claude-memory-compiler",
+      "stars": 950,
+      "category": "skill",
+      "trend_score": 31.0,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 950 stars (신규 추적)"
+        }
+      ]
+    },
+    {
+      "id": "levnikolaevich/claude-code-skills",
+      "title_ko": "풀 라이프사이클 스킬 + MCP 번들",
+      "catchphrase": "7개 플러그인 + 4개 MCP 서버, 애자일 파이프라인",
+      "summary_ko": "소프트웨어 개발 전 과정(부트스트랩 → 문서화 → 계획 → 실행 → QA → 감사)을 자동화하는 Claude Code 플러그인 모음입니다. 7개 플러그인(agile-workflow, documentation-pipeline, codebase-audit-suite 등)에 137개 스킬을 담고 있으며, hex-line(해시 검증 파일 편집), hex-graph(코드 지식 그래프, 106/106 테스트 통과), hex-ssh(원격 파일 편집), hex-research(가설 추적) 4개 MCP 서버를 번들로 제공합니다. 250 스타로 신규 추적 시작.",
+      "key_features": [
+        "7개 플러그인: 애자일 워크플로우, 문서 파이프라인, 코드 감사 등",
+        "4개 hex MCP 서버: 해시 검증 편집, 코드 그래프, SSH, 리서치",
+        "137개 스킬로 부트스트랩부터 QA까지 전체 개발 주기 커버"
+      ],
+      "use_case": "개발 라이프사이클 전체를 스킬과 MCP로 자동화하면서, 해시 검증으로 에이전트의 파일 편집 안정성을 높이고 싶을 때",
+      "install_hint": "/plugin marketplace add levnikolaevich/claude-code-skills",
+      "tags": [
+        "skill",
+        "mcp",
+        "agile",
+        "full-lifecycle",
+        "hash-verification"
+      ],
+      "thumbnail_url": "https://github.com/levnikolaevich.png",
+      "official_url": "https://github.com/levnikolaevich/claude-code-skills",
+      "stars": 250,
+      "category": "skill",
+      "trend_score": 25.4,
+      "badges": [
+        "🔥 Rising",
+        "🆕 New",
+        "🔌 MCP"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "총 250 stars (신규 추적)"
+        }
+      ]
+    }
+  ],
+  "classic": [
+    {
+      "id": "thedotmack/claude-mem",
+      "title_ko": "AI 세션 메모리 시스템",
+      "catchphrase": "주간 +2,987 스타, 77.5K 돌파한 메모리 표준",
+      "summary_ko": "Claude Code의 모든 세션 활동을 자동 캡처하고, AI로 시맨틱 압축한 뒤 다음 세션에 관련 컨텍스트를 주입하는 영구 메모리 시스템입니다. 3계층 Progressive Disclosure 워크플로우로 compact index부터 시작해 필요 시 상세 내용을 로딩하여 토큰 사용량을 약 10배 절감합니다. SQLite + Chroma 벡터 검색 기반이며, 웹 뷰어(localhost:37777)로 메모리를 탐색할 수 있습니다. 이번 주 +2,987 스타로 총 77.5K 스타를 기록하며 메모리 카테고리 부동의 1위를 유지 중입니다.",
+      "key_features": [
+        "세션 활동 자동 캡처 + AI 기반 시맨틱 압축",
+        "3계층 Progressive Disclosure로 토큰 약 10배 절감",
+        "웹 뷰어 UI + <private> 태그 프라이버시 제어"
+      ],
+      "use_case": "장기 프로젝트에서 이전 세션의 결정과 맥락을 자동으로 이어가고 싶을 때",
+      "install_hint": "npx claude-mem install",
+      "tags": [
+        "skill",
+        "memory",
+        "context-management",
+        "token-optimization"
+      ],
+      "thumbnail_url": "https://github.com/thedotmack.png",
+      "official_url": "https://github.com/thedotmack/claude-mem",
+      "stars": 77500,
+      "category": "skill",
+      "trend_score": 66.0,
+      "badges": [
+        "⭐ 50K+",
+        "📈 Trending"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +2987 stars"
+        }
+      ]
+    },
+    {
+      "id": "affaan-m/everything-claude-code",
+      "title_ko": "하네스 올인원 최적화",
+      "catchphrase": "183K 스타, 주간 +4,676으로 성장세 지속",
+      "summary_ko": "Claude Code, Cursor, OpenCode 등 AI 에이전트 하네스의 성능을 극대화하는 올인원 최적화 시스템입니다. 48개 에이전트, 182개 스킬, 68개 레거시 명령어 심을 탑재하고 있으며, 12개 이상 언어 에코시스템을 지원합니다. 인스틴트 기반 연속 학습과 보안 스캐닝을 통합합니다. 이번 주 +4,676 스타로 총 183K 스타를 기록하며 하네스 카테고리에서 가장 높은 주간 성장을 보이고 있습니다.",
+      "key_features": [
+        "48개 전문 에이전트 + 182개 스킬 + 68개 레거시 명령어 심",
+        "12+ 언어 에코시스템 지원 (TypeScript, Python 등)",
+        "인스틴트 기반 패턴 자동 추출 및 보안 통합"
+      ],
+      "use_case": "Claude Code를 프로덕션 수준으로 최적화하고 체계적 하네스를 한 번에 갖추고 싶을 때",
+      "install_hint": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
+      "tags": [
+        "harness",
+        "optimization",
+        "security",
+        "all-in-one"
+      ],
+      "thumbnail_url": "https://github.com/affaan-m.png",
+      "official_url": "https://github.com/affaan-m/everything-claude-code",
+      "stars": 183000,
+      "category": "harness",
+      "trend_score": 65.8,
+      "badges": [
+        "⭐ 100K+",
+        "📈 Trending"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +4676 stars"
+        }
+      ]
+    },
+    {
+      "id": "ComposioHQ/awesome-claude-skills",
+      "title_ko": "1000+ 스킬 + 500앱 연동",
+      "catchphrase": "주간 +1,408 스타, 60.5K로 꾸준한 상승",
+      "summary_ko": "1,000개 이상의 프로덕션 레디 Claude 스킬을 카테고리별로 분류한 컬렉션입니다. 문서 처리, 개발 도구, 데이터 분석, 비즈니스, 보안 등 폭넓은 카테고리를 다루며, Composio connect-apps 플러그인으로 CRM, 이메일, Slack, GitHub 등 500개 이상 외부 앱과 실제 액션을 연결할 수 있습니다. 이번 주 +1,408 스타로 총 60.5K 스타, 순위 상승 중입니다.",
+      "key_features": [
+        "1,000+ 프로덕션 레디 스킬, 카테고리별 분류",
+        "Composio connect-apps로 500+ SaaS 앱 직접 액션 실행",
+        "YAML 프론트매터 + Markdown 오픈 스킬 표준"
+      ],
+      "use_case": "Claude가 텍스트만 생성하는 게 아니라 실제 SaaS 앱에서 작업을 실행하게 만들고 싶을 때",
+      "install_hint": "claude --plugin-dir ./connect-apps-plugin && /connect-apps:setup",
+      "tags": [
+        "skill",
+        "awesome-list",
+        "saas-integration",
+        "composio",
+        "automation"
+      ],
+      "thumbnail_url": "https://github.com/ComposioHQ.png",
+      "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "stars": 60500,
+      "category": "skill",
+      "trend_score": 65.0,
+      "badges": [
+        "⭐ 50K+",
+        "🏆 awesome",
+        "📈 Trending"
+      ],
+      "week_change": "up",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1408 stars"
+        }
+      ]
+    },
+    {
+      "id": "shareAI-lab/learn-claude-code",
+      "title_ko": "Bash로 배우는 코딩 에이전트 구조",
+      "catchphrase": "주간 +1,437 스타, 61K 돌파한 교육 프로젝트",
+      "summary_ko": "'Bash is all you need'를 모토로, Claude Code와 유사한 에이전트 하네스를 처음부터 직접 만들어보는 교육 프로젝트입니다. 에이전트 루프, 도구 호출, 컨텍스트 관리 등 핵심 개념을 단계별로 구현하며 배울 수 있습니다. 이번 주 +1,437 스타로 총 61K 스타를 돌파했으며, 에이전트 내부 구조를 이해하고 싶은 개발자들에게 꾸준히 인기를 끌고 있습니다.",
+      "key_features": [
+        "제로부터 코딩 에이전트를 단계별로 구현하는 튜토리얼",
+        "에이전트 루프, 도구 호출, 컨텍스트 관리 핵심 개념",
+        "TypeScript 기반, 실제 동작하는 미니 에이전트 산출물"
+      ],
+      "use_case": "AI 코딩 에이전트의 내부 작동 원리를 코드로 직접 구현하며 배우고 싶을 때",
+      "install_hint": "git clone https://github.com/shareAI-lab/learn-claude-code",
+      "tags": [
+        "harness",
+        "educational",
+        "tutorial",
+        "agent-internals"
+      ],
+      "thumbnail_url": "https://github.com/shareAI-lab.png",
+      "official_url": "https://github.com/shareAI-lab/learn-claude-code",
+      "stars": 61000,
+      "category": "harness",
+      "trend_score": 65.0,
+      "badges": [
+        "⭐ 50K+",
+        "📈 Trending"
+      ],
+      "week_change": "up",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1437 stars"
+        }
+      ]
+    },
+    {
+      "id": "hesreallyhim/awesome-claude-code",
+      "title_ko": "CC 생태계 Awesome 리스트",
+      "catchphrase": "주간 +1,222 스타, 44.5K로 생태계 정리 허브",
+      "summary_ko": "Claude Code의 스킬, 에이전트, 플러그인, 훅, 슬래시 커맨드를 체계적으로 정리한 Awesome 리스트입니다. 43K에서 44.5K로 성장하며 이번 주 +1,222 스타를 기록했습니다. CSV 기반 구조화된 리소스 카탈로그 재편이 진행 중이며, 커뮤니티 기반 큐레이션이 활발합니다.",
+      "key_features": [
+        "CC 생태계 스킬, 에이전트, 플러그인, 훅 종합 카탈로그",
+        "활발한 커뮤니티 큐레이션과 지속적 업데이트",
+        "CSV 기반 구조화된 리소스 테이블 재편 진행 중"
+      ],
+      "use_case": "Claude Code 생태계의 전체 그림을 파악하고 카테고리별 대표 도구를 찾고 싶을 때",
+      "install_hint": "GitHub README 참조 (큐레이션 리스트)",
+      "tags": [
+        "skill",
+        "awesome-list",
+        "ecosystem",
+        "curation"
+      ],
+      "thumbnail_url": "https://github.com/hesreallyhim.png",
+      "official_url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "stars": 44500,
+      "category": "skill",
+      "trend_score": 64.6,
+      "badges": [
+        "⭐ 10K+",
+        "🏆 awesome"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1222 stars"
+        }
+      ]
+    },
+    {
+      "id": "ultraworkers/claw-code",
+      "title_ko": "Claw Code: Rust 기반 코딩 에이전트",
+      "catchphrase": "역대 최빠 100K 돌파, Rust로 재구현한 CC 아키텍처",
+      "summary_ko": "Claude Code의 아키텍처를 Rust로 재구현한 코딩 에이전트로, 역대 가장 빠르게 100K 스타를 넘긴 레포입니다. oh-my-codex 기반으로 구축되었으며, 이번 주 +1,023 스타로 총 192K 스타를 기록 중입니다. Rust의 성능과 메모리 안전성을 코딩 에이전트에 적용한 점이 특징입니다.",
+      "key_features": [
+        "Claude Code 아키텍처를 Rust로 완전 재구현",
+        "oh-my-codex 기반 고성능 에이전트 런타임",
+        "역대 최빠 100K 스타 돌파 기록"
+      ],
+      "use_case": "Rust 성능의 코딩 에이전트를 사용하거나, Claude Code 대안을 찾고 있을 때",
+      "install_hint": "GitHub README 참조",
+      "tags": [
+        "agent",
+        "rust",
+        "high-performance",
+        "claude-code-alternative"
+      ],
+      "thumbnail_url": "https://github.com/ultraworkers.png",
+      "official_url": "https://github.com/ultraworkers/claw-code",
+      "stars": 192000,
+      "category": "agent",
+      "trend_score": 64.6,
+      "badges": [
+        "⭐ 100K+"
+      ],
+      "week_change": "up",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1023 stars"
+        }
+      ]
+    },
+    {
+      "id": "anomalyco/opencode",
+      "title_ko": "OpenCode: 모델 무관 코딩 에이전트",
+      "catchphrase": "주간 +3,968 스타, 162K로 모델 자유 에이전트 대표",
+      "summary_ko": "특정 LLM에 종속되지 않는 100% 오픈소스 터미널 코딩 에이전트입니다. Claude, OpenAI, Google, 로컬 모델을 자유롭게 전환하며, build(풀 액세스)와 plan(읽기 전용) 두 에이전트 모드를 Tab 키로 전환합니다. 75개 이상의 프로바이더를 지원하고, LSP 통합과 데스크톱 앱(베타)도 제공합니다. 이번 주 +3,968 스타로 총 162K 스타를 기록하며 오픈소스 코딩 에이전트 중 최고 주간 성장률을 보이고 있습니다.",
+      "key_features": [
+        "75+ 프로바이더: Claude, OpenAI, Google, 로컬 모델 자유 전환",
+        "build(개발)/plan(분석) 듀얼 에이전트 모드, Tab으로 전환",
+        "클라이언트/서버 구조로 원격 제어 + 데스크톱 앱 베타"
+      ],
+      "use_case": "특정 벤더에 묶이지 않고 상황에 맞는 LLM을 골라 쓰는 코딩 에이전트가 필요할 때",
+      "install_hint": "curl -fsSL https://opencode.ai/install | bash",
+      "tags": [
+        "agent",
+        "open-source",
+        "multi-model",
+        "terminal",
+        "provider-agnostic"
+      ],
+      "thumbnail_url": "https://github.com/anomalyco.png",
+      "official_url": "https://github.com/anomalyco/opencode",
+      "stars": 162000,
+      "category": "agent",
+      "trend_score": 64.6,
+      "badges": [
+        "⭐ 100K+",
+        "📈 Trending"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +3968 stars"
+        }
+      ]
+    },
+    {
+      "id": "VoltAgent/awesome-agent-skills",
+      "title_ko": "에이전트 스킬 1000+ 컬렉션",
+      "catchphrase": "주간 +1,365 스타, 공식팀 제작 스킬 총망라",
+      "summary_ko": "Anthropic, Google Labs, Stripe, Cloudflare, Vercel 등 40개 이상 공식 개발팀과 커뮤니티가 만든 1,000개 이상의 에이전트 스킬을 모은 컬렉션입니다. AI 생성 콘텐츠를 배제하고 실제 엔지니어링 팀이 만든 스킬만 수록하며, Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot 등 멀티 에이전트와 호환됩니다. 이번 주 +1,365 스타로 총 22.5K 스타를 기록했습니다.",
+      "key_features": [
+        "1,000+ 실전 검증 스킬 (AI 생성 콘텐츠 배제)",
+        "40+ 공식 개발팀 기여 (Anthropic, Stripe, Vercel 등)",
+        "Claude Code, Codex, Gemini CLI, Cursor, Copilot 호환"
+      ],
+      "use_case": "프로젝트에 맞는 스킬을 공식 팀 제작 여부까지 확인하며 찾고 싶을 때",
+      "install_hint": "GitHub README 참조 (큐레이션 리스트)",
+      "tags": [
+        "skill",
+        "awesome-list",
+        "skill-directory",
+        "multi-agent"
+      ],
+      "thumbnail_url": "https://github.com/VoltAgent.png",
+      "official_url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "stars": 22500,
+      "category": "skill",
+      "trend_score": 64.4,
+      "badges": [
+        "⭐ 10K+",
+        "🏆 awesome"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1365 stars"
+        }
+      ]
+    },
+    {
+      "id": "ChromeDevTools/chrome-devtools-mcp",
+      "title_ko": "Chrome DevTools MCP",
+      "catchphrase": "주간 +1,392 스타, 40.5K로 MCP 카테고리 1위",
+      "summary_ko": "AI 코딩 에이전트가 Chrome 브라우저를 직접 제어하고 검사할 수 있게 하는 MCP 서버입니다. 40개 이상의 도구를 10개 카테고리(입력 자동화, 네비게이션, 디버깅, 성능 등)로 제공합니다. Puppeteer 기반 자동 대기 로직이 내장되어 있고, Lighthouse 감사와 CrUX 실사용자 성능 데이터 통합도 지원합니다. 이번 주 +1,392 스타로 총 40.5K 스타, MCP 서버 중 가장 높은 스타 수를 보유하고 있습니다.",
+      "key_features": [
+        "40+ 도구: 입력 자동화, 네비게이션, 성능 분석, 네트워크 디버깅",
+        "Lighthouse 감사 + CrUX 실사용자 성능 데이터 통합",
+        "자동 Chrome 실행, 원격 디버깅, 헤드리스 모드, 디바이스 에뮬레이션"
+      ],
+      "use_case": "프론트엔드 개발 중 에이전트가 실제 브라우저에서 UI를 검증하고 성능을 측정하게 하고 싶을 때",
+      "install_hint": "npx -y chrome-devtools-mcp@latest",
+      "tags": [
+        "mcp",
+        "chrome",
+        "devtools",
+        "browser-automation",
+        "debugging"
+      ],
+      "thumbnail_url": "https://github.com/ChromeDevTools.png",
+      "official_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "stars": 40500,
+      "category": "mcp",
+      "trend_score": 64.4,
+      "badges": [
+        "⭐ 10K+",
+        "🔌 MCP",
+        "📈 Trending"
+      ],
+      "week_change": "up",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1392 stars"
+        }
+      ]
+    },
+    {
+      "id": "modelcontextprotocol/servers",
+      "title_ko": "MCP 공식 레퍼런스 서버",
+      "catchphrase": "Anthropic 관리, 86.5K 스타의 MCP 표준 구현",
+      "summary_ko": "Anthropic이 관리하는 Model Context Protocol(MCP) 공식 레퍼런스 서버 모음입니다. Everything(테스트용), Fetch(웹 콘텐츠 수집), Filesystem(파일 조작), Git(레포 관리), Memory(지식 그래프 기반 메모리), Sequential Thinking(단계적 문제 해결), Time(시간대 변환) 등 7개 레퍼런스 서버를 제공합니다. TypeScript(npx)와 Python(uvx) 두 가지 방식으로 실행 가능하며, 커뮤니티 프레임워크와 도구 목록도 함께 제공합니다. 이번 주 +1,099 스타로 총 86.5K 스타.",
+      "key_features": [
+        "7개 공식 레퍼런스 서버: Filesystem, Git, Memory, Fetch 등",
+        "TypeScript(npx) + Python(uvx) 듀얼 실행 지원",
+        "커뮤니티 프레임워크, 클라이언트, 디스커버리 플랫폼 목록 포함"
+      ],
+      "use_case": "MCP 서버를 직접 만들거나, 레퍼런스 구현을 참고해 커스텀 도구를 개발하고 싶을 때",
+      "install_hint": "npx -y @modelcontextprotocol/server-memory",
+      "tags": [
+        "mcp",
+        "reference-implementation",
+        "anthropic",
+        "standard"
+      ],
+      "thumbnail_url": "https://github.com/modelcontextprotocol.png",
+      "official_url": "https://github.com/modelcontextprotocol/servers",
+      "stars": 86500,
+      "category": "mcp",
+      "trend_score": 64.3,
+      "badges": [
+        "⭐ 50K+",
+        "🔌 MCP",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +1099 stars"
+        }
+      ]
+    },
+    {
+      "id": "anthropics/skills",
+      "title_ko": "Anthropic 공식 스킬 리포",
+      "catchphrase": "주간 +2,314 스타, 134K로 공식 스킬 표준 정착",
+      "summary_ko": "Anthropic이 관리하는 공식 에이전트 스킬 저장소입니다. 스킬은 Claude가 특정 작업을 반복 가능하게 수행하도록 가르치는 지침/스크립트/리소스 폴더이며, 문서 생성(DOCX, PDF, PPTX, XLSX), 웹앱 테스팅, MCP 서버 생성, 브랜드 가이드라인 적용 등의 예제를 포함합니다. 이번 주 +2,314 스타로 총 134K에 도달했으며, 커스텀 스킬 제작의 출발점으로 활용되고 있습니다.",
+      "key_features": [
+        "공식 스킬 예제: 문서 생성(DOCX/PDF/PPTX/XLSX), 웹앱 테스팅, MCP 서버",
+        "스킬 템플릿 + 스펙 문서로 커스텀 스킬 제작 가이드",
+        "Claude Code 플러그인 마켓플레이스 + Claude.ai + API 3가지 경로 지원"
+      ],
+      "use_case": "공식 스킬의 구조를 참고해 자신만의 Claude 스킬을 만들거나, 문서 생성 스킬을 바로 사용하고 싶을 때",
+      "install_hint": "/plugin marketplace add anthropics/skills",
+      "tags": [
+        "skill",
+        "official",
+        "anthropic",
+        "template",
+        "reference"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "official_url": "https://github.com/anthropics/skills",
+      "stars": 134000,
+      "category": "skill",
+      "trend_score": 64.0,
+      "badges": [
+        "⭐ 100K+",
+        "🏢 Official",
+        "🆕 New"
+      ],
+      "week_change": "new",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +2314 stars"
+        }
+      ]
+    },
+    {
+      "id": "czlonkowski/n8n-mcp",
+      "title_ko": "n8n 워크플로우 MCP 서버",
+      "catchphrase": "주간 +984 스타, 1,650개 노드로 자동화 설계",
+      "summary_ko": "Claude Code, Cursor, Windsurf 등에서 n8n 워크플로우를 자연어로 설계/생성/배포할 수 있게 하는 MCP 서버입니다. 1,650개 n8n 노드(코어 820 + 커뮤니티 830)의 속성 스키마를 99% 커버하고, 2,352개 워크플로우 템플릿과 265개 AI 도구 변형을 제공합니다. 무료 호스팅(100콜/일)과 셀프호스팅을 모두 지원합니다. 이번 주 +984 스타로 총 21.5K 스타.",
+      "key_features": [
+        "1,650개 n8n 노드 문서 + 99% 속성 커버리지",
+        "2,352개 워크플로우 템플릿 + 265개 AI 도구 변형",
+        "호스팅(무료 100콜/일) + 셀프호스팅(npx/Docker)"
+      ],
+      "use_case": "n8n으로 업무 자동화를 구축하면서 노드 설정을 자연어로 빠르게 만들고 싶을 때",
+      "install_hint": "dashboard.n8n-mcp.com (호스팅) 또는 npx n8n-mcp (셀프호스팅)",
+      "tags": [
+        "mcp",
+        "n8n",
+        "workflow-automation",
+        "no-code"
+      ],
+      "thumbnail_url": "https://github.com/czlonkowski.png",
+      "official_url": "https://github.com/czlonkowski/n8n-mcp",
+      "stars": 21500,
+      "category": "mcp",
+      "trend_score": 63.3,
+      "badges": [
+        "⭐ 10K+",
+        "🔌 MCP"
+      ],
+      "week_change": "same",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +984 stars"
+        }
+      ]
+    },
+    {
+      "id": "mvanhorn/last30days-skill",
+      "title_ko": "13개 플랫폼 통합 리서치 스킬",
+      "catchphrase": "주간 +832 스타, 순위 소폭 하락 중",
+      "summary_ko": "Reddit, X, YouTube, TikTok, Instagram, HN, Polymarket, GitHub, Bluesky, Threads, Pinterest, Perplexity 등 13개 플랫폼을 동시 검색해 주제별 리서치 요약을 생성하는 에이전트 스킬입니다. 실제 업보트/좋아요/조회수 기반으로 순위를 매기고, 플랫폼 간 중복 스토리를 자동 병합합니다. 이번 주 +832 스타로 총 26.2K 스타이나, 지난주 대비 속도가 다소 둔화되며 순위가 하락했습니다.",
+      "key_features": [
+        "13개 소셜 플랫폼 동시 검색 (Reddit, X, YouTube, TikTok, HN 등)",
+        "실제 engagement 지표(업보트, 조회수) 기반 순위 + 중복 병합",
+        "HTML 브리프 내보내기, 다크 모드, 오프라인 지원"
+      ],
+      "use_case": "특정 기술이나 트렌드의 최근 30일간 커뮤니티 반응을 빠르게 조사하고 싶을 때",
+      "install_hint": "/plugin marketplace add mvanhorn/last30days-skill",
+      "tags": [
+        "skill",
+        "research",
+        "multi-platform",
+        "social-search"
+      ],
+      "thumbnail_url": "https://github.com/mvanhorn.png",
+      "official_url": "https://github.com/mvanhorn/last30days-skill",
+      "stars": 26200,
+      "category": "skill",
+      "trend_score": 57.7,
+      "badges": [
+        "⭐ 10K+"
+      ],
+      "week_change": "down",
+      "sources": [
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "label": "7일간 +832 stars"
+        }
+      ]
+    }
+  ]
+}

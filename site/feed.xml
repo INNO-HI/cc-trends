@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 18 May 2026 15:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 00:23:09 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-05-25 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-05-25</link>
+      <guid isPermaLink="false">cc-trends-2026-05-25</guid>
+      <pubDate>Mon, 25 May 2026 00:23:09 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-05-25 업데이트&lt;/strong&gt; · 총 23개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;&lt;strong&gt;Claude Code 공식 에이전트&lt;/strong&gt;&lt;/a&gt; — 126K 스타, Self-Hosted Sandboxes 발표와 함께 주간 +1,000 &lt;em&gt;(anthropics/claude-code · ★126000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/affaan-m/everything-claude-code&quot;&gt;&lt;strong&gt;ECC: 하네스 올인원 최적화&lt;/strong&gt;&lt;/a&gt; — 주간 +8,000 스타, 191K 돌파 — 60개 에이전트 + 232개 스킬 탑재 &lt;em&gt;(affaan-m/everything-claude-code · ★191000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/JuliusBrussee/caveman&quot;&gt;&lt;strong&gt;Caveman: 토큰 75% 압축 스킬&lt;/strong&gt;&lt;/a&gt; — 64.3K 스타, 간결한 응답이 정확도 26점 높인다는 논문 기반 &lt;em&gt;(JuliusBrussee/caveman · ★64300)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/NousResearch/hermes-agent&quot;&gt;&lt;strong&gt;Hermes Agent: 자기 학습 CLI 에이전트&lt;/strong&gt;&lt;/a&gt; — 166K 스타, 200+ 모델 지원 — 스킬을 스스로 만들고 개선 &lt;em&gt;(NousResearch/hermes-agent · ★166000)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/code-yeongyu/oh-my-openagent&quot;&gt;&lt;strong&gt;OMO: 멀티 에이전트 오케스트레이션 하네스&lt;/strong&gt;&lt;/a&gt; — 59.3K 스타, 8개 병렬 에이전트 + 해시 검증 편집 &lt;em&gt;(code-yeongyu/oh-my-openagent · ★59300)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Piebald-AI/claude-code-system-prompts&quot;&gt;CC 시스템 프롬프트 아카이브&lt;/a&gt; — 187+ 릴리스 추적, 27개 빌트인 도구 문서화 &lt;em&gt;(★10900)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/revfactory/harness&quot;&gt;Harness: 에이전트 팀 자동 생성기&lt;/a&gt; — 주간 +300 스타, 6가지 아키텍처 패턴으로 팀 설계 자동화 &lt;em&gt;(★3800)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ComposioHQ/awesome-claude-skills&quot;&gt;1000+ 스킬 + 500앱 연동&lt;/a&gt; — 주간 +1,100 스타, 61.6K — SaaS 앱 직접 액션 실행 &lt;em&gt;(★61600)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-05-18 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-05-18</link>
