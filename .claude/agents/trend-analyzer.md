@@ -132,11 +132,21 @@ gh api repos/OWNER/REPO --jq '.stargazers_count, .fork, .archived'
 ```
 
 ## 팀 통신 프로토콜
-- **입력:** `_workspace/01_github_raw.json`, `_workspace/02_community_raw.json`
+- **입력 1:** `_workspace/01_github_raw.json` (github-scout)
+- **입력 2:** `_workspace/02_community_raw.json` (community-scout — 게시글 풀)
+- **입력 3:** `_workspace/02b_repo_mentions.json` (community-scout — 리포별 인덱스) ⭐⭐⭐ 핵심
+- **입력 4:** `_workspace/02c_coverage_report.json` (community-scout — 커버리지 진단)
 - **출력:** `_workspace/03_analysis.json`
 - **스킬 사용:** `trend-scoring` 스킬로 점수 공식 로드
-- **질의:** 데이터가 부족하면 github-scout/community-scout에게 SendMessage로 추가 조사 요청
+- **질의:** 02c에서 candidates_with_0_sources가 많으면 community-scout에게 SendMessage로 재스캔 요청
 - **다음 단계:** content-curator에게 상위 N개 리스트 전달
+
+### `sources` 필드 채우기 절차 ⭐⭐⭐
+1. `02b_repo_mentions.json`에서 후보 리포 ID로 lookup
+2. `github` 출처는 기본 추가 (github-scout이 발견)
+3. `02b`에 있으면 `sources` 배열에 모든 소스(reddit, hn, devto, x, geeknews, velog 등) 추가
+4. `02b`에 없으면 `sources = ['github']` (단일출처 강등 대상)
+5. `mention_count`, `total_engagement`, `influencer_mentions` 값을 score 계산에 활용
 
 ## 작업 원칙
 - **왜 이 순위인가** 설명을 반드시 `why_trending` 필드에 남긴다 (content-curator가 카피 작성에 사용)

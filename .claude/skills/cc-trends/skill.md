@@ -18,20 +18,30 @@ Claude Code 에이전트·하네스·스킬 트렌드 홈페이지를 자동 갱
 
 ## 실행 흐름
 
-### Phase 1: 수집 (병렬)
-`TeamCreate`로 팀 구성 후 `TaskCreate`로 github-scout, community-scout에 동시 할당.
+### Phase 1A: 광역 수집 (병렬)
+`TeamCreate`로 팀 구성 후 `TaskCreate`로 github-scout, community-scout(Phase A)에 동시 할당.
 - github-scout → `_workspace/01_github_raw.json`
-- community-scout → `_workspace/02_community_raw.json`
+- community-scout (Phase A 광역) → `_workspace/02_community_raw.json` (최소 90건)
 
-둘은 `SendMessage`로 상호 교차 힌트 교환 (예: community가 발견한 repo URL을 github에 전달).
+### Phase 1B: 후보 역방향 검증 ⭐⭐⭐
+github-scout 완료 후, community-scout이 **Phase B 실행**.
+- 입력: `_workspace/01_github_raw.json`의 candidate 리포 리스트
+- 동작: 각 candidate를 모든 커뮤니티에서 직접 검색 (7개 쿼리 × N개 후보)
+- 출력:
+  - `_workspace/02b_repo_mentions.json` — 리포별 출처 인덱스 (다중출처 데이터의 핵심)
+  - `_workspace/02c_coverage_report.json` — 커버리지 자가진단
+
+**Phase B 없이는 모든 항목이 단일출처가 된다.** 절대 스킵 금지.
 
 ### Phase 2: 분석
 수집 완료 후 trend-analyzer 작업 시작.
-- 입력: `01_*.json` + `02_*.json`
+- 입력: `01_github_raw.json` + `02_community_raw.json` + `02b_repo_mentions.json` + `02c_coverage_report.json`
 - 스킬: `trend-scoring`
+- 핵심: `02b`로 각 항목의 `sources` 필드 채우기 (단일출처 강등 규칙 적용)
 - 출력: `_workspace/03_analysis.json` (**카테고리별 정원제** — rising 최대 20, classic 최대 16)
   - skill 8/6, mcp 6/4, agent 4/4, harness 2/2 상한
   - 임계치 미달이면 정원이 비어도 강제로 채우지 않음 (자연 공급량 존중)
+  - 단일출처(`sources` 1개) + score < 70 → 자동 pending 강등
 
 ### Phase 3: 큐레이션
 content-curator가 각 아이템에 WebFetch로 README 확인 후 한글 콘텐츠 작성.
