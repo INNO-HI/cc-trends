@@ -71,6 +71,31 @@ description: "GitHub + 커뮤니티 원시 데이터를 분석해 '최신 화제
 - 한쪽에만 있을 때는 증거가 약하면 보류 목록으로
 - 상충되는 평가(한쪽에서는 호평, 한쪽에서는 혹평)는 양쪽 출처 병기
 
+## 단일 출처 강등 (Single-Source Demotion) ⭐⭐ 신규
+
+`sources` 필드(github-scout + community-scout 합집합) 검사 후:
+
+- **sources 개수 == 1 AND score < 70** → `pending` 큐로 이동, 사이트 노출 금지
+  - 사유: 다중 출처 교차검증이 위클렌드의 핵심 차별점. 한 곳에서만 발견된 신호는 노이즈일 가능성 크다
+- **sources 개수 == 1 AND score >= 70** → Rising/Classic 허용하되 `low_confidence: true` 표기 (배지에 ⚠️ 단일출처)
+- **sources 개수 >= 2** → 정상 처리
+- **sources 개수 >= 3** → buzz 가산점 +10 유지
+
+이 규칙은 정원 컷 이전 단계에서 실행된다. 즉, 단일 출처 항목이 강등되면 그 정원 슬롯은 다음 후보로 채워진다.
+
+## 존재 검증 게이트 ⭐ 신규
+
+trend-analyzer는 발행 후보 확정 직전, 각 리포에 대해 다음을 수행:
+
+```bash
+gh api repos/OWNER/REPO --jq '.stargazers_count, .fork, .archived'
+```
+
+- API 404 / 에러 → 후보 풀에서 즉시 제거 + `dedup_log`에 사유 기록
+- `fork: true` → 컷 (의미 있는 추가 기여 명시 시 예외)
+- `archived: true` → Classic만 허용, Rising 컷
+- API에서 받은 `stargazers_count` 값으로 자체 추정치 덮어쓰기 (content-curator가 다시 한 번 검증)
+
 ## Dedup 전처리 (점수 계산 전 실행) ⭐ 신규
 점수 계산하기 **전에** 후보 풀에서 중복·미러를 제거한다:
 

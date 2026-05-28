@@ -23,7 +23,7 @@
       ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/claude-code",
-      "stars": 127108,
+      "stars": 126000,
       "star_velocity_7d": 1000,
       "category": "agent",
       "trend_score": 69.5,
@@ -58,15 +58,6 @@
           "source": "blog",
           "label": "Even Claude agrees: hole in its sandbox was real and dangerous"
         }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 126000,
-          "actual": 127108,
-          "action": "corrected",
-          "source": "gh api"
-        }
       ]
     },
     {
@@ -90,7 +81,7 @@
       ],
       "thumbnail_url": "https://github.com/affaan-m.png",
       "official_url": "https://github.com/affaan-m/everything-claude-code",
-      "stars": 196339,
+      "stars": 191000,
       "star_velocity_7d": 8000,
       "category": "harness",
       "trend_score": 67.5,
@@ -108,15 +99,6 @@
         {
           "source": "github",
           "label": "7d +8,000 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 191000,
-          "actual": 196339,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -140,7 +122,7 @@
       ],
       "thumbnail_url": "https://github.com/JuliusBrussee.png",
       "official_url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 65688,
+      "stars": 64300,
       "star_velocity_7d": null,
       "category": "skill",
       "trend_score": 62.6,
@@ -157,15 +139,6 @@
         {
           "source": "github",
           "label": "Total 64,300 stars (new to tracking)"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 64300,
-          "actual": 65688,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -190,7 +163,7 @@
       ],
       "thumbnail_url": "https://github.com/NousResearch.png",
       "official_url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 170576,
+      "stars": 166000,
       "star_velocity_7d": null,
       "category": "agent",
       "trend_score": 62.6,
@@ -207,15 +180,6 @@
         {
           "source": "github",
           "label": "Total 166,000 stars (new to tracking)"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 166000,
-          "actual": 170576,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -240,7 +204,7 @@
       ],
       "thumbnail_url": "https://github.com/code-yeongyu.png",
       "official_url": "https://github.com/code-yeongyu/oh-my-openagent",
-      "stars": 59849,
+      "stars": 59300,
       "star_velocity_7d": null,
       "category": "harness",
       "trend_score": 62.6,
@@ -257,15 +221,6 @@
         {
           "source": "github",
           "label": "Total 59,300 stars (new to tracking)"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 59300,
-          "actual": 59849,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -290,7 +245,7 @@
       ],
       "thumbnail_url": "https://github.com/farion1231.png",
       "official_url": "https://github.com/farion1231/cc-switch",
-      "stars": 83016,
+      "stars": 79700,
       "star_velocity_7d": null,
       "category": "agent",
       "trend_score": 62.6,
@@ -307,15 +262,6 @@
         {
           "source": "github",
           "label": "Total 79,700 stars (new to tracking)"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 79700,
-          "actual": 83016,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -340,7 +286,7 @@
       ],
       "thumbnail_url": "https://github.com/nexu-io.png",
       "official_url": "https://github.com/nexu-io/open-design",
-      "stars": 54188,
+      "stars": 50900,
       "star_velocity_7d": 8600,
       "category": "skill",
       "trend_score": 62.6,
@@ -356,15 +302,6 @@
         {
           "source": "github",
           "label": "7d +8,600 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 50900,
-          "actual": 54188,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -388,7 +325,7 @@
       ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 28283,
+      "stars": 27200,
       "star_velocity_7d": 7400,
       "category": "skill",
       "trend_score": 61.6,
@@ -405,15 +342,6 @@
         {
           "source": "github",
           "label": "7d +7,400 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 27200,
-          "actual": 28283,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -438,7 +366,7 @@
       ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/skills",
-      "stars": 142102,
+      "stars": 140000,
       "star_velocity_7d": 6000,
       "category": "skill",
       "trend_score": 61.0,
@@ -455,15 +383,6 @@
         {
           "source": "github",
           "label": "7d +6,000 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 140000,
-          "actual": 142102,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     }
@@ -489,7 +408,7 @@
       ],
       "thumbnail_url": "https://github.com/Piebald-AI.png",
       "official_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
-      "stars": 10565,
+      "stars": 10900,
       "star_velocity_7d": 400,
       "category": "harness",
       "trend_score": 65.9,
@@ -507,15 +426,6 @@
         {
           "source": "github",
           "label": "7d +400 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 10900,
-          "actual": 10565,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -539,7 +449,7 @@
       ],
       "thumbnail_url": "https://github.com/revfactory.png",
       "official_url": "https://github.com/revfactory/harness",
-      "stars": 3669,
+      "stars": 3800,
       "star_velocity_7d": 300,
       "category": "harness",
       "trend_score": 63.6,
@@ -556,15 +466,6 @@
         {
           "source": "github",
           "label": "7d +300 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 3800,
-          "actual": 3669,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -589,7 +490,7 @@
       ],
       "thumbnail_url": "https://github.com/ComposioHQ.png",
       "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "stars": 62184,
+      "stars": 61600,
       "star_velocity_7d": 1100,
       "category": "skill",
       "trend_score": 63.0,
@@ -606,15 +507,6 @@
         {
           "source": "github",
           "label": "7d +1,100 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 61600,
-          "actual": 62184,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -638,7 +530,7 @@
       ],
       "thumbnail_url": "https://github.com/thedotmack.png",
       "official_url": "https://github.com/thedotmack/claude-mem",
-      "stars": 79215,
+      "stars": 77900,
       "star_velocity_7d": 400,
       "category": "skill",
       "trend_score": 63.0,
@@ -654,15 +546,6 @@
         {
           "source": "github",
           "label": "7d +400 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 77900,
-          "actual": 79215,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -687,7 +570,7 @@
       ],
       "thumbnail_url": "https://github.com/ai-boost.png",
       "official_url": "https://github.com/ai-boost/awesome-harness-engineering",
-      "stars": 1208,
+      "stars": 4200,
       "star_velocity_7d": 400,
       "category": "skill",
       "trend_score": 62.9,
@@ -704,15 +587,6 @@
         {
           "source": "github",
           "label": "7d +400 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 4200,
-          "actual": 1208,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -737,7 +611,7 @@
       ],
       "thumbnail_url": "https://github.com/anomalyco.png",
       "official_url": "https://github.com/anomalyco/opencode",
-      "stars": 166300,
+      "stars": 164000,
       "star_velocity_7d": 2000,
       "category": "agent",
       "trend_score": 62.6,
@@ -753,15 +627,6 @@
         {
           "source": "github",
           "label": "7d +2,000 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 164000,
-          "actual": 166300,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -785,7 +650,7 @@
       ],
       "thumbnail_url": "https://github.com/modelcontextprotocol.png",
       "official_url": "https://github.com/modelcontextprotocol/servers",
-      "stars": 86363,
+      "stars": 87500,
       "star_velocity_7d": 1000,
       "category": "mcp",
       "trend_score": 62.4,
@@ -803,15 +668,6 @@
         {
           "source": "github",
           "label": "7d +1,000 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 87500,
-          "actual": 86363,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -836,7 +692,7 @@
       ],
       "thumbnail_url": "https://github.com/VoltAgent.png",
       "official_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
-      "stars": 20725,
+      "stars": 20500,
       "star_velocity_7d": 500,
       "category": "skill",
       "trend_score": 61.6,
@@ -852,15 +708,6 @@
         {
           "source": "github",
           "label": "7d +500 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 20500,
-          "actual": 20725,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -885,7 +732,7 @@
       ],
       "thumbnail_url": "https://github.com/ChromeDevTools.png",
       "official_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "stars": 42045,
+      "stars": 41500,
       "star_velocity_7d": 1000,
       "category": "mcp",
       "trend_score": 61.4,
@@ -902,15 +749,6 @@
         {
           "source": "github",
           "label": "7d +1,000 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 41500,
-          "actual": 42045,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -934,7 +772,7 @@
       ],
       "thumbnail_url": "https://github.com/alirezarezvani.png",
       "official_url": "https://github.com/alirezarezvani/claude-skills",
-      "stars": 16372,
+      "stars": 16100,
       "star_velocity_7d": 1100,
       "category": "skill",
       "trend_score": 61.4,
@@ -950,15 +788,6 @@
         {
           "source": "github",
           "label": "7d +1,100 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 16100,
-          "actual": 16372,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -983,7 +812,7 @@
       ],
       "thumbnail_url": "https://github.com/different-ai.png",
       "official_url": "https://github.com/different-ai/openwork",
-      "stars": 15592,
+      "stars": 16000,
       "star_velocity_7d": 500,
       "category": "agent",
       "trend_score": 61.4,
@@ -999,15 +828,6 @@
         {
           "source": "github",
           "label": "7d +500 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 16000,
-          "actual": 15592,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -1032,7 +852,7 @@
       ],
       "thumbnail_url": "https://github.com/mvanhorn.png",
       "official_url": "https://github.com/mvanhorn/last30days-skill",
-      "stars": 26695,
+      "stars": 26500,
       "star_velocity_7d": 300,
       "category": "skill",
       "trend_score": 61.4,
@@ -1048,15 +868,6 @@
         {
           "source": "github",
           "label": "7d +300 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 26500,
-          "actual": 26695,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -1081,7 +892,7 @@
       ],
       "thumbnail_url": "https://github.com/github.png",
       "official_url": "https://github.com/github/github-mcp-server",
-      "stars": 30230,
+      "stars": 30700,
       "star_velocity_7d": 500,
       "category": "mcp",
       "trend_score": 60.9,
@@ -1099,15 +910,6 @@
         {
           "source": "github",
           "label": "7d +500 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 30700,
-          "actual": 30230,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     },
@@ -1132,7 +934,7 @@
       ],
       "thumbnail_url": "https://github.com/zilliztech.png",
       "official_url": "https://github.com/zilliztech/claude-context",
-      "stars": 11608,
+      "stars": 11700,
       "star_velocity_7d": 400,
       "category": "mcp",
       "trend_score": 60.9,
@@ -1149,15 +951,6 @@
         {
           "source": "github",
           "label": "7d +400 stars"
-        }
-      ],
-      "audit_log": [
-        {
-          "field": "stars",
-          "claimed": 11700,
-          "actual": 11608,
-          "action": "corrected",
-          "source": "gh api"
         }
       ]
     }

@@ -44,6 +44,32 @@ description: "분석 결과를 사이트에 게시할 콘텐츠로 가공하는 
 - **한국 개발자 시점** — "이거 내가 왜 써야 해?"에 답하는 캐치프레이즈
 - **클릭률** — 제목과 캐치프레이즈는 과장 없이 흥미롭게
 
+## GitHub API 강제 검증 (Hallucination Guard) ⭐⭐⭐ 필수
+
+**각 아이템 발행 직전에 반드시 실행:**
+
+```bash
+gh api repos/OWNER/REPO --jq '{name, stargazers_count, description, html_url, fork, archived, pushed_at, created_at}'
+```
+
+### 검증 규칙
+
+1. **존재 게이트 (404)**: API가 404 또는 에러 반환 → `needs_review: true` + `dropped_reason: "repo_not_found"` → 사이트 노출 금지
+2. **stars 강제 동기화**: `stars` 필드는 **반드시 API의 `stargazers_count` 값**으로 덮어쓴다. 추측·기억·트렌드 분석기 값 절대 사용 금지
+3. **fork/archived 컷**: `fork: true` 또는 `archived: true` → `needs_review: true` + `dropped_reason: "fork_or_archived"`
+4. **description 동기화**: 본인이 작성한 catchphrase/summary가 실제 description과 의미 맞는지 한 번 더 비교
+5. **stars 환각 알람**: 만약 trend-analyzer에서 받은 stars와 API 값의 차이가 **2배 이상** 나면 → 그 차이를 `audit_log` 배열에 기록
+
+### audit_log 예시
+```json
+"audit_log": [
+  { "field": "stars", "claimed": 191000, "actual": 1850, "action": "corrected" },
+  { "field": "existence", "result": "404", "action": "dropped" }
+]
+```
+
+**이 게이트를 통과하지 못한 항목은 사이트에 절대 노출되지 않는다.** site-builder가 `needs_review: true` 필드를 강제 필터링한다.
+
 ## 한글 번역 자체 검수 (Self-Check) ⭐ 신규
 각 아이템 큐레이션 직후, 발행 전에 본인이 다음 질문을 모두 통과하는지 점검한다:
 
