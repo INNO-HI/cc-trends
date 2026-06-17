@@ -3,3 +3,5 @@ _workspace/
 .DS_Store
 node_modules/
 *.log
+package-lock.json
+node_modules/

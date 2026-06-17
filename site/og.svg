@@ -1,55 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <style>
-      .title { font: 700 92px "Pretendard", -apple-system, sans-serif; letter-spacing: -0.035em; fill: #0e0e0e; }
-      .sub { font: 500 32px "Pretendard", -apple-system, sans-serif; fill: #3a3a38; }
-      .chip { font: 700 22px "Pretendard", -apple-system, sans-serif; }
-      .meta { font: 600 24px "Pretendard", -apple-system, sans-serif; fill: #6b6860; }
-      .brand { font: 700 28px "Pretendard", -apple-system, sans-serif; fill: #0e0e0e; }
-    </style>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0e0e0e" flood-opacity="0.10"/>
+    </filter>
   </defs>
 
-  <!-- background -->
+  <!-- Background -->
   <rect width="1200" height="630" fill="#fbfaf6"/>
 
-  <!-- brand row top-left -->
-  <g transform="translate(80, 80)">
-    <rect x="0" y="0" width="210" height="42" rx="21" fill="#ffffff" stroke="#f2efe5" stroke-width="1.5"/>
-    <g transform="translate(14, 11) scale(0.83)">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M20.998 10.949H24v3.102h-3v3.028h-1.487V20H18v-2.921h-1.487V20H15v-2.921H9V20H7.488v-2.921H6V20H4.487v-2.921H3V14.05H0V10.95h3V5h17.998v5.949zM6 10.949h1.488V8.102H6v2.847zm10.51 0H18V8.102h-1.49v2.847z"
-            fill="#D97757"/>
+  <!-- Header brand -->
+  <text x="60" y="80" font-size="32" font-weight="700" fill="#0e0e0e" letter-spacing="-0.8">위클렌드 · Weeklaude</text>
+  <text x="60" y="108" font-size="14" font-weight="500" fill="#6b6860">Claude Code 주간 인덱스</text>
+
+  <!-- Version pill (right side) -->
+  <g transform="translate(940, 64)">
+    <rect x="0" y="0" width="200" height="36" rx="18" fill="#f2efe5"/>
+    <text x="100" y="23" font-size="13" font-weight="600" fill="#0e0e0e" text-anchor="middle">📅 2026.06.15 · v2026.06.15</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="200" font-size="48" font-weight="700" fill="#0e0e0e" letter-spacing="-1.5">이번 주 뜨는 도구 TOP 3</text>
+  <text x="60" y="245" font-size="18" font-weight="500" fill="#6b6860">매주 월요일 자동 갱신 · inno-hi.github.io/weeklaude</text>
+
+  <!-- Top 3 cards -->
+  
+    <g transform="translate(60, 290)">
+      <rect x="0" y="0" width="347" height="280" rx="20" fill="#ffeca0" stroke="#0e0e0e" stroke-width="1.5"/>
+      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#01 · SKILL</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Last30Days - 멀티…</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">Reddit, HN, X, YouTube를 동시에 훑어 30일치 여…</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">HN, X, YouTube를 동시에 훑어 30일치 여론을 한 장으로</text>
+
+      <g transform="translate(24, 220)">
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">mvanhorn/last30days-sk…</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 42k</text>
+      </g>
     </g>
-    <text x="50" y="28" class="chip" fill="#2b2b2b">Claude Code · Weekly</text>
-  </g>
+    <g transform="translate(427, 290)">
+      <rect x="0" y="0" width="347" height="280" rx="20" fill="#d8edd0" stroke="#0e0e0e" stroke-width="1.5"/>
+      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#02 · SKILL</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Agent Skills - …</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">spec에서 ship까지, 시니어 엔지니어의 품질 게이트를 에이전트…</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">시니어 엔지니어의 품질 게이트를 에이전트에 이식</text>
 
-  <!-- big logo on right -->
-  <g transform="translate(860, 90) scale(11)">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M20.998 10.949H24v3.102h-3v3.028h-1.487V20H18v-2.921h-1.487V20H15v-2.921H9V20H7.488v-2.921H6V20H4.487v-2.921H3V14.05H0V10.95h3V5h17.998v5.949zM6 10.949h1.488V8.102H6v2.847zm10.51 0H18V8.102h-1.49v2.847z"
-          fill="#D97757"/>
-  </g>
-
-  <!-- headline with highlight blobs -->
-  <g transform="translate(80, 240)">
-    <!-- line 1 -->
-    <text x="0" y="0" class="title">이번 주 Claude Code에서</text>
-
-    <!-- line 2 with highlight blobs -->
-    <g transform="translate(0, 110)">
-      <!-- mint blob behind 뜨고 -->
-      <rect x="92" y="-68" width="132" height="96" rx="14" fill="#d8edd0" transform="rotate(-0.8 158 -20)"/>
-      <!-- lemon blob behind 자리잡았나 -->
-      <rect x="540" y="-68" width="310" height="96" rx="14" fill="#ffeca0" transform="rotate(0.5 695 -20)"/>
-      <text x="0" y="0" class="title">뭐가 뜨고, 뭐가 이미 자리잡았나.</text>
+      <g transform="translate(24, 220)">
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">addyosmani/agent-skills</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 60k</text>
+      </g>
     </g>
-  </g>
+    <g transform="translate(794, 290)">
+      <rect x="0" y="0" width="347" height="280" rx="20" fill="#ffd8bd" stroke="#0e0e0e" stroke-width="1.5"/>
+      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#03 · SKILL</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Matt Pocock Ski…</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">/grill-me로 요구사항을 캐묻고, /tdd로 레드-그린-리팩터…</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">/tdd로 레드-그린-리팩터를 강제</text>
 
-  <!-- subtitle -->
-  <text x="80" y="495" class="sub">GitHub과 개발자 커뮤니티에서 매주 수집한</text>
-  <text x="80" y="540" class="sub">에이전트 · 스킬 · 하네스 · MCP 주간 인덱스.</text>
+      <g transform="translate(24, 220)">
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">mattpocock/skills</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 129k</text>
+      </g>
+    </g>
 
-  <!-- bottom bar -->
-  <rect x="0" y="600" width="1200" height="30" fill="#D97757"/>
-  <text x="80" y="598" class="meta">cc-trends.dev · 매주 월요일 갱신</text>
+  <!-- Footer -->
+  <text x="60" y="600" font-size="12" font-weight="600" fill="#6b6860">Made with Claude Code · 5명의 서브에이전트가 자동 큐레이션</text>
+  <text x="1140" y="600" font-size="12" font-weight="600" fill="#d97757" text-anchor="end">★ Star on GitHub: INNO-HI/weeklaude</text>
 </svg>
