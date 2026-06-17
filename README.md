@@ -46,21 +46,43 @@ Claude Code 도구는 매일 수십 개씩 쏟아진다. 인스타·트위터에
 5명의 Claude Code 서브에이전트가 매주 자동으로 처리한다.
 
 ```
-github-scout  ┐
-              ├─→  trend-analyzer  ─→  content-curator  ─→  site-builder  ─→  🌐
-community-scout┘    (분류·점수·dedup)    (한글화·자체검수)        (정적빌드)
+github-scout    ┐                                                              
+                ├─→ trend-analyzer ─→ content-curator ─→ site-builder ─→ 🌐
+community-scout ┘    분류·점수·dedup    한글화·gh api 검증     publish gate
+   ↑ A: 광역 + B: 역방향 검증
 ```
 
 | 에이전트 | 하는 일 |
 |---|---|
 | `github-scout` | GitHub 트렌딩 · `.claude/agents` 경로 · awesome-list 스캔 |
-| `community-scout` | HN · Reddit · dev.to · GeekNews · velog · X 크롤링 |
-| `trend-analyzer` | Rising/Classic 분류 · 점수 계산 · 중복 제거 |
-| `content-curator` | 한글 요약 · 캐치프레이즈 · 5단계 자체 검수 |
-| `site-builder` | `latest.json` 갱신 · 정적 빌드 |
+| `community-scout` | **2단계 모드**: (A) 광역 스캔 + (B) 후보 리포 역방향 검색 |
+| `trend-analyzer` | Rising/Classic 분류 · 점수 · dedup · 단일출처 강등 |
+| `content-curator` | 한글 요약 · `gh api` 강제 검증 · 5단계 자체 검수 |
+| `site-builder` | `latest.json` 갱신 · publish gate · 정적 빌드 |
 
 오케스트레이터 [`cc-trends`](.claude/skills/cc-trends/skill.md) 스킬 하나가 5명을 순차 호출한다.
 모든 프롬프트는 [`.claude/`](.claude/) 아래 공개. 그대로 가져다 써도 됨.
+
+## 품질 게이트
+
+신뢰도를 위해 **4겹 검증**이 직렬로 걸려있다.
+
+| 단계 | 게이트 | 효과 |
+|---|---|---|
+| 분석 | **존재 검증** — `gh api` 404면 즉시 컷 | 죽은 리포 차단 |
+| 분석 | **단일출처 강등** — sources 1개 + score<70 → 보류 | 노이즈 차단 |
+| 분석 | **fork/archived 컷** | 미러·죽은 리포 차단 |
+| 큐레이션 | **stars 강제 동기화** — `gh api`의 `stargazers_count`로 덮어쓰기 | 환각 차단 |
+| 큐레이션 | **5단계 자체 검수** — 사실/숫자/과장/예시/카테고리 점검 | 카피 품질 |
+| 발행 | **Publish Gate** — `needs_review` / `dropped_reason` 강제 필터링 | 최종 안전망 |
+
+### community-scout 2단계 모드 (다중 출처 확보)
+
+위클렌드의 핵심 차별점은 다중 출처 교차 검증. 이걸 살리려고 community-scout이 2단계로 돈다.
+
+- **Phase A — 광역 스캔**: 7개 소스 × 5개 이상 쿼리 = 주간 **최소 90건** 게시글
+- **Phase B — 역방향 검증** ⭐: github-scout이 발견한 각 후보 리포를 모든 커뮤니티에서 직접 검색 (후보당 7쿼리)
+- **영향력자 가중**: @AnthropicAI, @alexalbert__, velopert, jojoldu, xguru, dang 등 언급은 buzz +20
 
 ## 점수와 정원
 
