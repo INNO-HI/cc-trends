@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 08 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-06-29 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-06-29</link>
+      <guid isPermaLink="false">cc-trends-2026-06-29</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-06-29 업데이트&lt;/strong&gt; · 총 24개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/DietrichGebert/ponytail&quot;&gt;&lt;strong&gt;Ponytail - 코드를 덜 쓰게 만드는 스킬&lt;/strong&gt;&lt;/a&gt; — 가장 좋은 코드는 안 쓴 코드 - 코드량 54%, 비용 20% 감소 &lt;em&gt;(DietrichGebert/ponytail · ★64374)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/JuliusBrussee/caveman&quot;&gt;&lt;strong&gt;Caveman - 원시인처럼 말해 토큰 65% 절감&lt;/strong&gt;&lt;/a&gt; — 왜 많은 토큰 쓰나, 적은 토큰으로 통하는데 - 출력 토큰 65% 절감 &lt;em&gt;(JuliusBrussee/caveman · ★77647)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/garrytan/gstack&quot;&gt;&lt;strong&gt;gstack - Garry Tan의 1인 개발 팀 세팅&lt;/strong&gt;&lt;/a&gt; — Y Combinator CEO의 Claude Code 세팅 그대로 - 23개 역할이 가상 엔지니어링 팀 &lt;em&gt;(garrytan/gstack · ★117743)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/safishamsi/graphify&quot;&gt;&lt;strong&gt;Graphify - 코드·문서를 지식 그래프로&lt;/strong&gt;&lt;/a&gt; — 쿼리당 토큰 71.5배 절감 - 폴더 통째로 지식 그래프 변환 &lt;em&gt;(safishamsi/graphify · ★73689)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/rtk-ai/rtk&quot;&gt;&lt;strong&gt;RTK - 셸 출력 토큰 60-90% 줄이는 프록시&lt;/strong&gt;&lt;/a&gt; — git status 2,000토큰을 600토큰으로 - Rust 단일 바이너리, 의존성 제로 &lt;em&gt;(rtk-ai/rtk · ★66762)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;Claude Code - 터미널 에이전틱 코딩 도구&lt;/a&gt; — 터미널에서 코드베이스를 이해하고 자연어로 코딩하는 생태계의 기준점 &lt;em&gt;(★134825)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/skills&quot;&gt;Agent Skills - 공식 표준 저장소&lt;/a&gt; — SKILL.md 파일 하나로 스킬을 정의하는 에이전트 스킬 공식 표준 &lt;em&gt;(★156254)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ruvnet/ruflo&quot;&gt;Ruflo - 멀티 에이전트 메타 하네스&lt;/a&gt; — 100+ 에이전트 스웜을 조율 - 벡터DB 메모리로 brute force 대비 최대 4.7배 빠르게 &lt;em&gt;(★61913)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-06-15 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-06-15</link>
