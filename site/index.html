@@ -96,13 +96,35 @@
       <img src="https://visitor-badge.laobi.icu/badge?page_id=inno-hi.weeklaude&left_text=visitors&left_color=%230E0E0E&right_color=%23D97757" alt="visitor counter" loading="lazy" />
     </span>
   </span>
-  <div class="archive-wrap">
-    <button class="archive-btn" id="archive-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18v3H3zM5 10v10h14V10M9 14h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-      <span data-i18n-en="Past weeks" data-i18n-ko="지난 주차">지난 주차</span>
-      <span class="archive-caret">▾</span>
-    </button>
-    <ul class="archive-menu" id="archive-menu" role="listbox" hidden></ul>
+  <div class="update-actions">
+    <form class="subscribe-form"
+          action="https://rlaalstn.substack.com/api/v1/free?nojs=true"
+          method="post"
+          target="_blank">
+      <input type="hidden" name="first_url" value="https://inno-hi.github.io/weeklaude/" />
+      <input type="hidden" name="first_referrer" value="" />
+      <input type="hidden" name="current_url" value="https://inno-hi.github.io/weeklaude/" />
+      <input type="hidden" name="current_referrer" value="" />
+      <input type="hidden" name="referral_code" value="" />
+      <input type="hidden" name="source" value="subscribe_widget" />
+      <span class="subscribe-icon" aria-hidden="true">📧</span>
+      <input type="email" name="email" required
+        data-i18n-en-placeholder="your@email.com"
+        data-i18n-ko-placeholder="이메일 주소"
+        placeholder="이메일 주소"
+        aria-label="이메일 구독" />
+      <button type="submit"
+        data-i18n-en="Subscribe"
+        data-i18n-ko="구독">구독</button>
+    </form>
+    <div class="archive-wrap">
+      <button class="archive-btn" id="archive-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18v3H3zM5 10v10h14V10M9 14h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span data-i18n-en="Past weeks" data-i18n-ko="지난 주차">지난 주차</span>
+        <span class="archive-caret">▾</span>
+      </button>
+      <ul class="archive-menu" id="archive-menu" role="listbox" hidden></ul>
+    </div>
   </div>
 </div>
 

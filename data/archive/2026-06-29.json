@@ -1,0 +1,1522 @@
+{
+  "generated": "2026-06-29",
+  "generated_at": "2026-06-29",
+  "version": "v2026.06.29",
+  "rising": [
+    {
+      "id": "DietrichGebert/ponytail",
+      "name": "ponytail",
+      "owner": "DietrichGebert",
+      "title_ko": "Ponytail - 코드를 덜 쓰게 만드는 스킬",
+      "official_url": "https://github.com/DietrichGebert/ponytail",
+      "repo_url": "https://github.com/DietrichGebert/ponytail",
+      "category": "skill",
+      "score": 85.8,
+      "trend_score": 85.8,
+      "stars": 64374,
+      "velocity_7d": 27860,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "label": "최근 7일 +27,860 stars (이번 주 최고 급증)"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 5건 + dev.to 1건 + 블로그 1건, 7개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "가장 좋은 코드는 안 쓴 코드 - 코드량 54%, 비용 20% 감소",
+      "summary_ko": "AI 에이전트가 새 코드를 짜기 전에 '7단계 판단 사다리'를 거치게 만드는 미니멀리즘 스킬. 이 코드가 정말 필요한가, 재사용할 수 있는가, 표준 라이브러리나 브라우저 기본 기능으로 되는가를 먼저 따진다. 실제 작업에서 코드 라인을 54% 줄이고 비용을 20% 절감하면서도 검증/보안/접근성은 100% 유지한다.",
+      "key_features": [
+        "코드 작성 전 7단계 판단 사다리(필요성→재사용→표준기능→의존성) 강제",
+        "실측 벤치마크: 코드 라인 -54%, 비용 -20%, 안전성 100% 유지",
+        "예: 날짜 선택기 요청 시 라이브러리 대신 <input type=\"date\"> 한 줄로 404줄→23줄"
+      ],
+      "use_case": "에이전트가 간단한 요구에도 라이브러리를 끌어오고 래퍼를 양산할 때. 군더더기 없는 최소 구현을 원할 때.",
+      "install_hint": "/plugin marketplace add DietrichGebert/ponytail && /plugin install ponytail@ponytail",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "미니멀리즘",
+        "skill",
+        "코드품질",
+        "비용절감",
+        "안티오버엔지니어링"
+      ],
+      "thumbnail_url": "https://github.com/DietrichGebert.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 64365,
+          "actual": 64374,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "JuliusBrussee/caveman",
+      "name": "caveman",
+      "owner": "JuliusBrussee",
+      "title_ko": "Caveman - 원시인처럼 말해 토큰 65% 절감",
+      "official_url": "https://github.com/JuliusBrussee/caveman",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "category": "skill",
+      "score": 85.6,
+      "trend_score": 85.6,
+      "stars": 77647,
+      "velocity_7d": 2536,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "clien",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "label": "최근 7일 +2,536 stars"
+        },
+        {
+          "source": "velog",
+          "url": null,
+          "label": "X 3건 + velog 1건 + Clien 1건 + 블로그 1건, 한국 커뮤니티 언급"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "왜 많은 토큰 쓰나, 적은 토큰으로 통하는데 - 출력 토큰 65% 절감",
+      "summary_ko": "에이전트 출력에서 군더더기를 걷어내 토큰 사용량을 줄이는 스킬. 기술적 정확성은 유지한 채 불필요한 수식어를 제거해 10개 벤치마크 프롬프트 평균 65% 출력 토큰을 절감한다(개별 작업 22~87%). lite/full/ultra/wenyan(문언문) 압축 레벨을 제공하고, /caveman-compress로 CLAUDE.md 같은 메모리 파일을 다시 써 매 세션 입력 토큰을 약 46% 줄인다.",
+      "key_features": [
+        "출력 토큰 평균 65% 절감(개별 22~87%), 기술 정확성 유지",
+        "lite/full/ultra/wenyan(문언문) 4단계 압축 레벨",
+        "/caveman-stats 세션별 토큰·USD 절감 추적 + /caveman-compress 메모리 파일 압축"
+      ],
+      "use_case": "긴 설명으로 토큰을 낭비하는 에이전트의 출력 비용을 줄이고 싶을 때. CLAUDE.md가 비대해 입력 토큰이 부담될 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🇰🇷 한국어",
+        "🆕 New"
+      ],
+      "tags": [
+        "토큰절약",
+        "skill",
+        "비용절감",
+        "출력압축",
+        "한국어언급"
+      ],
+      "thumbnail_url": "https://github.com/JuliusBrussee.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 77647,
+          "actual": 77647,
+          "action": "unchanged"
+        }
+      ]
+    },
+    {
+      "id": "garrytan/gstack",
+      "name": "gstack",
+      "owner": "garrytan",
+      "title_ko": "gstack - Garry Tan의 1인 개발 팀 세팅",
+      "official_url": "https://github.com/garrytan/gstack",
+      "repo_url": "https://github.com/garrytan/gstack",
+      "category": "harness",
+      "score": 85.6,
+      "trend_score": 85.6,
+      "stars": 117743,
+      "velocity_7d": 3781,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "producthunt",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/garrytan/gstack",
+          "label": "최근 7일 +3,781 stars"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 4건 + Product Hunt 1건 + 블로그 2건, 영향력자 6건 인용(Anthropic 공식 포함)"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "Y Combinator CEO의 Claude Code 세팅 그대로 - 23개 역할이 가상 엔지니어링 팀",
+      "summary_ko": "Y Combinator CEO Garry Tan이 실제로 쓰는 Claude Code 세팅을 패키징한 하네스. Claude Code를 CEO 리뷰어, 디자인 감사관, QA 리드, 보안 담당, 릴리스 엔지니어 등 23개 이상의 전문 역할로 바꿔 1인 개발자에게 가상 엔지니어링 팀을 제공한다. /office-hours(제품 인터뷰)→/plan-ceo-review(범위 검증)→/review(코드 감사)→/qa(브라우저 테스트)→/ship(배포)으로 이어지는 스프린트 파이프라인이 핵심.",
+      "key_features": [
+        "CEO/디자인/QA/보안/릴리스 등 23+ 역할을 슬래시 커맨드로 제공",
+        "/office-hours→/plan-ceo-review→/review→/qa→/ship 엔드투엔드 스프린트 파이프라인",
+        "/qa·/browse가 실제 Chromium을 띄워 클릭·캡처로 프로덕션 버그 검출"
+      ],
+      "use_case": "혼자 제품을 만들면서 기획·리뷰·QA·배포를 체계적으로 돌리고 싶은 솔로 빌더/창업가.",
+      "install_hint": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "harness",
+        "Garry-Tan",
+        "워크플로우",
+        "QA자동화",
+        "1인개발"
+      ],
+      "thumbnail_url": "https://github.com/garrytan.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 117740,
+          "actual": 117743,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "safishamsi/graphify",
+      "name": "graphify",
+      "owner": "safishamsi",
+      "title_ko": "Graphify - 코드·문서를 지식 그래프로",
+      "official_url": "https://github.com/safishamsi/graphify",
+      "repo_url": "https://github.com/safishamsi/graphify",
+      "category": "skill",
+      "score": 83.7,
+      "trend_score": 83.7,
+      "stars": 73689,
+      "velocity_7d": 3228,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/safishamsi/graphify",
+          "label": "최근 7일 +3,228 stars"
+        },
+        {
+          "source": "devto",
+          "url": null,
+          "label": "X 3건 + dev.to 1건 + 블로그 2건, 6개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "쿼리당 토큰 71.5배 절감 - 폴더 통째로 지식 그래프 변환",
+      "summary_ko": "코드, SQL 스키마, PDF, 마크다운, 스크린샷, 다이어그램, 손글씨 화이트보드 사진까지 한 폴더를 쿼리 가능한 지식 그래프로 변환하는 스킬. 멀티모달 추출로 개념과 관계를 뽑아내고, 검색·커뮤니티 필터가 있는 인터랙티브 graph.html을 생성한다. 원본 파일을 직접 읽는 것 대비 쿼리당 토큰을 71.5배 절감한다.",
+      "key_features": [
+        "멀티모달 추출: 코드·PDF·마크다운·스크린샷·다이어그램·타 언어 이미지까지",
+        "검색·커뮤니티 필터 가능한 인터랙티브 graph.html 시각화",
+        "원본 직접 읽기 대비 쿼리당 토큰 71.5배 절감"
+      ],
+      "use_case": "방대한 코드베이스나 자료(논문·노트)를 에이전트가 매번 통독하며 토큰을 낭비할 때. 팀 온보딩 자료 정리에도 유용.",
+      "install_hint": "pip install graphifyy && graphify install",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "토큰절약",
+        "skill",
+        "멀티모달",
+        "시각화"
+      ],
+      "thumbnail_url": "https://github.com/safishamsi.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 73688,
+          "actual": 73689,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "rtk-ai/rtk",
+      "name": "rtk",
+      "owner": "rtk-ai",
+      "title_ko": "RTK - 셸 출력 토큰 60-90% 줄이는 프록시",
+      "official_url": "https://github.com/rtk-ai/rtk",
+      "repo_url": "https://github.com/rtk-ai/rtk",
+      "category": "agent",
+      "score": 83.7,
+      "trend_score": 83.7,
+      "stars": 66762,
+      "velocity_7d": 2213,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/rtk-ai/rtk",
+          "label": "최근 7일 +2,213 stars (prev 12위→5위, +7)"
+        },
+        {
+          "source": "devto",
+          "url": null,
+          "label": "X 3건 + dev.to 2건 + 블로그 1건, 6개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "git status 2,000토큰을 600토큰으로 - Rust 단일 바이너리, 의존성 제로",
+      "summary_ko": "셸 명령 출력을 프록시해 LLM 토큰 소비를 60-90% 줄이는 Rust 단일 바이너리. git, cargo, 테스트 러너, AWS, Docker 등 흔한 개발 명령의 출력을 스마트 필터링·압축한다. Bash 명령을 자동으로 가로채 RTK 버전으로 바꾸는 훅과 절감량 분석 대시보드(rtk gain, rtk discover)를 제공하며, 중간 규모 프로젝트 워크플로우에서 약 118,000토큰→23,900토큰(약 80% 절감) 사례를 보여준다.",
+      "key_features": [
+        "git·cargo·테스트·AWS·Docker 등 명령 출력 60-90% 압축",
+        "Bash 명령 자동 가로채기 훅 + rtk gain/discover 절감 분석",
+        "Rust 단일 바이너리, 의존성 제로 (brew install rtk)"
+      ],
+      "use_case": "에이전트가 긴 명령 출력을 통째로 읽어 토큰을 낭비할 때. 특히 CI 로그·빌드 출력이 긴 프로젝트.",
+      "install_hint": "brew install rtk",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "토큰절약",
+        "Rust",
+        "CLI프록시",
+        "비용절감",
+        "agent"
+      ],
+      "thumbnail_url": "https://github.com/rtk-ai.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 66761,
+          "actual": 66762,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "colbymchenry/codegraph",
+      "name": "codegraph",
+      "owner": "colbymchenry",
+      "title_ko": "CodeGraph - 사전 인덱싱 코드 지식 그래프",
+      "official_url": "https://github.com/colbymchenry/codegraph",
+      "repo_url": "https://github.com/colbymchenry/codegraph",
+      "category": "agent",
+      "score": 82.2,
+      "trend_score": 82.2,
+      "stars": 55653,
+      "velocity_7d": 3267,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "devto",
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "label": "최근 7일 +3,267 stars"
+        },
+        {
+          "source": "medium",
+          "url": null,
+          "label": "X 3건 + dev.to 1건 + Medium 1건 + 블로그 1건, 영향력자 1건 인용"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "툴콜 81% 감소 - 한 번의 쿼리로 진입점·관련 심볼·코드 반환, 100% 로컬",
+      "summary_ko": "코드베이스를 로컬 지식 그래프로 미리 인덱싱해 에이전트가 파일을 하나씩 탐색하지 않고 한 번의 쿼리로 진입점·관련 심볼·코드 스니펫을 받게 하는 시맨틱 코드 인텔리전스. TypeScript·Python·Go·Rust·Swift 등 20개 이상 언어와 Django·FastAPI·Express·Laravel 등 17개 웹 프레임워크 라우팅을 인식한다. 100% 로컬 실행으로 외부 API 호출이 없으며, VS Code급 대형 코드베이스에서 grep 방식 대비 툴콜을 81% 줄인다.",
+      "key_features": [
+        "한 번의 툴콜로 진입점·관련 심볼·스니펫 반환 (파일별 탐색 제거)",
+        "20+ 언어 + 17개 웹 프레임워크 라우팅 자동 인식",
+        "100% 로컬 실행, grep 방식 대비 툴콜 81% 감소"
+      ],
+      "use_case": "에이전트가 파일 탐색에 토큰·툴콜을 과소비할 때. 특히 웹 프레임워크 프로젝트의 요청 경로 추적이 필요할 때.",
+      "install_hint": "npm i -g @colbymchenry/codegraph && codegraph install",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "토큰절약",
+        "로컬",
+        "코드분석",
+        "agent"
+      ],
+      "thumbnail_url": "https://github.com/colbymchenry.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 55652,
+          "actual": 55653,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "can1357/oh-my-pi",
+      "name": "oh-my-pi",
+      "owner": "can1357",
+      "title_ko": "Oh My Pi - IDE를 내장한 터미널 코딩 에이전트",
+      "official_url": "https://github.com/can1357/oh-my-pi",
+      "repo_url": "https://github.com/can1357/oh-my-pi",
+      "category": "agent",
+      "score": 82.1,
+      "trend_score": 82.1,
+      "stars": 15007,
+      "velocity_7d": 1279,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "label": "최근 7일 +1,279 stars"
+        },
+        {
+          "source": "medium",
+          "url": null,
+          "label": "X 3건 + Medium 1건 + 블로그 2건, 6개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "라인 번호 대신 해시 앵커 편집 - 토큰 61% 절감, LSP·디버거 내장",
+      "summary_ko": "LSP(언어 서버)와 디버거를 통째로 내장한 터미널 코딩 에이전트(omp). 라인 번호 대신 콘텐츠 해시 앵커로 편집해 공백 충돌을 없애고 Grok 4 Fast 기준 토큰을 61% 절감한다. lldb·dlv·debugpy 디버거 연결, 50+ tree-sitter 언어 분석, 격리된 서브에이전트 병렬 실행을 지원하며 핵심은 약 55,000줄의 Rust로 구현됐다.",
+      "key_features": [
+        "해시 앵커 편집으로 공백 충돌 제거 + 토큰 61% 절감(Grok 4 Fast 기준)",
+        "LSP 14개 연산 + DAP 디버거(lldb·dlv·debugpy) 통합",
+        "32개 빌트인 도구 + 40+ LLM 프로바이더 + 서브에이전트 병렬 실행"
+      ],
+      "use_case": "터미널에서 IDE 수준의 코드 이해와 실제 디버깅(세그폴트 추적 등)까지 필요할 때. 멀티 프로바이더 선택의 자유를 원할 때.",
+      "install_hint": "curl -fsSL https://omp.sh/install | sh",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "agent",
+        "터미널",
+        "LSP",
+        "디버거",
+        "Rust"
+      ],
+      "thumbnail_url": "https://github.com/can1357.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 15005,
+          "actual": 15007,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "santifer/career-ops",
+      "name": "career-ops",
+      "owner": "santifer",
+      "title_ko": "Career Ops - AI 구직 자동화 시스템",
+      "official_url": "https://github.com/santifer/career-ops",
+      "repo_url": "https://github.com/santifer/career-ops",
+      "category": "agent",
+      "score": 81.3,
+      "trend_score": 81.3,
+      "stars": 56378,
+      "velocity_7d": 1308,
+      "source_count": 3,
+      "sources": [
+        "producthunt",
+        "substack",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/santifer/career-ops",
+          "label": "최근 7일 +1,308 stars"
+        },
+        {
+          "source": "producthunt",
+          "url": null,
+          "label": "X 3건 + Substack 1건 + Product Hunt 1건, 5개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "채용공고 A-F 등급 평가부터 ATS 이력서까지 - 제작자는 740+ 공고 평가 후 취업 성공",
+      "summary_ko": "Claude Code 기반 AI 구직 자동화 시스템. 키워드 매칭이 아니라 직무 적합도·보상·성장성 등 10개 가중 항목으로 채용공고를 A-F 등급으로 평가하고, 공고별 맞춤 ATS 최적화 이력서 PDF를 생성한다. Greenhouse·Ashby·Lever 등 45+ 기업 채용 포털을 자동 스캔하며, 15개 스킬 모드를 갖춘다. 제작자는 이 도구로 740+ 공고를 평가하고 100+ 이력서를 생성해 Head of Applied AI 직을 따냈다.",
+      "key_features": [
+        "10개 가중 항목 기반 채용공고 A-F 자동 등급 평가",
+        "공고별 ATS 최적화 PDF 이력서 자동 생성",
+        "Greenhouse·Ashby·Lever 등 45+ 기업 포털 자동 스캔, 15개 스킬 모드"
+      ],
+      "use_case": "이직 준비 중 수십~수백 개 공고를 효율적으로 필터링하고 공고별 맞춤 이력서를 빠르게 만들고 싶을 때.",
+      "install_hint": "npx @santifer/career-ops init",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "구직",
+        "자동화",
+        "PDF생성",
+        "career",
+        "agent"
+      ],
+      "thumbnail_url": "https://github.com/santifer.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 56375,
+          "actual": 56378,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "affaan-m/ECC",
+      "name": "ECC",
+      "owner": "affaan-m",
+      "title_ko": "ECC - 에이전트 하네스 운영체제",
+      "official_url": "https://github.com/affaan-m/ECC",
+      "repo_url": "https://github.com/affaan-m/ECC",
+      "category": "harness",
+      "score": 80.8,
+      "trend_score": 80.8,
+      "stars": 223037,
+      "velocity_7d": 3726,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "medium",
+        "substack",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/affaan-m/ECC",
+          "label": "최근 7일 +3,726 stars, 총 223K"
+        },
+        {
+          "source": "medium",
+          "url": null,
+          "label": "X 2건 + Medium 1건 + Substack 1건 + 블로그 1건, 4개 플랫폼 확산"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "67개 에이전트 + 271개 스킬을 6개 플랫폼에서 - AgentShield 102개 보안 룰 내장",
+      "summary_ko": "Claude Code 등 AI 코딩 도구를 에이전트·스킬·훅·룰로 최적화하는 종합 플러그인 시스템. 계획·코드리뷰·보안스캔·빌드수정을 맡는 67개 전문 에이전트와 TDD·검증루프·API 설계 등 271개 재사용 스킬을 제공한다. Claude Code, Cursor, Codex, OpenCode, GitHub Copilot, Zed에서 통합 설정으로 동작하며, /security-scan은 AgentShield의 102개 정적 분석 룰로 배포 전 취약점을 잡는다.",
+      "key_features": [
+        "67개 전문 에이전트 + 271개 재사용 스킬 + 92개 슬래시 커맨드",
+        "Claude Code·Cursor·Codex·OpenCode·Copilot·Zed 6개 플랫폼 통합",
+        "AgentShield 102개 정적 분석 룰 + 12+ 언어 생태계 지원"
+      ],
+      "use_case": "여러 AI 코딩 도구를 동시에 쓰면서 일관된 스킬·룰·보안 게이트를 적용하고 싶을 때.",
+      "install_hint": "/plugin marketplace add https://github.com/affaan-m/ECC && /plugin install ecc@ecc",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "harness",
+        "크로스플랫폼",
+        "보안",
+        "올인원",
+        "성능최적화"
+      ],
+      "thumbnail_url": "https://github.com/affaan-m.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 223037,
+          "actual": 223037,
+          "action": "unchanged"
+        },
+        {
+          "field": "agents",
+          "claimed": "64 (prev curation)",
+          "actual": "67 (README)",
+          "action": "corrected"
+        },
+        {
+          "field": "skills",
+          "claimed": "262 (prev curation)",
+          "actual": "271 (README)",
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "addyosmani/agent-skills",
+      "name": "agent-skills",
+      "owner": "addyosmani",
+      "title_ko": "Agent Skills - 프로덕션급 SDLC 스킬 24종",
+      "official_url": "https://github.com/addyosmani/agent-skills",
+      "repo_url": "https://github.com/addyosmani/agent-skills",
+      "category": "skill",
+      "score": 79.8,
+      "trend_score": 79.8,
+      "stars": 67620,
+      "velocity_7d": 3999,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "label": "최근 7일 +3,999 stars"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 2건 + 블로그 3건, 영향력자 4건 인용(Anthropic 공식 포함)"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "spec에서 ship까지 - 안티-합리화 테이블로 에이전트 편법 차단",
+      "summary_ko": "Google Chrome DevRel 리드 Addy Osmani가 만든 24개 프로덕션급 엔지니어링 스킬. /spec→/plan→/build→/test→/review→/webperf→/ship 8개 슬래시 커맨드로 전체 개발 라이프사이클을 커버하며, 각 단계마다 검증 게이트와 안티-합리화 테이블로 에이전트가 테스트·리뷰를 건너뛰지 못하게 강제한다. code-reviewer, test-engineer, security-auditor, web-perf-auditor 4개 전문 페르소나를 포함한다.",
+      "key_features": [
+        "24개 스킬이 Define→Plan→Build→Verify→Review→Ship 전체 SDLC 커버",
+        "안티-합리화 테이블로 에이전트 편법(테스트 생략·리뷰 스킵) 차단",
+        "4개 전문 페르소나 (code-reviewer·test-engineer·security-auditor·web-perf-auditor)"
+      ],
+      "use_case": "에이전트가 코드는 빠르게 쏟아내지만 품질이 들쑥날쑥할 때, 시니어 엔지니어 수준의 체크포인트를 자동 적용.",
+      "install_hint": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "SDLC",
+        "skill",
+        "품질게이트",
+        "Addy-Osmani",
+        "엔지니어링"
+      ],
+      "thumbnail_url": "https://github.com/addyosmani.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 67619,
+          "actual": 67620,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "Imbad0202/academic-research-skills",
+      "name": "academic-research-skills",
+      "owner": "Imbad0202",
+      "title_ko": "Academic Research Skills - 논문 작성 전주기 스킬",
+      "official_url": "https://github.com/Imbad0202/academic-research-skills",
+      "repo_url": "https://github.com/Imbad0202/academic-research-skills",
+      "category": "skill",
+      "score": 76.7,
+      "trend_score": 76.7,
+      "stars": 35044,
+      "velocity_7d": 1800,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "hackernews",
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "label": "최근 7일 +1,800 stars"
+        },
+        {
+          "source": "hackernews",
+          "url": null,
+          "label": "HN 1건 + X 1건 + Medium 1건 + 블로그 1건, 4개 플랫폼 확산"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "리서치→집필→동료심사→인용검증→완성 - 5개 리뷰어 + 악마의 변호인",
+      "summary_ko": "문헌 조사부터 동료 심사까지 학술 논문 작성 전 과정을 안내하는 스킬 모음. 1단계는 13개 에이전트 팀이 PRISMA 체계적 리뷰까지 지원하는 심층 리서치, 2~4단계는 12개 에이전트 집필 파이프라인과 악마의 변호인 관점을 더한 7개 에이전트 독립 동료 심사(0-100점 루브릭), 5~6단계는 4개 서지 인덱스 대조 인용 검증과 APA 7.0 PDF 완성으로 구성된다. 모든 단계에 인간 검수를 둔다.",
+      "key_features": [
+        "1단계: 13개 에이전트 팀 심층 리서치 + PRISMA 체계적 리뷰",
+        "2~4단계: 12개 에이전트 집필 + 7개 에이전트 동료심사(악마의 변호인 포함)",
+        "5~6단계: 4개 서지 인덱스 대조 인용 검증 + APA 7.0 PDF 출력"
+      ],
+      "use_case": "학술 논문이나 체계적 문헌 리뷰를 쓰면서 인용 환각·논리 결함을 줄이고 동료 심사 품질을 미리 받고 싶을 때.",
+      "install_hint": "/plugin marketplace add Imbad0202/academic-research-skills && /plugin install academic-research-skills",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "학술연구",
+        "skill",
+        "논문작성",
+        "인용검증",
+        "동료심사"
+      ],
+      "thumbnail_url": "https://github.com/Imbad0202.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 35042,
+          "actual": 35044,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "blader/humanizer",
+      "name": "humanizer",
+      "owner": "blader",
+      "title_ko": "Humanizer - AI 글쓰기 티 제거 스킬",
+      "official_url": "https://github.com/blader/humanizer",
+      "repo_url": "https://github.com/blader/humanizer",
+      "category": "skill",
+      "score": 74.6,
+      "trend_score": 74.6,
+      "stars": 26604,
+      "velocity_7d": 1200,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/blader/humanizer",
+          "label": "최근 7일 +1,200 stars"
+        },
+        {
+          "source": "devto",
+          "url": null,
+          "label": "X 3건 + dev.to 1건 + 블로그 2건, 6개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "'pivotal moment', 'testament' 같은 AI 말투를 사람 글로 - Claude Code·OpenCode 지원",
+      "summary_ko": "텍스트에서 AI가 쓴 티가 나는 흔적을 제거해 자연스러운 사람 글로 바꾸는 스킬. 과장된 의미 부풀리기와 홍보성 표현, 'showcasing'·'testament' 같은 AI 상투어, 'Let me know if...' 같은 챗봇 마무리 어구와 표면적 헤징을 걷어낸다. 예: 'AI serves as an enduring testament to transformative potential' → 'AI can speed up the boring parts of the job'.",
+      "key_features": [
+        "의미 부풀리기·홍보성 표현 제거 ('pivotal moment in the evolution' → 'was established in 1989')",
+        "copula 회피·AI 어휘 교정 ('showcasing'·'testament' → 'is'·'has')",
+        "챗봇 잔재 제거 (마무리 권유 어구·표면적 헤징)"
+      ],
+      "use_case": "AI로 작성한 블로그·문서·카피에서 기계 냄새를 빼고 사람이 쓴 듯한 직설적인 글로 다듬고 싶을 때.",
+      "install_hint": "git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "글쓰기",
+        "skill",
+        "AI탐지회피",
+        "카피라이팅",
+        "자연어"
+      ],
+      "thumbnail_url": "https://github.com/blader.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 26603,
+          "actual": 26604,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "nexu-io/open-design",
+      "name": "open-design",
+      "owner": "nexu-io",
+      "title_ko": "Open Design - 로컬 퍼스트 디자인 워크스페이스",
+      "official_url": "https://github.com/nexu-io/open-design",
+      "repo_url": "https://github.com/nexu-io/open-design",
+      "category": "skill",
+      "score": 74.4,
+      "trend_score": 74.4,
+      "stars": 72419,
+      "velocity_7d": 3757,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/nexu-io/open-design",
+          "label": "최근 7일 +3,757 stars"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 2건 + 블로그 2건, 4개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "Claude Design의 오픈소스 대안 - 150개 브랜드 디자인 시스템, 클라우드 락인 없음",
+      "summary_ko": "Claude Design을 대체하는 오픈소스·에이전트 네이티브 디자인 워크스페이스. 프로토타입·슬라이드·이미지·동영상을 클라우드 락인 없이 로컬에서 생성한다. Linear·Stripe·Apple·Tesla·Figma 등 150개 브랜드급 디자인 시스템을 전환할 수 있고, 활성 DESIGN.md를 모든 렌더가 따른다. 랜딩페이지·대시보드·피치덱·Figma→React 마이그레이션 등 100+ 스킬과 261개 플러그인을 갖추고, MCP로 Claude Code·Cursor·Copilot 등 22개 코딩 에이전트와 연동된다.",
+      "key_features": [
+        "Linear·Stripe·Apple·Tesla 등 150개 브랜드급 디자인 시스템(DESIGN.md 기반)",
+        "100+ 스킬 + 261개 플러그인 (랜딩·대시보드·Figma→React 마이그레이션 등)",
+        "MCP로 22개 코딩 에이전트 연동 + 샌드박스 프리뷰 (HTML/PDF/PPTX/MP4 export)"
+      ],
+      "use_case": "디자이너 없이 프로토타입·프레젠테이션·프로모션 영상을 로컬에서 빠르게 만들고 소스코드로 핸드오프하고 싶을 때.",
+      "install_hint": "od mcp install claude-code",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "디자인",
+        "local-first",
+        "skill",
+        "프로토타이핑",
+        "멀티포맷"
+      ],
+      "thumbnail_url": "https://github.com/nexu-io.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 72418,
+          "actual": 72419,
+          "action": "corrected"
+        },
+        {
+          "field": "skills/systems",
+          "claimed": "259 skills/142 systems (description)",
+          "actual": "100+ skills/150 systems/261 plugins (README)",
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "Leonxlnx/taste-skill",
+      "name": "taste-skill",
+      "owner": "Leonxlnx",
+      "title_ko": "Taste Skill - AI에게 디자인 안목 주입",
+      "official_url": "https://github.com/Leonxlnx/taste-skill",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "category": "skill",
+      "score": 73.1,
+      "trend_score": 73.1,
+      "stars": 52564,
+      "velocity_7d": 4372,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "label": "최근 7일 +4,372 stars"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 3건 + 블로그 1건, 4개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "AI가 만드는 뻔한 UI를 막는 취향 주입기 - 1~10 디자인 다이얼 3종",
+      "summary_ko": "AI가 생성하는 지루하고 평범한 UI를 더 강한 레이아웃·타이포·모션·여백으로 끌어올리는 디자인 프레임워크. DESIGN_VARIANCE(레이아웃 실험성), MOTION_INTENSITY(애니메이션 강도), VISUAL_DENSITY(정보 밀도)를 1~10 다이얼로 조절한다. 기본 v2 외에 GPT 최적화판, soft/minimalist/brutalist 미학 프리셋, 이미지→코드 워크플로우, 리디자인 감사 도구를 포함하며 React·Vue·Svelte와 주요 코딩 에이전트에 프레임워크 무관하게 동작한다.",
+      "key_features": [
+        "1~10 디자인 다이얼 3종: DESIGN_VARIANCE·MOTION_INTENSITY·VISUAL_DENSITY",
+        "GPT 최적화판 + soft/minimalist/brutalist 미학 프리셋 + 리디자인 감사 도구",
+        "웹 컴프·모바일·브랜드킷 이미지 생성 스킬 → 코딩 에이전트로 연계"
+      ],
+      "use_case": "AI로 프론트엔드를 만들 때 매번 비슷한 디자인이 나와 불만일 때. 디자이너 없이 차별화된 UI를 뽑고 싶을 때.",
+      "install_hint": "npx skills add https://github.com/Leonxlnx/taste-skill",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "디자인",
+        "skill",
+        "UI/UX",
+        "안티슬롭",
+        "프론트엔드"
+      ],
+      "thumbnail_url": "https://github.com/Leonxlnx.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 52563,
+          "actual": 52564,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "cobusgreyling/loop-engineering",
+      "name": "loop-engineering",
+      "owner": "cobusgreyling",
+      "title_ko": "Loop Engineering - 에이전트 루프 설계 툴킷",
+      "official_url": "https://github.com/cobusgreyling/loop-engineering",
+      "repo_url": "https://github.com/cobusgreyling/loop-engineering",
+      "category": "mcp",
+      "score": 69.5,
+      "trend_score": 69.5,
+      "stars": 3694,
+      "velocity_7d": 1359,
+      "source_count": 2,
+      "sources": [
+        "medium",
+        "substack"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/cobusgreyling/loop-engineering",
+          "label": "최근 7일 +1,359 stars, 생성 20일차"
+        },
+        {
+          "source": "medium",
+          "url": null,
+          "label": "Medium 2건 + Substack 2건, 4개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "이제 프롬프트하지 말고 루프를 설계하라 - loop-init·audit·cost CLI 3종",
+      "summary_ko": "수동 프롬프트 엔지니어링을 대체해 AI 에이전트를 목표로 향해 자동 반복 오케스트레이션하는 '루프 엔지니어링' 패턴과 CLI 툴킷. loop-init으로 예산·실행 로그 추적이 있는 스타터 프로젝트를 스캐폴딩하고, loop-audit로 준비도를 점수화하며, loop-cost로 케이던스별 토큰 비용을 추정한다. Addy Osmani·Boris Cherny 등의 아이디어에서 영감을 받았다.",
+      "key_features": [
+        "loop-init: 예산·실행 로그 추적 스타터 프로젝트 스캐폴딩",
+        "loop-audit: 활동 감지 기반 준비도 점수화 + 단계적 롤아웃 가이드",
+        "loop-cost: 케이던스(예: 15분) 기반 토큰 비용 추정"
+      ],
+      "use_case": "에이전트를 일회성 프롬프트가 아니라 일정 주기로 도는 자동화 루프(데일리 트리아지·CI 스위퍼)로 운영하고 비용을 미리 잡고 싶을 때.",
+      "install_hint": "npx @cobusgreyling/loop-init . --pattern daily-triage --tool grok",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "루프엔지니어링",
+        "mcp",
+        "자동화",
+        "비용추정",
+        "오케스트레이션"
+      ],
+      "thumbnail_url": "https://github.com/cobusgreyling.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 3694,
+          "actual": 3694,
+          "action": "unchanged"
+        }
+      ]
+    }
+  ],
+  "classic": [
+    {
+      "id": "anthropics/claude-code",
+      "name": "claude-code",
+      "owner": "anthropics",
+      "title_ko": "Claude Code - 터미널 에이전틱 코딩 도구",
+      "official_url": "https://github.com/anthropics/claude-code",
+      "repo_url": "https://github.com/anthropics/claude-code",
+      "category": "harness",
+      "score": 94.5,
+      "trend_score": 94.5,
+      "stars": 134825,
+      "velocity_7d": 1205,
+      "source_count": 6,
+      "sources": [
+        "anthropic",
+        "devto",
+        "geeknews",
+        "hackernews",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/claude-code",
+          "label": "총 134K stars, 주간 +1,205"
+        },
+        {
+          "source": "hackernews",
+          "url": null,
+          "label": "18개 출처(HN·X 9건·dev.to·GeekNews 3건·velog·Anthropic 공식 3건) 교차검증"
+        },
+        {
+          "source": "geeknews",
+          "url": null,
+          "label": "영향력자 12건 인용 + 한국 커뮤니티 언급 + awesome 등재"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "터미널에서 코드베이스를 이해하고 자연어로 코딩하는 생태계의 기준점",
+      "summary_ko": "터미널에 상주하며 코드베이스를 이해하고 자연어 명령으로 루틴 작업 실행, 복잡한 코드 설명, git 워크플로우 처리를 해주는 Anthropic 공식 에이전틱 코딩 도구. 터미널·IDE는 물론 GitHub에서 @claude 태그로도 동작하며, 커스텀 커맨드·에이전트를 더하는 플러그인 시스템을 내장한다. 이 사이트에 소개된 거의 모든 도구의 기반이 되는 생태계 앵커.",
+      "key_features": [
+        "자연어로 루틴 작업 실행·복잡한 코드 설명·디버깅",
+        "git 워크플로우 자동화 + 코드베이스 전체 이해",
+        "터미널/IDE/GitHub @claude 멀티 인터페이스 + 플러그인 시스템"
+      ],
+      "use_case": "코딩 생산성을 극대화하려는 모든 개발자. 이 사이트에 소개된 에이전트·스킬·하네스의 토대.",
+      "install_hint": "curl -fsSL https://claude.ai/install.sh | bash",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "anthropic-official",
+        "harness",
+        "터미널",
+        "생태계앵커",
+        "플러그인"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 134824,
+          "actual": 134825,
+          "action": "corrected"
+        }
+      ],
+      "official": true
+    },
+    {
+      "id": "anthropics/skills",
+      "name": "skills",
+      "owner": "anthropics",
+      "title_ko": "Agent Skills - 공식 표준 저장소",
+      "official_url": "https://github.com/anthropics/skills",
+      "repo_url": "https://github.com/anthropics/skills",
+      "category": "skill",
+      "score": 91.2,
+      "trend_score": 91.2,
+      "stars": 156254,
+      "velocity_7d": 2750,
+      "source_count": 3,
+      "sources": [
+        "geeknews",
+        "hackernews",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/skills",
+          "label": "총 156K stars, 주간 +2,750"
+        },
+        {
+          "source": "hackernews",
+          "url": null,
+          "label": "6개 출처(HN 2건·X 2건·GeekNews 2건) 교차검증, 영향력자 3건 인용"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "SKILL.md 파일 하나로 스킬을 정의하는 에이전트 스킬 공식 표준",
+      "summary_ko": "Claude가 전문 작업 성능을 높이기 위해 동적으로 불러오는 스킬(지침·스크립트·리소스 폴더)의 Anthropic 공식 레퍼런스 저장소. 스킬은 name·description YAML 프론트매터를 담은 SKILL.md 파일 하나로 정의되며, Claude Code(마켓플레이스 플러그인)·claude.ai(유료)·Claude API에서 모두 사용 가능하다. Creative & Design, Development, Enterprise, Document(PDF·DOCX·PPTX·XLSX) 카테고리 예시를 포함한다.",
+      "key_features": [
+        "SKILL.md 한 파일(name·description 프론트매터)로 스킬 정의",
+        "Creative/Development/Enterprise/Document 카테고리별 공식 예시",
+        "Claude Code·claude.ai·API 3개 진입점에서 동일 스킬 사용"
+      ],
+      "use_case": "자신만의 스킬을 표준 포맷으로 만들거나, 공식 예시 스킬(PDF·DOCX 처리 등)을 설치해 에이전트 능력을 확장하고 싶을 때.",
+      "install_hint": "/plugin marketplace add anthropics/skills && /plugin install document-skills@anthropic-agent-skills",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "공식표준",
+        "skill",
+        "anthropic",
+        "SKILL.md",
+        "agentskills.io"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 156252,
+          "actual": 156254,
+          "action": "corrected"
+        }
+      ],
+      "official": true
+    },
+    {
+      "id": "ruvnet/ruflo",
+      "name": "ruflo",
+      "owner": "ruvnet",
+      "title_ko": "Ruflo - 멀티 에이전트 메타 하네스",
+      "official_url": "https://github.com/ruvnet/ruflo",
+      "repo_url": "https://github.com/ruvnet/ruflo",
+      "category": "harness",
+      "score": 89.7,
+      "trend_score": 89.7,
+      "stars": 61913,
+      "velocity_7d": 1210,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "geeknews",
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/ruvnet/ruflo",
+          "label": "총 61K stars, 주간 +1,210 (prev 9위→3위, +6)"
+        },
+        {
+          "source": "geeknews",
+          "url": null,
+          "label": "X 2건 + Medium 2건 + GeekNews 1건 + 블로그 1건, 한국 커뮤니티 언급 + awesome 등재"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "100+ 에이전트 스웜을 조율 - 벡터DB 메모리로 brute force 대비 최대 4.7배 빠르게",
+      "summary_ko": "Claude Code에서 지능형 에이전트 스웜을 배포하고 워크플로우를 조율하는 선두 멀티 에이전트 메타 하네스. 코딩·테스트·보안·문서·아키텍처를 맡는 100+ 전문 에이전트가 스웜 토폴로지로 협력한다. HNSW 인덱싱 벡터DB(AgentDB)로 brute force 대비 약 1.9~4.7배 성능을 내며 과거 성공을 학습·재사용하고, Claude·GPT·Gemini·Cohere·Ollama를 자동 페일오버·라우팅한다.",
+      "key_features": [
+        "100+ 전문 에이전트 스웜 오케스트레이션",
+        "HNSW 벡터DB(AgentDB) 자기학습 메모리, brute force 대비 1.9~4.7배",
+        "Claude·GPT·Gemini·Cohere·Ollama 멀티 프로바이더 자동 라우팅·페일오버"
+      ],
+      "use_case": "단일 에이전트로 벅찬 복잡한 프로젝트에서 여러 에이전트를 자동 조율(테스트 생성·취약점 리뷰·문서 유지)하고 싶을 때.",
+      "install_hint": "npx ruflo@latest init wizard",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "멀티에이전트",
+        "harness",
+        "스웜",
+        "벡터DB",
+        "메타하네스"
+      ],
+      "thumbnail_url": "https://github.com/ruvnet.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 61914,
+          "actual": 61913,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "name": "claude-mem",
+      "owner": "thedotmack",
+      "title_ko": "Claude Mem - 세션 간 영구 메모리 스킬",
+      "official_url": "https://github.com/thedotmack/claude-mem",
+      "repo_url": "https://github.com/thedotmack/claude-mem",
+      "category": "skill",
+      "score": 86.7,
+      "trend_score": 86.7,
+      "stars": 84896,
+      "velocity_7d": 1295,
+      "source_count": 4,
+      "sources": [
+        "blog",
+        "medium",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "label": "총 84K stars, 주간 +1,295"
+        },
+        {
+          "source": "velog",
+          "url": null,
+          "label": "X 2건 + Medium 1건 + velog 1건 + 블로그 2건, 한국 커뮤니티 언급"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "툴 사용 관찰을 자동 캡처·의미 요약해 다음 세션에 자동 주입",
+      "summary_ko": "Claude Code용 영구 메모리 압축 시스템. 세션 중 툴 사용 관찰을 자동 캡처하고 의미론적 요약을 생성한 뒤, 다음 세션에 관련 컨텍스트를 자동으로 다시 주입해 세션 간 맥락이 끊기지 않게 한다. mem-search 스킬로 3-레이어 토큰 효율 워크플로우를 통해 프로젝트 이력을 자연어로 검색할 수 있고, localhost:37777에서 실시간 메모리 스트림을 보고 관찰 ID로 과거 기록을 인용할 수 있다.",
+      "key_features": [
+        "툴 사용 자동 캡처 → 의미 요약 → 다음 세션 자동 주입",
+        "mem-search 스킬로 3-레이어 토큰 효율 자연어 이력 검색",
+        "localhost:37777 실시간 메모리 뷰어 + 관찰 ID 인용"
+      ],
+      "use_case": "에이전트가 매 세션마다 같은 프로젝트 맥락을 다시 파악하느라 시간·토큰을 낭비할 때.",
+      "install_hint": "npx claude-mem install",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "메모리",
+        "skill",
+        "컨텍스트관리",
+        "세션영속",
+        "한국어언급"
+      ],
+      "thumbnail_url": "https://github.com/thedotmack.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 84893,
+          "actual": 84896,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "name": "ui-ux-pro-max-skill",
+      "owner": "nextlevelbuilder",
+      "title_ko": "UI UX Pro Max - 디자인 시스템 자동 생성 스킬",
+      "official_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "repo_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "skill",
+      "score": 81.9,
+      "trend_score": 81.9,
+      "stars": 97478,
+      "velocity_7d": 2887,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+          "label": "주간 +2,887 stars"
+        },
+        {
+          "source": "velog",
+          "url": null,
+          "label": "X 2건 + velog 1건 + 블로그 1건, 한국 커뮤니티 언급"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "67개 UI 스타일 + 161개 컬러 팔레트 + 22개 기술 스택 - 산업별 디자인 추론",
+      "summary_ko": "산업별 추론 룰로 전문 UI/UX 디자인 시스템을 자동 생성하는 AI 스킬. 패턴·스타일·컬러·타이포를 포함한 완전한 디자인 시스템을 161개 산업 카테고리 기준으로 만들어내며, Glassmorphism·Brutalism·Bento Grid·AI-Native UI 등 67개 UI 스타일과 161개 컬러 팔레트를 갖췄다. React·Next.js·Vue·SwiftUI·Flutter·shadcn/ui 등 22개 기술 스택을 지원한다.",
+      "key_features": [
+        "산업 카테고리 기반 완전한 디자인 시스템(패턴·컬러·타이포) 자동 생성",
+        "67개 UI 스타일(Glassmorphism·Brutalism·Bento Grid 등) + 161개 컬러 팔레트",
+        "React·Next.js·Vue·SwiftUI·Flutter·shadcn/ui 등 22개 기술 스택 지원"
+      ],
+      "use_case": "프로젝트 성격(예: 뷰티 스파 랜딩)에 맞는 일관된 디자인 시스템과 안티패턴 가이드를 빠르게 잡고 싶을 때.",
+      "install_hint": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어",
+        "🆕 New"
+      ],
+      "tags": [
+        "디자인",
+        "skill",
+        "UI/UX",
+        "디자인시스템",
+        "한국어언급"
+      ],
+      "thumbnail_url": "https://github.com/nextlevelbuilder.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 97476,
+          "actual": 97478,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "shanraisshan/claude-code-best-practice",
+      "name": "claude-code-best-practice",
+      "owner": "shanraisshan",
+      "title_ko": "Claude Code Best Practice - 실전 노하우 모음",
+      "official_url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "repo_url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "category": "skill",
+      "score": 81.3,
+      "trend_score": 81.3,
+      "stars": 61425,
+      "velocity_7d": 1846,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/shanraisshan/claude-code-best-practice",
+          "label": "주간 +1,846 stars"
+        },
+        {
+          "source": "medium",
+          "url": null,
+          "label": "X 2건 + Medium 1건 + 블로그 2건, 5개 출처 교차검증"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "바이브 코딩에서 에이전틱 엔지니어링으로 - 83개 팁 + 16개 워크플로우",
+      "summary_ko": "Claude Code로 에이전틱 애플리케이션을 만드는 모범 사례·워크플로우·아키텍처 패턴을 정리한 종합 가이드. 'Command → Agent → Skill' 패턴으로 복잡한 작업을 위임 가능한 단위로 쪼개는 법, Superpowers·BMAD-METHOD 등 16개 이상의 완성 워크플로우(Research→Plan→Execute→Review→Ship)를 다룬다. 프롬프팅·계획·컨텍스트 관리에 걸친 83개 실전 팁(예: '컨텍스트 로트는 30~40만 토큰 부근에서 시작')을 제공한다.",
+      "key_features": [
+        "서브에이전트·오케스트레이션: 'Command→Agent→Skill' 위임 패턴 가이드",
+        "16+ 완성 워크플로우(Superpowers·BMAD-METHOD 등) Research→Ship 매핑",
+        "프롬프팅·계획·컨텍스트 관리 83개 실전 팁"
+      ],
+      "use_case": "Claude Code를 본격적으로 쓰면서 흩어진 모범 사례와 워크플로우를 한곳에서 빠르게 참고하고 싶을 때.",
+      "install_hint": "git clone https://github.com/shanraisshan/claude-code-best-practice (워크플로우 표·팁 섹션 참고)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🆕 New"
+      ],
+      "tags": [
+        "모범사례",
+        "skill",
+        "워크플로우",
+        "서브에이전트",
+        "컨텍스트관리"
+      ],
+      "thumbnail_url": "https://github.com/shanraisshan.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 61424,
+          "actual": 61425,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/hermes-agent",
+      "name": "hermes-agent",
+      "owner": "NousResearch",
+      "title_ko": "Hermes Agent - 자기 개선형 CLI 에이전트",
+      "official_url": "https://github.com/NousResearch/hermes-agent",
+      "repo_url": "https://github.com/NousResearch/hermes-agent",
+      "category": "agent",
+      "score": 77,
+      "trend_score": 77,
+      "stars": 204965,
+      "velocity_7d": 5655,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "label": "총 204K stars, 주간 +5,655"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 4건 + 블로그 1건, 5개 출처 교차검증"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "복잡한 작업 후 스스로 스킬을 만들고 기억한다 - $5 VPS부터 서버리스까지",
+      "summary_ko": "내장 학습 루프로 경험에서 스킬을 만들고 영구 메모리를 유지하며 사용할수록 똑똑해지는 자기 개선형 AI 에이전트(NousResearch 제작). 에이전트가 큐레이션한 메모리와 주기적 넛지로 닫힌 학습 루프를 돌리고, Telegram·Discord·Slack·WhatsApp·Signal·CLI 단일 게이트웨이로 접근한다. $5 VPS부터 서버리스까지 어디서나 돌아가며 Nous Portal·OpenRouter·OpenAI 등 락인 없는 모델 전환(300+ 모델), 40+ 도구, 내장 크론 스케줄러를 지원한다.",
+      "key_features": [
+        "닫힌 학습 루프: 복잡한 작업 후 자율 스킬 생성 + 에이전트 큐레이션 메모리",
+        "Telegram·Discord·Slack·WhatsApp·Signal·CLI 멀티 채널 단일 게이트웨이",
+        "300+ 모델 락인 없는 전환 + 40+ 도구 + 내장 크론 스케줄러"
+      ],
+      "use_case": "저렴한 VPS나 서버리스에서 개인 맞춤형 AI 에이전트를 돌리고 다양한 메신저로 접근하며 자동화(일일 리포트·백업)하고 싶을 때.",
+      "install_hint": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🆕 New"
+      ],
+      "tags": [
+        "self-improving",
+        "agent",
+        "멀티채널",
+        "persistent-memory",
+        "300+모델"
+      ],
+      "thumbnail_url": "https://github.com/NousResearch.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 204965,
+          "actual": 204965,
+          "action": "unchanged"
+        },
+        {
+          "field": "models",
+          "claimed": "200+ (prev curation)",
+          "actual": "300+ (README)",
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "farion1231/cc-switch",
+      "name": "cc-switch",
+      "owner": "farion1231",
+      "title_ko": "CC Switch - 멀티 CLI 프로바이더 전환 데스크톱 앱",
+      "official_url": "https://github.com/farion1231/cc-switch",
+      "repo_url": "https://github.com/farion1231/cc-switch",
+      "category": "skill",
+      "score": 76.8,
+      "trend_score": 76.8,
+      "stars": 109945,
+      "velocity_7d": 4542,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/farion1231/cc-switch",
+          "label": "총 109K stars, 주간 +4,542"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 4건 + 블로그 1건, 5개 출처 교차검증"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "설정 파일 수동 편집 끝 - 50+ 프로바이더 프리셋을 트레이에서 원클릭 전환",
+      "summary_ko": "Claude Code·Codex·OpenCode·OpenClaw·Gemini CLI·Hermes Agent를 위한 크로스플랫폼 데스크톱 올인원 어시스턴트. 여러 AI 도구의 설정 파일을 수동으로 고치지 않고도, 50+ 프로바이더 프리셋을 시스템 트레이에서 원클릭으로 전환한다. 통합 MCP 패널로 Claude·Codex·Gemini·OpenCode·Hermes의 MCP 서버를 양방향 동기화하고, Dropbox·OneDrive·iCloud·WebDAV로 설정을 기기 간 클라우드 동기화한다.",
+      "key_features": [
+        "50+ 프로바이더 프리셋 트레이 원클릭 전환",
+        "통합 MCP 패널로 5개 CLI의 MCP 서버 양방향 동기화",
+        "Dropbox·OneDrive·iCloud·WebDAV 설정 클라우드 동기화"
+      ],
+      "use_case": "공식 Claude·AWS Bedrock 릴레이·커뮤니티 프로바이더를 오가며 여러 CLI 설정을 일일이 편집하는 게 번거로울 때.",
+      "install_hint": "brew install --cask cc-switch (Windows/Linux는 Releases에서 설치)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🆕 New"
+      ],
+      "tags": [
+        "프로바이더관리",
+        "데스크톱앱",
+        "MCP",
+        "크로스플랫폼",
+        "skill"
+      ],
+      "thumbnail_url": "https://github.com/farion1231.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 109944,
+          "actual": 109945,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "kepano/obsidian-skills",
+      "name": "obsidian-skills",
+      "owner": "kepano",
+      "title_ko": "Obsidian Skills - 옵시디언용 에이전트 스킬 5종",
+      "official_url": "https://github.com/kepano/obsidian-skills",
+      "repo_url": "https://github.com/kepano/obsidian-skills",
+      "category": "skill",
+      "score": 70,
+      "trend_score": 70,
+      "stars": 38699,
+      "velocity_7d": 1532,
+      "source_count": 2,
+      "sources": [
+        "medium",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/kepano/obsidian-skills",
+          "label": "총 38K stars, 주간 +1,532"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "X 3건 + Medium 1건, 영향력자 2건 인용"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "Obsidian 창립자(Kepano)가 만든 마크다운·Bases·Canvas 스킬",
+      "summary_ko": "Obsidian 창립자 Kepano가 직접 만든 AI 에이전트용 스킬 5종. 위키링크·임베드·콜아웃·프로퍼티를 다루는 Obsidian Flavored Markdown, 뷰·필터·수식이 있는 Bases, 노드·엣지·그룹의 JSON Canvas, 플러그인·테마 개발까지 가능한 Obsidian CLI, 웹페이지를 깔끔한 마크다운으로 추출해 토큰을 아끼는 Defuddle을 포함한다. Agent Skills 표준을 따라 Claude Code·Codex·OpenCode 등에서 바로 쓸 수 있다.",
+      "key_features": [
+        "5개 스킬: obsidian-markdown·obsidian-bases·json-canvas·obsidian-cli·defuddle",
+        "위키링크·임베드·콜아웃·프로퍼티 등 Obsidian 고유 포맷 완전 지원",
+        "defuddle로 웹페이지를 클린 마크다운으로 추출해 토큰 절약"
+      ],
+      "use_case": "Obsidian으로 노트·지식 관리를 하면서 에이전트로 노트 생성·Bases 뷰 구축·Canvas 지식맵을 자동화하고 싶을 때.",
+      "install_hint": "npx skills add https://github.com/kepano/obsidian-skills",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "Obsidian",
+        "skill",
+        "마크다운",
+        "지식관리",
+        "Kepano"
+      ],
+      "thumbnail_url": "https://github.com/kepano.png",
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 38699,
+          "actual": 38699,
+          "action": "unchanged"
+        }
+      ]
+    }
+  ]
+}
