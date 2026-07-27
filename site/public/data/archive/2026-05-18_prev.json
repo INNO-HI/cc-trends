@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-11T15:30:00Z",
-  "version": "2026-W20",
+  "version": "2026-05-18",
   "rising": [
     {
       "id": "anthropics/claude-code",
@@ -14,19 +14,50 @@
       ],
       "use_case": "AI 코딩 에이전트를 처음 도입하거나, 확장 생태계를 활용해 개발 워크플로우를 자동화하고 싶을 때",
       "install_hint": "curl -fsSL https://claude.ai/install.sh | bash",
-      "tags": ["agent", "official", "anthropic", "terminal", "core-platform"],
+      "tags": [
+        "agent",
+        "official",
+        "anthropic",
+        "terminal",
+        "core-platform"
+      ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/claude-code",
       "stars": 122294,
       "category": "agent",
       "trend_score": 91.7,
-      "badges": ["🔥 Rising", "⭐ 100K+", "🔗 Cross-verified", "🏢 Official"],
+      "badges": [
+        "🔥 Rising",
+        "⭐ 100K+",
+        "🔗 Cross-verified",
+        "🏢 Official"
+      ],
       "week_change": "up",
-      "sources": ["devto", "geeknews", "github", "hackernews", "other", "velog", "x"],
+      "sources": [
+        "devto",
+        "geeknews",
+        "github",
+        "hackernews",
+        "other",
+        "velog",
+        "x"
+      ],
       "evidence": [
-        {"source": "hackernews", "url": "", "label": "HN 프론트페이지 942 pts"},
-        {"source": "github", "url": "https://github.com/anthropics/claude-code", "label": "7일간 +4,094 stars"},
-        {"source": "community", "url": "", "label": "7개 소스 15건 언급 (devto, geeknews, HN, velog, X 등)"}
+        {
+          "source": "hackernews",
+          "url": "",
+          "label": "HN 프론트페이지 942 pts"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/claude-code",
+          "label": "7일간 +4,094 stars"
+        },
+        {
+          "source": "community",
+          "url": "",
+          "label": "7개 소스 15건 언급 (devto, geeknews, HN, velog, X 등)"
+        }
       ]
     },
     {
@@ -41,18 +72,42 @@
       ],
       "use_case": "에이전트를 수 시간 무인 실행하면서 품질 회귀 없이 진행 상태를 추적하고 싶을 때",
       "install_hint": "cp -r claude-code-config/.claude /path/to/your/project/ && chmod +x .claude/hooks/*.sh",
-      "tags": ["agent", "harness-pattern", "long-running", "hooks", "official"],
+      "tags": [
+        "agent",
+        "harness-pattern",
+        "long-running",
+        "hooks",
+        "official"
+      ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/cwc-long-running-agents",
       "stars": 252,
       "category": "agent",
       "trend_score": 88.2,
-      "badges": ["🔥 Rising", "🆕 New this week", "🔗 Cross-verified", "🏢 Official"],
+      "badges": [
+        "🔥 Rising",
+        "🆕 New this week",
+        "🔗 Cross-verified",
+        "🏢 Official"
+      ],
       "week_change": "new",
-      "sources": ["geeknews", "github", "other", "x"],
+      "sources": [
+        "geeknews",
+        "github",
+        "other",
+        "x"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/anthropics/cwc-long-running-agents", "label": "5일 만에 252 stars (5/6 생성)"},
-        {"source": "community", "url": "", "label": "5건 언급 (geeknews, X 등)"}
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/cwc-long-running-agents",
+          "label": "5일 만에 252 stars (5/6 생성)"
+        },
+        {
+          "source": "community",
+          "url": "",
+          "label": "5건 언급 (geeknews, X 등)"
+        }
       ]
     },
     {
@@ -67,17 +122,32 @@
       ],
       "use_case": "프로덕션급 에이전트 시스템을 설계할 때 Claude Code의 아키텍처 패턴을 참고하고 싶을 때",
       "install_hint": "git clone https://github.com/VILA-Lab/Dive-into-Claude-Code (연구 자료, 설치 불필요)",
-      "tags": ["harness", "research", "architecture", "academic", "security"],
+      "tags": [
+        "harness",
+        "research",
+        "architecture",
+        "academic",
+        "security"
+      ],
       "thumbnail_url": "https://github.com/VILA-Lab.png",
       "official_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
       "stars": 1091,
       "category": "harness",
       "trend_score": 61.5,
-      "badges": ["🔥 Rising", "⭐ 1K+"],
+      "badges": [
+        "🔥 Rising",
+        "⭐ 1K+"
+      ],
       "week_change": "new",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/VILA-Lab/Dive-into-Claude-Code", "label": "30일간 1,091 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+          "label": "30일간 1,091 stars"
+        }
       ]
     }
   ],
@@ -94,17 +164,31 @@
       ],
       "use_case": "장기 프로젝트에서 이전 세션의 결정과 맥락을 자동으로 이어가고 싶을 때",
       "install_hint": "npx claude-mem install",
-      "tags": ["skill", "memory", "context-management", "token-optimization"],
+      "tags": [
+        "skill",
+        "memory",
+        "context-management",
+        "token-optimization"
+      ],
       "thumbnail_url": "https://github.com/thedotmack.png",
       "official_url": "https://github.com/thedotmack/claude-mem",
       "stars": 74513,
       "category": "skill",
-      "trend_score": 64.0,
-      "badges": ["🏛️ Classic", "⭐ 50K+"],
+      "trend_score": 64,
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 50K+"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/thedotmack/claude-mem", "label": "7일간 +3,013 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "label": "7일간 +3,013 stars"
+        }
       ]
     },
     {
@@ -119,17 +203,31 @@
       ],
       "use_case": "Claude Code를 프로덕션 수준으로 최적화하고 체계적 하네스를 한 번에 갖추고 싶을 때",
       "install_hint": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
-      "tags": ["harness", "optimization", "security", "all-in-one"],
+      "tags": [
+        "harness",
+        "optimization",
+        "security",
+        "all-in-one"
+      ],
       "thumbnail_url": "https://github.com/affaan-m.png",
       "official_url": "https://github.com/affaan-m/everything-claude-code",
       "stars": 178324,
       "category": "harness",
       "trend_score": 63.8,
-      "badges": ["🏛️ Classic", "⭐ 100K+"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 100K+"
+      ],
       "week_change": "down",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/affaan-m/everything-claude-code", "label": "7일간 +5,624 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/affaan-m/everything-claude-code",
+          "label": "7일간 +5,624 stars"
+        }
       ]
     },
     {
@@ -144,17 +242,32 @@
       ],
       "use_case": "아키텍처, 보안, 인프라 등 도메인별 전문 에이전트를 조합해 복잡한 워크플로우를 자동화하고 싶을 때",
       "install_hint": "/plugin marketplace add wshobson/agents",
-      "tags": ["agent", "multi-agent", "orchestration", "marketplace", "plugin"],
+      "tags": [
+        "agent",
+        "multi-agent",
+        "orchestration",
+        "marketplace",
+        "plugin"
+      ],
       "thumbnail_url": "https://github.com/wshobson.png",
       "official_url": "https://github.com/wshobson/agents",
       "stars": 35140,
       "category": "agent",
       "trend_score": 63.7,
-      "badges": ["🏛️ Classic", "⭐ 10K+"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/wshobson/agents", "label": "7일간 +440 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/wshobson/agents",
+          "label": "7일간 +440 stars"
+        }
       ]
     },
     {
@@ -169,17 +282,31 @@
       ],
       "use_case": "긴 개발 세션에서 에이전트의 컨텍스트 품질이 떨어지는 문제를 구조적으로 해결하고 싶을 때",
       "install_hint": "npx get-shit-done-cc@latest",
-      "tags": ["harness", "context-engineering", "meta-prompting", "spec-driven"],
+      "tags": [
+        "harness",
+        "context-engineering",
+        "meta-prompting",
+        "spec-driven"
+      ],
       "thumbnail_url": "https://github.com/gsd-build.png",
       "official_url": "https://github.com/gsd-build/get-shit-done",
       "stars": 61354,
       "category": "harness",
       "trend_score": 63.6,
-      "badges": ["🏛️ Classic", "⭐ 50K+"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 50K+"
+      ],
       "week_change": "new",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/gsd-build/get-shit-done", "label": "61,354 stars 누적"}
+        {
+          "source": "github",
+          "url": "https://github.com/gsd-build/get-shit-done",
+          "label": "61,354 stars 누적"
+        }
       ]
     },
     {
@@ -194,17 +321,33 @@
       ],
       "use_case": "프론트엔드 개발 중 에이전트가 실제 브라우저에서 UI를 검증하고 성능을 측정하게 하고 싶을 때",
       "install_hint": "npx -y chrome-devtools-mcp@latest",
-      "tags": ["mcp", "chrome", "devtools", "browser-automation", "debugging"],
+      "tags": [
+        "mcp",
+        "chrome",
+        "devtools",
+        "browser-automation",
+        "debugging"
+      ],
       "thumbnail_url": "https://github.com/ChromeDevTools.png",
       "official_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "stars": 39108,
       "category": "mcp",
       "trend_score": 63.4,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🔌 MCP"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🔌 MCP"
+      ],
       "week_change": "up",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "label": "7일간 +1,108 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "label": "7일간 +1,108 stars"
+        }
       ]
     },
     {
@@ -219,17 +362,31 @@
       ],
       "use_case": "특정 기술이나 트렌드의 최근 30일간 커뮤니티 반응을 빠르게 조사하고 싶을 때",
       "install_hint": "/plugin marketplace add mvanhorn/last30days-skill",
-      "tags": ["skill", "research", "multi-platform", "social-search"],
+      "tags": [
+        "skill",
+        "research",
+        "multi-platform",
+        "social-search"
+      ],
       "thumbnail_url": "https://github.com/mvanhorn.png",
       "official_url": "https://github.com/mvanhorn/last30days-skill",
       "stars": 25368,
       "category": "skill",
       "trend_score": 63.4,
-      "badges": ["🏛️ Classic", "⭐ 10K+"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/mvanhorn/last30days-skill", "label": "7일간 +768 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "label": "7일간 +768 stars"
+        }
       ]
     },
     {
@@ -244,17 +401,34 @@
       ],
       "use_case": "Claude Code에서 GitHub 이슈 생성, PR 리뷰, CI/CD 관리를 자연어로 처리하고 싶을 때",
       "install_hint": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server",
-      "tags": ["mcp", "github", "official", "ci-cd", "enterprise"],
+      "tags": [
+        "mcp",
+        "github",
+        "official",
+        "ci-cd",
+        "enterprise"
+      ],
       "thumbnail_url": "https://github.com/github.png",
       "official_url": "https://github.com/github/github-mcp-server",
       "stars": 29696,
       "category": "mcp",
       "trend_score": 63.1,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🔌 MCP", "🏢 Official"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🔌 MCP",
+        "🏢 Official"
+      ],
       "week_change": "up",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/github/github-mcp-server", "label": "7일간 +196 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/github/github-mcp-server",
+          "label": "7일간 +196 stars"
+        }
       ]
     },
     {
@@ -269,17 +443,32 @@
       ],
       "use_case": "특정 벤더에 묶이지 않고 상황에 맞는 LLM을 골라 쓰는 코딩 에이전트가 필요할 때",
       "install_hint": "curl -fsSL https://opencode.ai/install | bash",
-      "tags": ["agent", "open-source", "multi-model", "terminal", "provider-agnostic"],
+      "tags": [
+        "agent",
+        "open-source",
+        "multi-model",
+        "terminal",
+        "provider-agnostic"
+      ],
       "thumbnail_url": "https://github.com/anomalyco.png",
       "official_url": "https://github.com/anomalyco/opencode",
       "stars": 158032,
       "category": "agent",
-      "trend_score": 63.0,
-      "badges": ["🏛️ Classic", "⭐ 100K+"],
+      "trend_score": 63,
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 100K+"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/anomalyco/opencode", "label": "7일간 +4,032 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/anomalyco/opencode",
+          "label": "7일간 +4,032 stars"
+        }
       ]
     },
     {
@@ -294,17 +483,32 @@
       ],
       "use_case": "n8n으로 업무 자동화를 구축하면서 노드 설정을 자연어로 빠르게 만들고 싶을 때",
       "install_hint": "dashboard.n8n-mcp.com (호스팅) 또는 npx n8n-mcp (셀프호스팅)",
-      "tags": ["mcp", "n8n", "workflow-automation", "no-code"],
+      "tags": [
+        "mcp",
+        "n8n",
+        "workflow-automation",
+        "no-code"
+      ],
       "thumbnail_url": "https://github.com/czlonkowski.png",
       "official_url": "https://github.com/czlonkowski/n8n-mcp",
       "stars": 20516,
       "category": "mcp",
       "trend_score": 62.8,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🔌 MCP"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🔌 MCP"
+      ],
       "week_change": "up",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/czlonkowski/n8n-mcp", "label": "7일간 +1,016 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/czlonkowski/n8n-mcp",
+          "label": "7일간 +1,016 stars"
+        }
       ]
     },
     {
@@ -319,17 +523,31 @@
       ],
       "use_case": "Claude Cowork 같은 데스크톱 AI 워크플로우를 벤더 종속 없이 로컬에서 운영하고 싶을 때",
       "install_hint": "npm install -g openwork-orchestrator",
-      "tags": ["agent", "desktop-app", "local-first", "open-source"],
+      "tags": [
+        "agent",
+        "desktop-app",
+        "local-first",
+        "open-source"
+      ],
       "thumbnail_url": "https://github.com/different-ai.png",
       "official_url": "https://github.com/different-ai/openwork",
       "stars": 15009,
       "category": "agent",
       "trend_score": 62.8,
-      "badges": ["🏛️ Classic", "⭐ 10K+"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+"
+      ],
       "week_change": "up",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/different-ai/openwork", "label": "7일간 +409 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/different-ai/openwork",
+          "label": "7일간 +409 stars"
+        }
       ]
     },
     {
@@ -344,17 +562,33 @@
       ],
       "use_case": "대규모 코드베이스에서 에이전트가 관련 코드만 정확히 참조하게 하고 싶을 때",
       "install_hint": "npx @zilliz/claude-context-mcp@latest",
-      "tags": ["mcp", "code-search", "vector-db", "semantic-search", "token-optimization"],
+      "tags": [
+        "mcp",
+        "code-search",
+        "vector-db",
+        "semantic-search",
+        "token-optimization"
+      ],
       "thumbnail_url": "https://github.com/zilliztech.png",
       "official_url": "https://github.com/zilliztech/claude-context",
       "stars": 10922,
       "category": "mcp",
       "trend_score": 62.8,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🔌 MCP"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🔌 MCP"
+      ],
       "week_change": "up",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/zilliztech/claude-context", "label": "7일간 +322 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/zilliztech/claude-context",
+          "label": "7일간 +322 stars"
+        }
       ]
     },
     {
@@ -369,17 +603,32 @@
       ],
       "use_case": "프로젝트에 맞는 스킬을 공식 팀 제작 여부까지 확인하며 찾고 싶을 때",
       "install_hint": "GitHub README 참조 (큐레이션 리스트)",
-      "tags": ["skill", "awesome-list", "skill-directory", "multi-agent"],
+      "tags": [
+        "skill",
+        "awesome-list",
+        "skill-directory",
+        "multi-agent"
+      ],
       "thumbnail_url": "https://github.com/VoltAgent.png",
       "official_url": "https://github.com/VoltAgent/awesome-agent-skills",
       "stars": 21135,
       "category": "skill",
       "trend_score": 62.4,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🏆 awesome"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🏆 awesome"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/VoltAgent/awesome-agent-skills", "label": "7일간 +1,135 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/VoltAgent/awesome-agent-skills",
+          "label": "7일간 +1,135 stars"
+        }
       ]
     },
     {
@@ -394,17 +643,33 @@
       ],
       "use_case": "Claude가 텍스트만 생성하는 게 아니라 실제 SaaS 앱에서 작업을 실행하게 만들고 싶을 때",
       "install_hint": "claude --plugin-dir ./connect-apps-plugin && /connect-apps:setup",
-      "tags": ["skill", "awesome-list", "saas-integration", "composio", "automation"],
+      "tags": [
+        "skill",
+        "awesome-list",
+        "saas-integration",
+        "composio",
+        "automation"
+      ],
       "thumbnail_url": "https://github.com/ComposioHQ.png",
       "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "stars": 59092,
       "category": "skill",
       "trend_score": 62.3,
-      "badges": ["🏛️ Classic", "⭐ 50K+", "🏆 awesome"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 50K+",
+        "🏆 awesome"
+      ],
       "week_change": "same",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/ComposioHQ/awesome-claude-skills", "label": "7일간 +1,392 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "label": "7일간 +1,392 stars"
+        }
       ]
     },
     {
@@ -419,17 +684,32 @@
       ],
       "use_case": "Claude Code 생태계의 전체 그림을 파악하고 카테고리별 대표 도구를 찾고 싶을 때",
       "install_hint": "GitHub README 참조 (큐레이션 리스트)",
-      "tags": ["skill", "awesome-list", "ecosystem", "curation"],
+      "tags": [
+        "skill",
+        "awesome-list",
+        "ecosystem",
+        "curation"
+      ],
       "thumbnail_url": "https://github.com/hesreallyhim.png",
       "official_url": "https://github.com/hesreallyhim/awesome-claude-code",
       "stars": 43278,
       "category": "skill",
       "trend_score": 60.3,
-      "badges": ["🏛️ Classic", "⭐ 10K+", "🏆 awesome"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 10K+",
+        "🏆 awesome"
+      ],
       "week_change": "down",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/hesreallyhim/awesome-claude-code", "label": "7일간 +878 stars"}
+        {
+          "source": "github",
+          "url": "https://github.com/hesreallyhim/awesome-claude-code",
+          "label": "7일간 +878 stars"
+        }
       ]
     },
     {
@@ -444,17 +724,33 @@
       ],
       "use_case": "공식 스킬의 구조를 참고해 자신만의 Claude 스킬을 만들거나, 문서 생성 스킬을 바로 사용하고 싶을 때",
       "install_hint": "/plugin marketplace add anthropics/skills",
-      "tags": ["skill", "official", "anthropic", "template", "reference"],
+      "tags": [
+        "skill",
+        "official",
+        "anthropic",
+        "template",
+        "reference"
+      ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/skills",
       "stars": 131686,
       "category": "skill",
       "trend_score": 59.7,
-      "badges": ["🏛️ Classic", "⭐ 100K+", "🏢 Official"],
+      "badges": [
+        "🏛️ Classic",
+        "⭐ 100K+",
+        "🏢 Official"
+      ],
       "week_change": "new",
-      "sources": ["github"],
+      "sources": [
+        "github"
+      ],
       "evidence": [
-        {"source": "github", "url": "https://github.com/anthropics/skills", "label": "131,686 stars 누적 (Anthropic 공식)"}
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/skills",
+          "label": "131,686 stars 누적 (Anthropic 공식)"
+        }
       ]
     }
   ],

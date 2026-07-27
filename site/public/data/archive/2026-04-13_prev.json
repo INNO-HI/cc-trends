@@ -13,12 +13,19 @@
       ],
       "use_case": "Cursor·Copilot 같은 에디터 IDE 보조 없이 터미널에서 장시간 자율 작업을 돌리고 싶을 때.",
       "install_hint": "curl -fsSL https://claude.ai/install.sh | bash (또는 brew install --cask claude-code)",
-      "tags": ["tool", "cli", "official", "anthropic"],
+      "tags": [
+        "tool",
+        "cli",
+        "official",
+        "anthropic"
+      ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/claude-code",
       "stars": 113088,
       "category": "tool",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "anthropics/skills",
@@ -32,12 +39,19 @@
       ],
       "use_case": "스킬을 처음 만들거나, 검증된 포맷·패턴을 따라가고 싶을 때 기준점.",
       "install_hint": "/plugin marketplace add anthropics/skills",
-      "tags": ["skill", "official", "anthropic", "reference"],
+      "tags": [
+        "skill",
+        "official",
+        "anthropic",
+        "reference"
+      ],
       "thumbnail_url": "https://github.com/anthropics.png",
       "official_url": "https://github.com/anthropics/skills",
       "stars": 115997,
       "category": "skill",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "obra/superpowers",
@@ -51,12 +65,19 @@
       ],
       "use_case": "에이전트가 잘못된 방향으로 질주하는 걸 막고, 설계·TDD·리뷰를 프로세스로 묶고 싶을 때.",
       "install_hint": "/plugin install superpowers@claude-plugins-official",
-      "tags": ["skill", "tdd", "workflow", "subagent"],
+      "tags": [
+        "skill",
+        "tdd",
+        "workflow",
+        "subagent"
+      ],
       "thumbnail_url": "https://github.com/obra.png",
       "official_url": "https://github.com/obra/superpowers",
       "stars": 148786,
       "category": "skill",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "github/spec-kit",
@@ -70,12 +91,19 @@
       ],
       "use_case": "매 프로젝트마다 임시방편 프롬프트 대신, 재현 가능한 스펙 기반 개발 루틴을 깔고 싶을 때.",
       "install_hint": "uv tool install specify-cli --from git+https://github.com/github/spec-kit.git",
-      "tags": ["harness", "spec-driven", "github", "workflow"],
+      "tags": [
+        "harness",
+        "spec-driven",
+        "github",
+        "workflow"
+      ],
       "thumbnail_url": "https://github.com/github.png",
       "official_url": "https://github.com/github/spec-kit",
       "stars": 87400,
       "category": "harness",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "Yeachan-Heo/oh-my-claudecode",
@@ -89,12 +117,20 @@
       ],
       "use_case": "Claude Code 튜닝 시간을 줄이고, 팀 단위 에이전트 협업을 즉시 돌리고 싶을 때.",
       "install_hint": "/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "tags": ["harness", "multi-agent", "orchestration", "korean"],
+      "tags": [
+        "harness",
+        "multi-agent",
+        "orchestration",
+        "korean"
+      ],
       "thumbnail_url": "https://github.com/Yeachan-Heo.png",
       "official_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
       "stars": 28131,
       "category": "harness",
-      "badges": ["🔥 Rising", "🇰🇷 한국어"]
+      "badges": [
+        "🔥 Rising",
+        "🇰🇷 한국어"
+      ]
     },
     {
       "id": "outworked/outworked",
@@ -108,12 +144,20 @@
       ],
       "use_case": "멀티에이전트 작동을 시각적으로 관찰하고, 크론·메시지 채널로 일상 업무에 묶고 싶을 때(Mac 전용).",
       "install_hint": "macOS dmg 다운로드 (Outworked-0.4.3-arm64.dmg)",
-      "tags": ["harness", "desktop", "multi-agent", "mcp", "macos"],
+      "tags": [
+        "harness",
+        "desktop",
+        "multi-agent",
+        "mcp",
+        "macos"
+      ],
       "thumbnail_url": "https://github.com/outworked.png",
       "official_url": "https://github.com/outworked/outworked",
       "stars": 263,
       "category": "harness",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "Intrect-io/OpenSwarm",
@@ -127,12 +171,19 @@
       ],
       "use_case": "티켓 기반 지속적 작업을 사람 개입 최소화로 돌리고, 로컬 LLM까지 섞어 쓰고 싶은 팀.",
       "install_hint": "npm install -g @intrect/openswarm",
-      "tags": ["harness", "multi-agent", "linear", "discord"],
+      "tags": [
+        "harness",
+        "multi-agent",
+        "linear",
+        "discord"
+      ],
       "thumbnail_url": "https://github.com/Intrect-io.png",
       "official_url": "https://github.com/Intrect-io/OpenSwarm",
       "stars": 440,
       "category": "harness",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "vercel-labs/agent-skills",
@@ -146,12 +197,20 @@
       ],
       "use_case": "Next.js·React 코드를 만드는 에이전트에 Vercel 수준의 품질 가드레일을 걸고 싶을 때.",
       "install_hint": "npx skills add vercel-labs/agent-skills",
-      "tags": ["skill", "vercel", "react", "nextjs", "official"],
+      "tags": [
+        "skill",
+        "vercel",
+        "react",
+        "nextjs",
+        "official"
+      ],
       "thumbnail_url": "https://github.com/vercel-labs.png",
       "official_url": "https://github.com/vercel-labs/agent-skills",
       "stars": 24966,
       "category": "skill",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     },
     {
       "id": "revfactory/harness",
@@ -165,12 +224,21 @@
       ],
       "use_case": "새 도메인마다 에이전트·스킬을 바닥부터 짜지 않고, 구조화된 팀을 한 번에 뽑아낼 때.",
       "install_hint": "/plugin marketplace add revfactory/harness 후 /plugin install harness@harness",
-      "tags": ["harness", "meta-skill", "agent-team", "korean"],
+      "tags": [
+        "harness",
+        "meta-skill",
+        "agent-team",
+        "korean"
+      ],
       "thumbnail_url": "https://github.com/revfactory.png",
       "official_url": "https://github.com/revfactory/harness",
       "stars": 2382,
       "category": "harness",
-      "badges": ["🔥 Rising", "🇰🇷 한국어", "🆕 신상"]
+      "badges": [
+        "🔥 Rising",
+        "🇰🇷 한국어",
+        "🆕 신상"
+      ]
     },
     {
       "id": "BandarLabs/open-skills",
@@ -184,12 +252,21 @@
       ],
       "use_case": "금융·의료 문서처럼 외부 업로드가 부담스러운 데이터에 스킬을 적용해야 할 때.",
       "install_hint": "git clone https://github.com/BandarLabs/open-skills.git && ./install.sh",
-      "tags": ["skill", "mcp", "local", "privacy", "macos"],
+      "tags": [
+        "skill",
+        "mcp",
+        "local",
+        "privacy",
+        "macos"
+      ],
       "thumbnail_url": "https://github.com/BandarLabs.png",
       "official_url": "https://github.com/BandarLabs/open-skills",
       "stars": 400,
       "category": "skill",
-      "badges": ["🔥 Rising", "🔌 MCP"]
+      "badges": [
+        "🔥 Rising",
+        "🔌 MCP"
+      ]
     },
     {
       "id": "simple10/agents-observe",
@@ -203,12 +280,20 @@
       ],
       "use_case": "멀티에이전트 실행이 블랙박스처럼 느껴지고, 실패 구간을 역추적해야 할 때.",
       "install_hint": "claude plugin marketplace add simple10/agents-observe && claude plugin install agents-observe",
-      "tags": ["harness", "observability", "dashboard", "mcp"],
+      "tags": [
+        "harness",
+        "observability",
+        "dashboard",
+        "mcp"
+      ],
       "thumbnail_url": "https://github.com/simple10.png",
       "official_url": "https://github.com/simple10/agents-observe",
       "stars": 405,
       "category": "harness",
-      "badges": ["🔥 Rising", "🔌 MCP"]
+      "badges": [
+        "🔥 Rising",
+        "🔌 MCP"
+      ]
     },
     {
       "id": "htdt/godogen",
@@ -222,12 +307,19 @@
       ],
       "use_case": "2D·3D 프로토타입 게임을 하룻밤에 굴려보고 싶을 때, 또는 스킬 파이프라인 구조 사례로.",
       "install_hint": "./publish.sh ~/my-game (Godot 4·Claude Code·GOOGLE/XAI/TRIPO3D API 키 필요)",
-      "tags": ["skill", "godot", "game", "pipeline"],
+      "tags": [
+        "skill",
+        "godot",
+        "game",
+        "pipeline"
+      ],
       "thumbnail_url": "https://github.com/htdt.png",
       "official_url": "https://github.com/htdt/godogen",
       "stars": 2769,
       "category": "skill",
-      "badges": ["🔥 Rising"]
+      "badges": [
+        "🔥 Rising"
+      ]
     }
   ],
   "classic": [
@@ -243,12 +335,20 @@
       ],
       "use_case": "셋업 고민 없이 검증된 에이전트 운영 스택을 통째로 받아 가고 싶을 때.",
       "install_hint": "npm i -g ecc-universal (또는 GitHub App: ecc-tools)",
-      "tags": ["harness", "production", "security", "memory"],
+      "tags": [
+        "harness",
+        "production",
+        "security",
+        "memory"
+      ],
       "thumbnail_url": "https://github.com/affaan-m.png",
       "official_url": "https://github.com/affaan-m/everything-claude-code",
       "stars": 153004,
       "category": "harness",
-      "badges": ["⭐ Classic", "🇰🇷 한국어"]
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ]
     },
     {
       "id": "x1xhlol/system-prompts-and-models-of-ai-tools",
@@ -261,12 +361,20 @@
         "AI 보안·프롬프트 유출 연구 레퍼런스"
       ],
       "use_case": "내 에이전트 프롬프트를 설계할 때 업계 표준 패턴을 비교·벤치마크하고 싶을 때.",
-      "tags": ["awesome", "prompt", "reference", "research"],
+      "tags": [
+        "awesome",
+        "prompt",
+        "reference",
+        "research"
+      ],
       "thumbnail_url": "https://github.com/x1xhlol.png",
       "official_url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
       "stars": 135029,
       "category": "awesome-list",
-      "badges": ["⭐ Classic", "🏆 awesome"]
+      "badges": [
+        "⭐ Classic",
+        "🏆 awesome"
+      ]
     },
     {
       "id": "garrytan/gstack",
@@ -280,12 +388,19 @@
       ],
       "use_case": "혼자서 팀급 품질로 출시까지 밀어붙이고 싶은 1인 창업자·스태프 엔지니어.",
       "install_hint": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
-      "tags": ["harness", "skill", "founder", "workflow"],
+      "tags": [
+        "harness",
+        "skill",
+        "founder",
+        "workflow"
+      ],
       "thumbnail_url": "https://github.com/garrytan.png",
       "official_url": "https://github.com/garrytan/gstack",
       "stars": 70813,
       "category": "harness",
-      "badges": ["⭐ Classic"]
+      "badges": [
+        "⭐ Classic"
+      ]
     },
     {
       "id": "NousResearch/hermes-agent",
@@ -299,12 +414,19 @@
       ],
       "use_case": "노트북을 끄고도 스마트폰에서 지시·피드백을 주고받는 개인 에이전트를 원할 때.",
       "install_hint": "curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash",
-      "tags": ["agent", "self-improving", "messaging", "cron"],
+      "tags": [
+        "agent",
+        "self-improving",
+        "messaging",
+        "cron"
+      ],
       "thumbnail_url": "https://github.com/NousResearch.png",
       "official_url": "https://github.com/NousResearch/hermes-agent",
       "stars": 69390,
       "category": "agent",
-      "badges": ["⭐ Classic"]
+      "badges": [
+        "⭐ Classic"
+      ]
     },
     {
       "id": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -318,12 +440,19 @@
       ],
       "use_case": "랜딩페이지·컴포넌트 초안을 산업 톤에 맞춰 한 번에 뽑아내고 싶을 때.",
       "install_hint": "npm install uipro-cli",
-      "tags": ["skill", "ui-ux", "design", "landing"],
+      "tags": [
+        "skill",
+        "ui-ux",
+        "design",
+        "landing"
+      ],
       "thumbnail_url": "https://github.com/nextlevelbuilder.png",
       "official_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "stars": 63830,
       "category": "skill",
-      "badges": ["⭐ Classic"]
+      "badges": [
+        "⭐ Classic"
+      ]
     },
     {
       "id": "ComposioHQ/awesome-claude-skills",
@@ -336,12 +465,20 @@
         "connect-apps로 1000+ SaaS 액션 연결"
       ],
       "use_case": "'이걸 스킬로 만들어볼까?' 싶을 때 선례와 실전 예제를 빠르게 찾고 싶을 때.",
-      "tags": ["awesome", "skill", "curation", "composio"],
+      "tags": [
+        "awesome",
+        "skill",
+        "curation",
+        "composio"
+      ],
       "thumbnail_url": "https://github.com/ComposioHQ.png",
       "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "stars": 53321,
       "category": "awesome-list",
-      "badges": ["⭐ Classic", "🏆 awesome"]
+      "badges": [
+        "⭐ Classic",
+        "🏆 awesome"
+      ]
     },
     {
       "id": "upstash/context7",
@@ -355,12 +492,21 @@
       ],
       "use_case": "LLM이 자꾸 사라진 API를 쓰거나 옛날 버전 코드를 낼 때 가장 먼저 붙이는 MCP.",
       "install_hint": "npx ctx7 setup (또는 MCP URL: https://mcp.context7.com/mcp)",
-      "tags": ["mcp", "docs", "context", "upstash"],
+      "tags": [
+        "mcp",
+        "docs",
+        "context",
+        "upstash"
+      ],
       "thumbnail_url": "https://github.com/upstash.png",
       "official_url": "https://github.com/upstash/context7",
       "stars": 52475,
       "category": "mcp",
-      "badges": ["⭐ Classic", "🔌 MCP", "🇰🇷 한국어"]
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP",
+        "🇰🇷 한국어"
+      ]
     },
     {
       "id": "shareAI-lab/learn-claude-code",
@@ -373,12 +519,18 @@
         "코드 리딩 순서·엔티티 맵·데이터 구조 브릿지 문서"
       ],
       "use_case": "에이전트 내부 구조를 원리 수준에서 이해하고 자체 하네스를 만들려는 엔지니어.",
-      "tags": ["harness", "education", "tutorial"],
+      "tags": [
+        "harness",
+        "education",
+        "tutorial"
+      ],
       "thumbnail_url": "https://github.com/shareAI-lab.png",
       "official_url": "https://github.com/shareAI-lab/learn-claude-code",
       "stars": 52359,
       "category": "harness",
-      "badges": ["⭐ Classic"]
+      "badges": [
+        "⭐ Classic"
+      ]
     },
     {
       "id": "gsd-build/get-shit-done",
@@ -392,12 +544,19 @@
       ],
       "use_case": "엔터프라이즈 방법론은 과하고, vibe coding은 불안할 때 그 중간을 원하는 1인 개발자.",
       "install_hint": "npx get-shit-done-cc@latest",
-      "tags": ["harness", "spec-driven", "context-engineering"],
+      "tags": [
+        "harness",
+        "spec-driven",
+        "context-engineering"
+      ],
       "thumbnail_url": "https://github.com/gsd-build.png",
       "official_url": "https://github.com/gsd-build/get-shit-done",
       "stars": 51410,
       "category": "harness",
-      "badges": ["⭐ Classic", "🇰🇷 한국어"]
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ]
     },
     {
       "id": "code-yeongyu/oh-my-openagent",
@@ -411,12 +570,20 @@
       ],
       "use_case": "Claude Code만으로 만족 못하고, 여러 모델을 오케스트레이션해 대규모 리팩터링까지 돌리고 싶을 때.",
       "install_hint": "에이전트에게 'follow https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/docs/guide/installation.md' 지시",
-      "tags": ["harness", "multi-model", "orchestration", "korean"],
+      "tags": [
+        "harness",
+        "multi-model",
+        "orchestration",
+        "korean"
+      ],
       "thumbnail_url": "https://github.com/code-yeongyu.png",
       "official_url": "https://github.com/code-yeongyu/oh-my-openagent",
       "stars": 51020,
       "category": "harness",
-      "badges": ["⭐ Classic", "🇰🇷 한국어"]
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ]
     },
     {
       "id": "hesreallyhim/awesome-claude-code",
@@ -429,12 +596,21 @@
         "4가지 렌더링 스타일(Awesome/Extra/Classic/Flat) 제공"
       ],
       "use_case": "Claude Code 생태계를 처음 훑어보거나, 특정 기능(훅·상태줄 등) 사례를 찾을 때.",
-      "tags": ["awesome", "curation", "skill", "hook", "slash-command"],
+      "tags": [
+        "awesome",
+        "curation",
+        "skill",
+        "hook",
+        "slash-command"
+      ],
       "thumbnail_url": "https://github.com/hesreallyhim.png",
       "official_url": "https://github.com/hesreallyhim/awesome-claude-code",
       "stars": 38337,
       "category": "awesome-list",
-      "badges": ["⭐ Classic", "🏆 awesome"]
+      "badges": [
+        "⭐ Classic",
+        "🏆 awesome"
+      ]
     },
     {
       "id": "wshobson/agents",
@@ -447,13 +623,21 @@
         "Smithery에서 바로 설치 가능한 플러그인 구조"
       ],
       "use_case": "에이전트·오케스트레이션을 가장 폭넓게 갖춘 프로덕션 번들을 참고하거나 부분 채택할 때.",
-      "tags": ["agent", "orchestrator", "plugin", "skill"],
+      "tags": [
+        "agent",
+        "orchestrator",
+        "plugin",
+        "skill"
+      ],
       "thumbnail_url": "https://github.com/wshobson.png",
       "official_url": "https://github.com/wshobson/agents",
       "stars": 33488,
       "category": "agent",
-      "badges": ["⭐ Classic"]
+      "badges": [
+        "⭐ Classic"
+      ]
     }
   ],
-  "errors": []
+  "errors": [],
+  "version": "2026-04-13"
 }

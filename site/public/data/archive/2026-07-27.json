@@ -1,22 +1,6 @@
 {
-  "generated": "2026-07-27",
-  "generated_at": "2026-07-27",
-  "version": "v2026.07.27",
-  "week": "v2026.07.27",
-  "meta": {
-    "curated_by": "content-curator",
-    "published": {
-      "rising": 1,
-      "classic": 10,
-      "total": 11
-    },
-    "publishable": 11,
-    "needs_review": 0,
-    "webfetch_failures": 0,
-    "github_api_gate": "11/11 통과 (404 0건, fork 0건, archived 0건)",
-    "stars_corrections": 9,
-    "note": "발행 대상 11건(rising 1 + classic 10)만 큐레이션. pending 31건은 사이트 노출 금지 대상이라 제외. stars는 전건 GitHub API stargazers_count로 덮어씀."
-  },
+  "generated_at": "2026-07-27T00:00:00Z",
+  "version": "2026-07-27",
   "rising": [
     {
       "id": "Vincentwei1021/video-shotcraft",

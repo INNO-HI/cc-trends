@@ -6,8 +6,15 @@
     <atom:link href="https://inno-hi-inc.github.io/claude-trend/feed.xml" rel="self" type="application/rss+xml" />
     <description>매주 월요일 갱신되는 Claude Code 에이전트 · 스킬 · 하네스 · MCP 큐레이션.</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 GMT</lastBuildDate>
     <ttl>10080</ttl>
+    <item>
+      <title>cc-trends · 2026-07-27 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-07-27</link>
+      <guid isPermaLink="false">cc-trends-2026-07-27</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-07-27 업데이트&lt;/strong&gt; · 총 11개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 1&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Vincentwei1021/video-shotcraft&quot;&gt;&lt;strong&gt;video-shotcraft — 시네마틱 제품영상 스킬&lt;/strong&gt;&lt;/a&gt; — Remotion 기반 100여 개 샷 레시피로 제품 영상을 코드로 연출 &lt;em&gt;(Vincentwei1021/video-shotcraft · ★1903)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;Claude Code — 터미널 에이전틱 코딩 도구&lt;/a&gt; — Anthropic 공식 터미널 에이전트 — 코드베이스 이해·git까지 처리 &lt;em&gt;(★139194)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/DeusData/codebase-memory-mcp&quot;&gt;codebase-memory-mcp — 코드 지식그래프&lt;/a&gt; — 구조 쿼리 5번에 토큰 99% 절감 — 158개 언어 인덱싱 MCP &lt;em&gt;(★35600)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ruvnet/ruflo&quot;&gt;ruflo — 멀티 에이전트 스웜 메타-하네스&lt;/a&gt; — 에이전트를 스웜으로 묶어 적응형 메모리·자가학습으로 협업 &lt;em&gt;(★66127)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>cc-trends · 2026-06-29 주간 업데이트</title>
       <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-06-29</link>
@@ -21,6 +28,13 @@
       <guid isPermaLink="false">cc-trends-2026-06-15</guid>
       <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;2026-06-15 업데이트&lt;/strong&gt; · 총 35개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Lum1104/Understand-Anything&quot;&gt;&lt;strong&gt;Understand-Anything&lt;/strong&gt;&lt;/a&gt; — 코드 → 지식 그래프 자동 변환 &lt;em&gt;(Lum1104/Understand-Anything · ★54364)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/NousResearch/hermes-agent&quot;&gt;&lt;strong&gt;hermes-agent&lt;/strong&gt;&lt;/a&gt; — 사용 경험 → 스킬 자동 생성 &lt;em&gt;(NousResearch/hermes-agent · ★185917)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/financial-services&quot;&gt;&lt;strong&gt;financial-services&lt;/strong&gt;&lt;/a&gt; — 10개 전문 에이전트 (Pitch, KYC, GL 등) &lt;em&gt;(anthropics/financial-services · ★30397)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/affaan-m/ECC&quot;&gt;&lt;strong&gt;ECC&lt;/strong&gt;&lt;/a&gt; — 64+ 에이전트 · 261+ 스킬 번들 &lt;em&gt;(affaan-m/ECC · ★209835)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/nexu-io/open-design&quot;&gt;&lt;strong&gt;open-design&lt;/strong&gt;&lt;/a&gt; — HTML/PDF/PPTX/MP4 다중 포맷 내보내기 &lt;em&gt;(nexu-io/open-design · ★60901)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/skills&quot;&gt;skills&lt;/a&gt; — Agent Skills 공식 표준 스펙 &lt;em&gt;(★147577)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-code&quot;&gt;claude-code&lt;/a&gt; — 자연어 → 코드 생성 + 리팩터링 &lt;em&gt;(★130866)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/multica-ai/andrej-karpathy-skills&quot;&gt;andrej-karpathy-skills&lt;/a&gt; — Think Before Coding - 가정 명시 강제 &lt;em&gt;(★170369)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cc-trends · 2026-06-08 주간 업데이트</title>
+      <link>https://inno-hi-inc.github.io/claude-trend/?w=2026-06-08</link>
+      <guid isPermaLink="false">cc-trends-2026-06-08</guid>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;2026-06-08 업데이트&lt;/strong&gt; · 총 22개 프로젝트.&lt;/p&gt;&lt;h3&gt;이번 주 뜨는 Top 5&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/a&gt; — 63개 에이전트, 하나의 하네스 &lt;em&gt;( · ★200579)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/a&gt; — Rust로 다시 쓴 CLI 에이전트 &lt;em&gt;( · ★192995)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/a&gt; — 카파시의 LLM 코딩 4원칙 &lt;em&gt;( · ★163403)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/a&gt; — 공식 스킬 오픈 표준 &lt;em&gt;( · ★144672)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/a&gt; — 스스로 스킬을 만드는 에이전트 &lt;em&gt;( · ★174676)&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;이미 유명한 (Top 3)&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; — 오픈소스 코딩 에이전트 본좌 &lt;em&gt;(★167854)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; — 에이전트 하네스를 바닥부터 &lt;em&gt;(★63863)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt; — 터미널에 사는 코딩 에이전트 &lt;em&gt;(★128896)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://inno-hi-inc.github.io/claude-trend/&quot;&gt;전체 인덱스 보기&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>cc-trends · 2026-06-01 주간 업데이트</title>

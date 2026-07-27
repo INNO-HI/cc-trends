@@ -1,7 +1,6 @@
 {
-  "generated": "2026-06-15",
-  "generated_at": "2026-06-15",
-  "version": "v2026.06.15",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "version": "2026-06-29",
   "rising": [
     {
       "id": "mvanhorn/last30days-skill",
