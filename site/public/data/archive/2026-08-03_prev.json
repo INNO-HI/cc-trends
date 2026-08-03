@@ -1,0 +1,730 @@
+{
+  "generated_at": "2026-07-27T00:00:00Z",
+  "version": "2026-08-03",
+  "week": "v2026.07.27",
+  "meta": {
+    "curated_by": "content-curator",
+    "published": {
+      "rising": 1,
+      "classic": 10,
+      "total": 11
+    },
+    "publishable": 11,
+    "needs_review": 0,
+    "webfetch_failures": 0,
+    "github_api_gate": "11/11 통과 (404 0건, fork 0건, archived 0건)",
+    "stars_corrections": 9,
+    "note": "발행 대상 11건(rising 1 + classic 10)만 큐레이션. pending 31건은 사이트 노출 금지 대상이라 제외. stars는 전건 GitHub API stargazers_count로 덮어씀."
+  },
+  "rising": [
+    {
+      "id": "Vincentwei1021/video-shotcraft",
+      "name": "video-shotcraft",
+      "owner": "Vincentwei1021",
+      "title_ko": "video-shotcraft — 시네마틱 제품영상 스킬",
+      "official_url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "repo_url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "category": "skill",
+      "category_confidence": "high",
+      "score": 76.7,
+      "trend_score": 76.7,
+      "stars": 1903,
+      "velocity_7d": 1901,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "github",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft",
+          "label": "출시 첫 주 1,903 stars (2026-07-19 생성)"
+        },
+        {
+          "source": "blog",
+          "url": "https://enterprisedna.co/resources/ai-pulse/ai-pulse-2026-07-24-video-shotcraft-a-claude-code-codex-skill-for-cinematic-prod/",
+          "label": "EnterpriseDNA AI Pulse 소개 (2026-07-24)"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "GitHub·블로그·X 3개 출처 교차검증"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "Remotion 기반 100여 개 샷 레시피로 제품 영상을 코드로 연출",
+      "summary_ko": "Claude Code·Codex를 모션 디자인 스튜디오로 바꿔, Remotion으로 제품 홍보 영상을 코드로 만드는 스킬. 실제 페이지 캡처·2.5D 카메라 무빙·컷 동기화·효과음을 조합한다. 104개 샷 레시피 카드와 161개 모션 프리뷰(온라인 갤러리에서 검색·필터), 36.2초짜리 완성 템플릿 'Ink Press'(1920×1080·30fps·10샷)를 제공한다. 2026-07-19 공개 후 첫 주에 1,900여 stars를 모은 이번 주 유일한 다중검증 신규 스킬.",
+      "key_features": [
+        "104개 샷 레시피 카드 + 161개 모션 프리뷰 (검색·필터 가능한 온라인 갤러리)",
+        "2.5D 페이지 카메라·자막·플래시컷·SFX·캡처 스크립트 등 재사용 컴포넌트",
+        "36.2초·1920×1080·30fps 완성형 템플릿 'Ink Press'(10샷) 포함"
+      ],
+      "use_case": "제품 랜딩 페이지나 앱을 코드 기반으로 시네마틱 홍보 영상으로 만들고 싶을 때. 디자이너 없이 Claude Code에서 모션 그래픽을 반복 생성할 때.",
+      "install_hint": "npx skills add Vincentwei1021/video-shotcraft",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🆕 New"
+      ],
+      "tags": [
+        "skill",
+        "영상제작",
+        "remotion",
+        "모션그래픽",
+        "제품마케팅"
+      ],
+      "thumbnail_url": "https://github.com/Vincentwei1021.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 1900,
+          "actual": 1903,
+          "action": "corrected"
+        },
+        {
+          "field": "shot_recipes",
+          "note": "GitHub 소개문은 '106개', README 렌더는 '104개'. README 표기(104) 채택.",
+          "action": "flagged"
+        }
+      ]
+    }
+  ],
+  "classic": [
+    {
+      "id": "anthropics/claude-code",
+      "name": "claude-code",
+      "owner": "anthropics",
+      "title_ko": "Claude Code — 터미널 에이전틱 코딩 도구",
+      "official_url": "https://github.com/anthropics/claude-code",
+      "repo_url": "https://github.com/anthropics/claude-code",
+      "category": "harness",
+      "category_confidence": "high",
+      "score": 96.6,
+      "trend_score": 96.6,
+      "stars": 139194,
+      "velocity_7d": 812,
+      "source_count": 8,
+      "sources": [
+        "anthropic",
+        "blog",
+        "devto",
+        "geeknews",
+        "github",
+        "hackernews",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/claude-code",
+          "label": "최근 7일 +812 stars, 매일 커밋"
+        },
+        {
+          "source": "anthropic",
+          "url": "https://github.com/anthropics/claude-code",
+          "label": "Anthropic 공식 도구"
+        },
+        {
+          "source": "hackernews",
+          "url": "https://github.com/anthropics/claude-code/issues/62476",
+          "label": "8개 출처 지속 언급 · engagement 67로 이번 주 커뮤니티 1위"
+        }
+      ],
+      "status": "classic",
+      "official": true,
+      "catchphrase": "Anthropic 공식 터미널 에이전트 — 코드베이스 이해·git까지 처리",
+      "summary_ko": "터미널에 상주하며 자연어 명령으로 코딩을 돕는 Anthropic 공식 에이전틱 도구. 코드베이스를 이해해 루틴 작업을 실행하고, 복잡한 코드를 설명하며, git 워크플로를 처리한다. 터미널·IDE에서 쓰거나 GitHub에서 @claude로 태그해 사용할 수 있다. 이 사이트가 추적하는 생태계 전체의 기준점으로, 매일 커밋되며 최근 7일 +812 stars.",
+      "key_features": [
+        "자연어 명령으로 루틴 코딩 작업 자동 실행 + 복잡한 코드 설명",
+        "git 워크플로(브랜치·커밋·PR) 처리",
+        "터미널·IDE·GitHub(@claude 태그) 어디서나 동작"
+      ],
+      "use_case": "터미널 중심으로 코드베이스 전체를 맥락째 다루는 AI 코딩 에이전트가 필요할 때. Claude Code 스킬·MCP·플러그인 생태계의 기반.",
+      "install_hint": "curl -fsSL https://claude.ai/install.sh | bash  (또는 brew install --cask claude-code)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "harness",
+        "공식",
+        "cli",
+        "에이전틱코딩",
+        "터미널"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "DeusData/codebase-memory-mcp",
+      "name": "codebase-memory-mcp",
+      "owner": "DeusData",
+      "title_ko": "codebase-memory-mcp — 코드 지식그래프",
+      "official_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "repo_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "category": "mcp",
+      "category_confidence": "high",
+      "score": 77.9,
+      "trend_score": 77.9,
+      "stars": 35600,
+      "velocity_7d": 2496,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/DeusData/codebase-memory-mcp",
+          "label": "최근 7일 +2,496 stars — 전 후보 중 최고 velocity"
+        },
+        {
+          "source": "blog",
+          "url": "https://www.russ.cloud/2026/05/10/codebase-memory-mcp-giving-claude-code-and-codex-a-map/",
+          "label": "russ.cloud 'Claude Code/Codex에 지도를 주다' 소개"
+        },
+        {
+          "source": "devto",
+          "url": null,
+          "label": "GitHub·블로그·dev.to 3개 출처 교차검증"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "구조 쿼리 5번에 토큰 99% 절감 — 158개 언어 인덱싱 MCP",
+      "summary_ko": "코드베이스를 지속형 지식그래프로 인덱싱하는 고성능 코드 인텔리전스 MCP 서버. 평균 리포는 수 밀리초, 리눅스 커널(2,800만 줄·7.5만 파일)도 3분에 인덱싱한다. 158개 언어를 tree-sitter로 파싱하고 콜그래프·아키텍처 매핑·데드코드 탐지·벡터 시맨틱 검색(로컬 Nomic 임베딩, API 키 불필요)을 제공한다. 파일 단위 탐색 대신 구조 쿼리 5번으로 약 3,400 토큰(파일 탐색 시 약 41만 대비 99% 절감).",
+      "key_features": [
+        "158개 언어 tree-sitter 파싱 + sub-ms 그래프 쿼리, 리눅스 커널 3분 인덱싱",
+        "콜그래프·아키텍처 매핑·데드코드 탐지·크로스서비스 HTTP 링킹 등 15개 MCP 툴",
+        "로컬 Nomic 임베딩 시맨틱 검색(API 키 불필요) + localhost:9749 3D 그래프 뷰"
+      ],
+      "use_case": "대규모 코드베이스에서 에이전트가 파일을 일일이 읽느라 토큰을 낭비할 때. 구조·의존성 질문을 한 번의 쿼리로 답하게 하고 싶을 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "mcp",
+        "코드인텔리전스",
+        "지식그래프",
+        "토큰절감",
+        "시맨틱검색"
+      ],
+      "thumbnail_url": "https://github.com/DeusData.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 35596,
+          "actual": 35600,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "ruvnet/ruflo",
+      "name": "ruflo",
+      "owner": "ruvnet",
+      "title_ko": "ruflo — 멀티 에이전트 스웜 메타-하네스",
+      "official_url": "https://github.com/ruvnet/ruflo",
+      "repo_url": "https://github.com/ruvnet/ruflo",
+      "category": "harness",
+      "category_confidence": "high",
+      "score": 77.5,
+      "trend_score": 77.5,
+      "stars": 66127,
+      "velocity_7d": 971,
+      "source_count": 3,
+      "sources": [
+        "blog",
+        "devto",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/ruvnet/ruflo",
+          "label": "최근 7일 +971 stars, 오늘자 커밋"
+        },
+        {
+          "source": "blog",
+          "url": "https://tosea.ai/blog/ruflo-enterprise-ai-multi-agent-guide-2026",
+          "label": "tosea.ai 엔터프라이즈 멀티에이전트 가이드"
+        },
+        {
+          "source": "devto",
+          "url": null,
+          "label": "GitHub·블로그·dev.to 3개 출처 교차검증"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "에이전트를 스웜으로 묶어 적응형 메모리·자가학습으로 협업",
+      "summary_ko": "AI 에이전트를 개별 인스턴스가 아니라 스웜으로 조율하는 에이전트 메타-하네스. HNSW 벡터DB(AgentDB) 기반 적응형 메모리(sub-ms 검색·recall@10 약 0.99), SONA/ReasoningBank 자가학습, RAG 하이브리드 검색을 갖췄다. 코딩·테스트·보안·문서화 등 100개+ 전문 에이전트를 내장하고, 계층·메시 토폴로지와 비잔틴 내결함성으로 스웜을 운영한다. Claude·GPT·Gemini·Ollama 멀티 프로바이더 페일오버 지원.",
+      "key_features": [
+        "HNSW 벡터DB(AgentDB) 적응형 메모리 — sub-ms 검색, recall@10 ≈ 0.99",
+        "SONA/ReasoningBank 자가학습 + RAG 하이브리드 검색",
+        "100개+ 전문 에이전트, 계층·메시 스웜 토폴로지, 멀티 프로바이더(Claude·GPT·Gemini·Ollama) 페일오버"
+      ],
+      "use_case": "단일 에이전트로는 부치는 복잡한 워크플로를 여러 에이전트가 협업·자가개선하며 처리하게 만들고 싶을 때.",
+      "install_hint": "npx ruflo@latest init wizard",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "harness",
+        "멀티에이전트",
+        "스웜",
+        "메모리",
+        "자가학습"
+      ],
+      "thumbnail_url": "https://github.com/ruvnet.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 66126,
+          "actual": 66127,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "name": "claude-mem",
+      "owner": "thedotmack",
+      "title_ko": "claude-mem — 세션 간 지속 메모리 플러그인",
+      "official_url": "https://github.com/thedotmack/claude-mem",
+      "repo_url": "https://github.com/thedotmack/claude-mem",
+      "category": "skill",
+      "category_confidence": "medium",
+      "score": 69.7,
+      "trend_score": 69.7,
+      "stars": 88645,
+      "velocity_7d": 836,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "label": "최근 7일 +836 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://medium.com/@markchen69/give-claude-a-memory-a-3-step-tutorial-for-claude-mem-c3d088b9b19d",
+          "label": "Medium '3단계 튜토리얼' 소개"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "세션 종료해도 컨텍스트 유지 — 작업을 AI로 압축·재주입",
+      "summary_ko": "에이전트가 세션 중 한 모든 작업을 포착해 AI로 압축·요약하고, 다음 세션에 관련 컨텍스트를 자동 주입하는 지속형 메모리 시스템. 5개 라이프사이클 훅(SessionStart·UserPromptSubmit·PostToolUse·Stop·SessionEnd)으로 동작하며 SQLite+Chroma 벡터 검색에 저장한다. compact index→timeline→full details 3단계 검색과 토큰 비용 표시(progressive disclosure), <private> 태그 제외 기능을 제공한다. Claude Code·Codex·Gemini·Copilot 등 범용 지원.",
+      "key_features": [
+        "5개 라이프사이클 훅으로 세션 작업 자동 포착 → AI 압축 → 다음 세션 자동 주입",
+        "SQLite + Chroma 벡터 검색, compact index→timeline→full details 3단계 조회",
+        "<private> 태그로 민감정보 제외 + 실시간 메모리 웹 뷰어"
+      ],
+      "use_case": "세션이 바뀔 때마다 프로젝트 맥락을 다시 설명하기 지칠 때. 에이전트에게 장기 기억을 주고 싶을 때.",
+      "install_hint": "npx claude-mem install",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "메모리",
+        "컨텍스트관리",
+        "세션연속성",
+        "생산성"
+      ],
+      "thumbnail_url": "https://github.com/thedotmack.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 88644,
+          "actual": 88645,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "wshobson/agents",
+      "name": "agents",
+      "owner": "wshobson",
+      "title_ko": "wshobson/agents — 에이전트 마켓플레이스",
+      "official_url": "https://github.com/wshobson/agents",
+      "repo_url": "https://github.com/wshobson/agents",
+      "category": "agent",
+      "category_confidence": "high",
+      "score": 69.6,
+      "trend_score": 69.6,
+      "stars": 38260,
+      "velocity_7d": 212,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/wshobson/agents",
+          "label": "최근 7일 +212 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://www.thetoolnerd.com/p/supercharge-claude-code-custom-commands-thetoolnerd",
+          "label": "The Tool Nerd 커스텀 커맨드 소개"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "Markdown 한 소스로 6개 CLI에 203개 에이전트 배포",
+      "summary_ko": "Markdown 기반 플러그인 정의를 각 플랫폼용 아티팩트로 변환하는 프로덕션급 에이전트 플러그인 마켓플레이스. 203개 에이전트·175개 스킬·109개 커맨드·94개 플러그인을 단일 소스로 관리한다. Claude Code·Codex CLI·Cursor·OpenCode·Gemini CLI·GitHub Copilot 6개 하네스에 네이티브로 배포되며, Fable·Opus·Sonnet·Haiku 계층 모델 전략과 정적·LLM Judge·몬테카를로 3층 plugin-eval 품질 프레임워크를 갖췄다.",
+      "key_features": [
+        "203개 에이전트 · 175개 스킬 · 109개 커맨드 · 94개 플러그인을 단일 Markdown 소스로 관리",
+        "Claude Code·Codex·Cursor·OpenCode·Gemini·Copilot 6개 하네스 네이티브 배포",
+        "정적·LLM Judge·몬테카를로 3층 plugin-eval 품질 검증 프레임워크"
+      ],
+      "use_case": "여러 AI CLI를 쓰면서 에이전트·스킬·커맨드를 한 곳에서 관리·배포하고 싶을 때.",
+      "install_hint": "/plugin marketplace add wshobson/agents  (Claude Code)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "agent",
+        "마켓플레이스",
+        "플러그인",
+        "멀티하네스",
+        "커맨드"
+      ],
+      "thumbnail_url": "https://github.com/wshobson.png",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "Imbad0202/academic-research-skills",
+      "name": "academic-research-skills",
+      "owner": "Imbad0202",
+      "title_ko": "학술 논문 리서치·집필 파이프라인 스킬",
+      "official_url": "https://github.com/Imbad0202/academic-research-skills",
+      "repo_url": "https://github.com/Imbad0202/academic-research-skills",
+      "category": "skill",
+      "category_confidence": "high",
+      "score": 68.8,
+      "trend_score": 68.8,
+      "stars": 39622,
+      "velocity_7d": 1066,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "label": "최근 7일 +1,066 stars, 오늘자 커밋"
+        },
+        {
+          "source": "blog",
+          "url": "https://medium.com/@joe.njenga/this-academic-research-skills-for-claude-code-turns-13-agents-into-your-research-team-bf5fc68ae28d",
+          "label": "Joe Njenga(Medium) 리뷰"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "리서치→집필→리뷰→수정→완성, 인용 3중 검증 학술 스킬",
+      "summary_ko": "리서치→집필→리뷰→수정→완성으로 이어지는 학술 논문 작성 파이프라인 스킬. 'copilot, not pilot'을 표방해 핵심 판단은 사람이 쥐고 잡일을 자동화한다. Deep Research·Academic Paper·Reviewer·Pipeline 4개 핵심 스킬과 39개 에이전트로 구성되며, 2.5/4.5단계에 주장 검증·인용 감사 무결성 게이트를 둔다. Semantic Scholar·OpenAlex·Crossref 3중 인용 검증과 7인 리뷰 패널(0~100 루브릭)을 제공한다.",
+      "key_features": [
+        "research→write→review→revise→finalize 10단계 오케스트레이터 + 무결성 게이트(2.5/4.5단계)",
+        "Deep Research·Academic Paper·Reviewer·Pipeline 4개 스킬 + 39개 전문 에이전트",
+        "Semantic Scholar·OpenAlex·Crossref 3중 인용 검증 + 7인 리뷰 패널(0~100 채점)"
+      ],
+      "use_case": "논문·리뷰 초안을 체계적으로 쓰되 인용과 주장 근거를 자동 검증하고 싶은 연구자.",
+      "install_hint": "/plugin marketplace add Imbad0202/academic-research-skills",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "학술연구",
+        "논문작성",
+        "인용검증",
+        "파이프라인"
+      ],
+      "thumbnail_url": "https://github.com/Imbad0202.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 39621,
+          "actual": 39622,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "headroomlabs-ai/headroom",
+      "name": "headroom",
+      "owner": "headroomlabs-ai",
+      "title_ko": "headroom — LLM 전 컨텍스트 압축 엔진",
+      "official_url": "https://github.com/headroomlabs-ai/headroom",
+      "repo_url": "https://github.com/headroomlabs-ai/headroom",
+      "category": "mcp",
+      "category_confidence": "high",
+      "score": 68.6,
+      "trend_score": 68.6,
+      "stars": 62600,
+      "velocity_7d": 1927,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "label": "최근 7일 +1,927 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://knightli.com/en/2026/06/06/headroom-ai-context-compression/",
+          "label": "knightli.com 컨텍스트 압축 소개"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "툴 출력·JSON을 LLM 도달 전 압축 — JSON 토큰 60~95% 절감",
+      "summary_ko": "툴 출력·로그·RAG 청크·파일·대화 이력을 LLM에 보내기 전에 압축하는 컨텍스트 압축 엔진. 로컬에서 동작해 데이터가 기기를 벗어나지 않고, 필요 시 원본을 되살리는 가역 압축(CCR)을 지원한다. 코딩 에이전트 토큰 약 20%, JSON 데이터 60~95% 절감(코드 검색·SRE 디버깅 사례에서 92% 감소). 라이브러리·프록시·MCP 서버 3가지 형태로 배포된다.",
+      "key_features": [
+        "툴 출력·로그·RAG·파일을 LLM 도달 전 압축 — 코딩 20%, JSON 60~95% 토큰 절감",
+        "필요 시 원본 복원하는 가역 압축(CCR), 100% 로컬 처리",
+        "라이브러리(compress())·프록시(zero-code)·MCP 서버 3가지 배포 형태"
+      ],
+      "use_case": "긴 툴 출력·JSON·로그가 컨텍스트 창을 잡아먹어 비용이 커질 때. 코드 변경 없이 프록시만 끼워 절감하고 싶을 때.",
+      "install_hint": "uv tool install --python 3.13 \"headroom-ai[all]\"  (또는 pip install \"headroom-ai[all]\")",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "mcp",
+        "컨텍스트압축",
+        "토큰절감",
+        "프록시",
+        "rag"
+      ],
+      "thumbnail_url": "https://github.com/headroomlabs-ai.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 62598,
+          "actual": 62600,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "JuliusBrussee/caveman",
+      "name": "caveman",
+      "owner": "JuliusBrussee",
+      "title_ko": "caveman — 원시인 말투로 출력 토큰 65% 절감",
+      "official_url": "https://github.com/JuliusBrussee/caveman",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "category": "skill",
+      "category_confidence": "high",
+      "score": 67.4,
+      "trend_score": 67.4,
+      "stars": 93213,
+      "velocity_7d": 2342,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "label": "최근 7일 +2,342 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://medium.com/@joe.njenga/i-tested-claude-code-caveman-new-trick-and-it-cuts-token-costs-by-75-ddb142d2be85",
+          "label": "Joe Njenga(Medium) 토큰 절감 테스트"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "원시인처럼 짧게 말해 출력 토큰 평균 65% 절감",
+      "summary_ko": "Claude Code와 30개+ 에이전트의 출력을 원시인처럼 간결한 말투로 압축하는 스킬. 필러(군더더기)를 걷어내되 코드·명령어·에러 메시지는 바이트 단위로 보존해 기술 정확성을 유지한다. 10개 벤치마크 작업에서 출력 토큰 평균 65% 절감(작업별 22~87%)을 표방한다. Claude Code는 세션마다 훅이 플래그 파일을 써서 자동 활성화되고, /caveman-stats로 절감량 확인, /caveman-compress로 메모리 파일을 영구 압축한다.",
+      "key_features": [
+        "출력 토큰 평균 65% 절감(10개 벤치마크, 22~87%) — 코드·명령어·에러는 원본 보존",
+        "세션마다 훅으로 caveman 모드 자동 활성화(Claude Code)",
+        "/caveman-stats 절감량 표시, /caveman-compress 메모리 영구 압축"
+      ],
+      "use_case": "에이전트의 장황한 출력이 토큰·비용을 잡아먹을 때. 정확성은 지키면서 응답을 짧게 만들고 싶을 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "토큰절감",
+        "비용절감",
+        "출력압축",
+        "밈"
+      ],
+      "thumbnail_url": "https://github.com/JuliusBrussee.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 93212,
+          "actual": 93213,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "colbymchenry/codegraph",
+      "name": "codegraph",
+      "owner": "colbymchenry",
+      "title_ko": "codegraph — 자동 동기화 코드 지식그래프",
+      "official_url": "https://github.com/colbymchenry/codegraph",
+      "repo_url": "https://github.com/colbymchenry/codegraph",
+      "category": "mcp",
+      "category_confidence": "high",
+      "score": 67.1,
+      "trend_score": 67.1,
+      "stars": 62574,
+      "velocity_7d": 1574,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "label": "최근 7일 +1,574 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://medium.com/@me_82386/i-cut-my-claude-code-api-costs-by-40-with-one-tool-12cf4306a1ab",
+          "label": "Medium 'API 비용 40% 절감' 후기"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "코드 변경 시 자동 인덱싱 — 툴 호출 89%·토큰 69% 감소",
+      "summary_ko": "심볼·의존성·콜플로를 미리 인덱싱해두고 파일이 바뀔 때마다 자동 동기화하는 코드 지식그래프. 에이전트가 파일을 하나씩 뒤지는 대신 단일 툴 호출로 아키텍처 질문에 답하게 한다. 벤치마크 7개 리포에서 툴 호출 89%·토큰 69% 감소, 비용 평균 60% 절감, 파일 읽기 0회를 기록했다. 데이터는 기기를 벗어나지 않고(SQLite만, API 키·외부 서비스 없음) 100% 로컬로 동작한다.",
+      "key_features": [
+        "코드 변경 시 자동 동기화되는 사전 인덱싱 지식그래프(심볼·의존성·콜플로)",
+        "벤치마크 7개 리포: 툴 호출 -89%, 토큰 -69%, 비용 -60%, 파일 읽기 0회",
+        "Claude Code·Cursor·Codex·Gemini·opencode·Hermes·Antigravity·Kiro 8개 CLI, 100% 로컬(SQLite)"
+      ],
+      "use_case": "코드베이스 구조 질문에 에이전트가 느리게 파일을 뒤질 때. API 키 없이 로컬에서 토큰·비용을 줄이고 싶을 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/colbymchenry/codegraph/main/install.sh | sh",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "mcp",
+        "코드지식그래프",
+        "토큰절감",
+        "로컬",
+        "인덱싱"
+      ],
+      "thumbnail_url": "https://github.com/colbymchenry.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 62571,
+          "actual": 62574,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "coreyhaines31/marketingskills",
+      "name": "marketingskills",
+      "owner": "coreyhaines31",
+      "title_ko": "marketingskills — 마케팅 실무 스킬 모음",
+      "official_url": "https://github.com/coreyhaines31/marketingskills",
+      "repo_url": "https://github.com/coreyhaines31/marketingskills",
+      "category": "skill",
+      "category_confidence": "high",
+      "score": 66.1,
+      "trend_score": 66.1,
+      "stars": 41822,
+      "velocity_7d": 1950,
+      "source_count": 2,
+      "sources": [
+        "blog",
+        "github"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "label": "최근 7일 +1,950 stars"
+        },
+        {
+          "source": "blog",
+          "url": "https://medium.com/design-bootcamp/10-best-claude-skill-repos-for-marketing-2026-0e308c19514c",
+          "label": "Design Bootcamp 마케팅 스킬 Top 10 선정"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "CRO·카피·SEO·그로스 60개+ 마케팅 스킬을 에이전트에",
+      "summary_ko": "AI 코딩 에이전트에 마케팅 실무 지식과 워크플로를 주입하는 스킬 모음(마케터 Corey Haines 제작). CRO(cro·signup·onboarding·paywall), 카피라이팅(copywriting·cold-email·social), SEO(seo-audit·programmatic-seo·schema), 애널리틱스(ab-testing), 그로스(referrals·churn-prevention) 등 60개+ 스킬을 담았다. Agent Skills 스펙을 따라 Claude Code·Codex·Cursor·Windsurf 등에서 동작한다.",
+      "key_features": [
+        "CRO·카피라이팅·SEO·애널리틱스·그로스 등 60개+ 마케팅 스킬",
+        "Agent Skills 스펙 준수 — Claude Code·Codex·Cursor·Windsurf 등 호환",
+        "npx skills로 개별 스킬만 골라 설치 가능(--skill cro copywriting)"
+      ],
+      "use_case": "1인 창업자·마케터가 CRO·SEO·카피 작업을 에이전트에게 맡기고 싶을 때.",
+      "install_hint": "npx skills add coreyhaines31/marketingskills",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "마케팅",
+        "cro",
+        "seo",
+        "카피라이팅"
+      ],
+      "thumbnail_url": "https://github.com/coreyhaines31.png",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 41821,
+          "actual": 41822,
+          "action": "corrected"
+        }
+      ]
+    }
+  ]
+}
