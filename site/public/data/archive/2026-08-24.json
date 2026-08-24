@@ -1,7 +1,6 @@
 {
-  "generated": "2026-08-24",
-  "generated_at": "2026-08-24",
-  "version": "v2026.08.24",
+  "generated_at": "2026-08-24T00:00:00Z",
+  "version": "2026-08-24",
   "week": "2026-08-24",
   "meta": {
     "input": "_workspace/03_analysis.json",

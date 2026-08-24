@@ -1,0 +1,1950 @@
+{
+  "generated_at": "2026-08-10T00:00:00Z",
+  "version": "2026-08-24",
+  "week": "2026-08-10",
+  "meta": {
+    "curated_by": "content-curator",
+    "published": {
+      "rising": 9,
+      "classic": 15,
+      "total": 24
+    },
+    "publishable": 24,
+    "needs_review": 0,
+    "readme_coverage": "24/24 (100%) — gh api repos/{owner}/{repo}/readme 원문 확보",
+    "webfetch_failures": 0,
+    "github_api_gate": "24/24 통과 (404 0건, fork 0건, archived 0건)",
+    "stars_corrections": 13,
+    "max_star_delta": 11,
+    "star_anomaly_2x": 0,
+    "note": "발행 대상 24건(rising 9 + classic 15) 전건 큐레이션. stars는 전건 GitHub API stargazers_count로 덮어썼고 그중 13건이 분석기 값과 달라 보정됐다(최대 +11, 전부 수집 시각 차이에 따른 자연 증가 — 2배 이상 괴리 0건). README는 GitHub API로 24/24 전건 원문 확보 후 작성했고 WebFetch 실패는 0건이다. sources·evidence·trend_score는 03_analysis.json 값을 승계했으며, evidence label의 points/comments는 02_community_raw.json의 실측 engagement로 채웠다(분석기가 정정한 \"HN 150pt\" 같은 미검증 수치는 인용하지 않음).",
+    "disambiguation": {
+      "DietrichGebert/ponytail": "미신고 재업로드본 0xwilliamortiz/ponytail-improved와 구분. official_url·repo_url 모두 원본(2026-06-12 생성, 컨트리뷰터 64명, ponytail.dev)을 가리키도록 API 값으로 확정했다.",
+      "headroom": "토큰 압축 프록시 \"Headroom\"(headroomlabs-ai/headroom)과 메뉴바 앱 michellzappa/headroom은 이번 주 발행 목록에 없다. 기능 혼동 가능성 없음."
+    },
+    "category_confidence_low": [
+      "diegosouzapw/OmniRoute"
+    ],
+    "self_check": "5문항(README 핵심 반영 / 수치·고유명사 정확 / 과장 없는 캐치프레이즈 / 검증된 install_hint / 카테고리 분류) 24건 전건 통과. OmniRoute는 README 자기소개가 \"AI Gateway\"라 category_confidence: low로 표기했다.",
+    "publish_gate": {
+      "applied_by": "site-builder",
+      "rising": "9→9",
+      "classic": "15→15",
+      "rules": [
+        "needs_review",
+        "dropped_reason",
+        "stars_invalid",
+        "category_quota"
+      ],
+      "cuts": [],
+      "category_fill": {
+        "rising": {
+          "skill": 3,
+          "harness": 2,
+          "agent": 4
+        },
+        "classic": {
+          "harness": 2,
+          "skill": 6,
+          "agent": 4,
+          "mcp": 3
+        }
+      }
+    }
+  },
+  "rising": [
+    {
+      "id": "DietrichGebert/ponytail",
+      "name": "ponytail",
+      "owner": "DietrichGebert",
+      "title_ko": "Ponytail — 코드를 덜 쓰게 만드는 스킬",
+      "official_url": "https://github.com/DietrichGebert/ponytail",
+      "repo_url": "https://github.com/DietrichGebert/ponytail",
+      "homepage": "https://ponytail.dev",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 1,
+      "score": 97.5,
+      "trend_score": 97.5,
+      "stars": 99331,
+      "velocity_7d": 5266,
+      "source_count": 7,
+      "sources": [
+        "geeknews",
+        "github",
+        "hn",
+        "reddit",
+        "velog",
+        "web",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48527946",
+          "label": "HN 98pts / 17 comments — \"make your AI agent think like the laziest senior dev\" (2026-06-14)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "label": "2026-06-12 생성 59일차 · 최근 7일 +5,266★ (누적 99,331★) · 컨트리뷰터 64명"
+        },
+        {
+          "source": "geeknews",
+          "url": "https://news.hada.io/topic?id=30701",
+          "label": "GeekNews 한국어 소개 (2026-07-08)"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/pvergadia/status/2067108883185926260",
+          "label": "X 소개 게시글 2건 (2026-07-07 / 07-09, engagement 미수집)"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/programming/comments/1v9wf79/has_anyone_tried_vibe_coding_with_agentic_plugin/",
+          "label": "r/programming 사용 후기 문의 1pt / 1 comment (2026-07-29)"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "실측 12개 과제 LOC -54%, 안전 가드는 100% 유지",
+      "summary_ko": "에이전트가 코드를 쓰기 전에 7단 사다리를 타고 내려가 처음 걸리는 단계에서 멈추게 하는 스킬이다. \"이게 존재할 필요가 있나 → 이미 이 코드베이스에 있나 → 표준 라이브러리가 하나 → 플랫폼 기본 기능이 있나 → 설치된 의존성으로 되나 → 한 줄로 되나 → 그제서야 최소 구현\" 순서이며, 사다리는 문제를 이해한 다음에 돌아간다. 저자는 실제 오픈소스 저장소(FastAPI+React 템플릿)를 헤드리스 Claude Code 세션이 편집하게 하고 남은 git diff로 채점했다 — 기능 티켓 12건, n=4, Haiku 4.5 기준 스킬 없는 대조군 대비 LOC -54%, 토큰 -22%, 비용 -20%, 시간 -27%였고 안전 항목은 100%를 유지했다. 규칙은 \"토큰 최소화\"가 아니라 과제에 필요한 것만 쓰되 검증·에러 처리·보안·접근성은 절대 깎지 않는 것이다. 초기에 알려진 80~94% 감소 수치는 대화형 베이스라인 때문에 부풀려진 값이었다고 저자가 직접 정정해 두었다. 한국어 README를 제공한다.",
+      "key_features": [
+        "7단 사다리(YAGNI → 재사용 → 표준 라이브러리 → 플랫폼 기본 → 기존 의존성 → 한 줄 → 최소 구현)로 첫 단계에서 정지",
+        "검증·데이터 손실 처리·보안·접근성은 축소 대상에서 제외 — 안전 항목 100%(대조 프롬프트 yagni-oneliner는 95%)",
+        "Claude Code·Codex·Copilot CLI·Gemini/Antigravity·OpenCode·Pi·Hermes·OpenClaw·Grok Build 등 20개 에이전트 지원"
+      ],
+      "use_case": "에이전트가 요청하지도 않은 라이브러리를 깔고 래퍼 컴포넌트에 스타일시트까지 만들어내는 과잉 구현을 막고 싶을 때. 리뷰 부담을 diff 크기 단계에서 줄이고 싶을 때.",
+      "install_hint": "/plugin marketplace add DietrichGebert/ponytail → /plugin install ponytail@ponytail (두 명령을 각각 따로 전송)",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "skill",
+        "yagni",
+        "코드축소",
+        "프롬프트엔지니어링",
+        "멀티하네스"
+      ],
+      "thumbnail_url": "https://github.com/DietrichGebert.png",
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-06-12T00:52:37Z",
+      "pushed_at": "2026-08-07T21:44:01Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 2,
+        "prev_score": 96.7,
+        "delta_rank": 1,
+        "delta_score": 0.8,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "2026-06-12 생성 · 59일차 · 최근 7일 +5,266★ (누적 99,326★) · 커뮤니티 6개 출처 교차검증(geeknews/hn/reddit/velog/web/x) · 언급 10건 · 최근 14일 언급 2건 · 토론 engagement 합계 135 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영) · 한국어 커뮤니티 언급 2건 · 31~59일 사각지대 확장 규칙으로 Rising 배정 · ※ 미검색 소스 reddit_arcticshift_60d,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 99326,
+          "actual": 99331,
+          "delta": 5,
+          "action": "corrected"
+        }
+      ],
+      "curator_note": "동일 이름의 미신고 재업로드본(0xwilliamortiz/ponytail-improved)이 존재한다. official_url·repo_url은 원본 DietrichGebert/ponytail(2026-06-12 생성, 컨트리뷰터 64명, homepage ponytail.dev)을 가리킨다."
+    },
+    {
+      "id": "yc-software/qm",
+      "name": "qm",
+      "owner": "yc-software",
+      "title_ko": "qm — 회사 단위 멀티플레이어 하네스",
+      "official_url": "https://github.com/yc-software/qm",
+      "repo_url": "https://github.com/yc-software/qm",
+      "homepage": "https://qm.ycombinator.com",
+      "category": "harness",
+      "category_confidence": "high",
+      "rank": 2,
+      "score": 96.8,
+      "trend_score": 96.8,
+      "stars": 12771,
+      "velocity_7d": 5599,
+      "source_count": 4,
+      "sources": [
+        "geeknews",
+        "github",
+        "hn",
+        "web"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49126604",
+          "label": "HN 프론트페이지 678pts / 164 comments (2026-07-31)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/yc-software/qm",
+          "label": "2026-07-29 생성 12일차 · 최근 7일 +5,599★ = 누적 12,771★의 44%"
+        },
+        {
+          "source": "geeknews",
+          "url": "https://news.hada.io/topic?id=32023",
+          "label": "GeekNews 8pts / 1 comment — \"협업을 위한 멀티플레이어 에이전트 하네스\" (2026-08-01)"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "개인 비서가 아니라 회사용 — 사람·채널마다 권한과 샌드박스가 다르다",
+      "summary_ko": "Y Combinator가 공개한, 스타트업 조직 운영을 전제로 설계된 에이전트 하네스다. 직원 각자가 격리된 워크스페이스에서 서로 간섭 없이 일하되 Slack 채널·그룹 메시지·프로젝트에서는 같은 에이전트와 함께 협업한다. 사람과 방(room) 단위로 메모리·파일·키체인 뷰·권한·크론·웹앱·영속 샌드박스가 따로 붙는다. 코어가 헤드리스라 Pi·OpenCode·Codex·Claude Code가 모두 같은 코어를 구동하며, 배포가 특정 벤더에 묶이지 않는다. 보안은 조직이 Strict(모든 툴 호출 승인) / Auto(기본, 외부 데이터·툴 결과를 분류기로 선별) / Dangerous 중 하나를 고르고 하위 스코프는 조이기만 가능한데, 재귀 삭제나 파괴적 SQL 같은 사전 선언 명령 정책은 Dangerous에서도 그대로 적용된다. 코어는 Node에서 TypeScript를 직접 돌리고 HTTP는 Fastify, Slack 플러그인은 Bolt, 웹 UI는 Vite+Lit이다. 조직 고유 설정·샌드박스 이미지·인프라는 별도 배포 디렉터리로 분리돼 코어를 업스트림과 바이트 동일하게 유지한다.",
+      "key_features": [
+        "사람·채널 스코프마다 메모리·파일·키체인·권한·크론·웹앱·영속 샌드박스를 개별 부여",
+        "Pi·OpenCode·Codex·Claude Code가 같은 헤드리스 코어를 구동 — 하네스와 모델 교체 가능",
+        "조직 보안 태세 3단계 + 태세와 무관하게 적용되는 재귀 삭제·파괴적 SQL 하드 거부 정책"
+      ],
+      "use_case": "사내 전 구성원용 에이전트를 각자 권한·데이터가 섞이지 않게 자체 클라우드 계정에 배포할 때. Slack 채널에 상주하는 팀 공용 에이전트가 필요할 때.",
+      "install_hint": "npm exec --yes --package=@yc-software/qm@latest -- qm init . --org <slug> --target <fly-or-aws>",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "harness",
+        "slack",
+        "조직배포",
+        "멀티에이전트",
+        "postgres"
+      ],
+      "thumbnail_url": "https://github.com/yc-software.png",
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-07-29T20:03:08Z",
+      "pushed_at": "2026-08-09T10:07:27Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 1,
+        "prev_score": 96.7,
+        "delta_rank": -1,
+        "delta_score": 0.1,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "2026-07-29 생성 · 12일차 신상 · 최근 7일 +5,599★ = 누적 12,771★의 44% · 커뮤니티 3개 출처 교차검증(geeknews/hn/web) · 언급 4건 · 최근 14일 언급 4건 · 토론 engagement 합계 1,031 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영) · 한국어 커뮤니티 언급 2건 · ※ 미검색 소스 velog,x — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "vshulcz/deja-vu",
+      "name": "deja-vu",
+      "owner": "vshulcz",
+      "title_ko": "deja — 이미 쌓인 세션을 기억으로",
+      "official_url": "https://github.com/vshulcz/deja-vu",
+      "repo_url": "https://github.com/vshulcz/deja-vu",
+      "homepage": "https://vshulcz.github.io/deja-vu/",
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 3,
+      "score": 88.2,
+      "trend_score": 88.2,
+      "stars": 616,
+      "velocity_7d": 110,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "hn"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48923111",
+          "label": "HN 131pts / 35 comments — \"Open-source memory for coding agents, synced over SSH\" (2026-07-15)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/vshulcz/deja-vu",
+          "label": "2026-07-14 생성 27일차 · 최근 7일 +110★ = 누적 616★의 18% · 컨트리뷰터 14명"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "설치 전 몇 달치 대화까지 색인, 3.5GB를 중앙값 1.5ms에 검색",
+      "summary_ko": "메모리 도구는 대개 빈 상태로 시작해 앞으로만 기록하지만, deja는 Claude Code·Codex·opencode·aider·Gemini CLI·Cursor 등 16개 하네스가 이미 로컬 파일로 써 둔 대화를 색인해 처음부터 가득 찬 상태로 시작한다. LLM 호출도 임베딩도 API 키도 없이 동작하며, LongMemEval-S 세션 검색 hit@1 84.9%, LoCoMo 69.8%라는 수치와 그것을 재현하는 하네스를 저장소에 같이 넣어 뒀다. MCP recall 툴로 어느 에이전트에서든 불러올 수 있어 Codex에서 해결한 문제를 Claude가 기억하고, SessionStart 훅을 걸면(1,000세션 인덱스 기준 약 120ms) 묻기 전에 관련 기억이 컨텍스트에 들어온다. 대화만이 아니라 각 턴이 연 파일, 실행한 명령, 편집이 대체한 정확한 구간까지 색인해 요약이 버리는 부분을 남긴다. 기기 간에는 SSH로 append-only 동기화하고 handoff로 다른 에이전트에 컨텍스트를 넘긴다. 색인 시점에 API 키·JWT·개인키를 제거하며 전부 로컬에 머무는 무의존 단일 바이너리다.",
+      "key_features": [
+        "설치 이전에 쌓인 히스토리까지 소급 색인 — 3.5GB 기준 중앙값 약 1.5ms 검색",
+        "MCP recall + SessionStart 자동 회상(1,000세션 기준 약 120ms), 하네스를 넘나드는 교차 회상",
+        "대화뿐 아니라 연 파일·실행 명령·편집이 대체한 구간까지 색인, 색인 시 비밀값 제거"
+      ],
+      "use_case": "몇 달 전에 이미 해결한 문제를 에이전트가 처음부터 다시 디버깅하고 있을 때. Codex와 Claude Code를 오가며 쓰는데 맥락이 매번 리셋될 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/vshulcz/deja-vu/main/install.sh | sh → deja install --all",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "agent",
+        "메모리",
+        "mcp",
+        "세션검색",
+        "로컬우선"
+      ],
+      "thumbnail_url": "https://github.com/vshulcz.png",
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2026-07-14T07:45:44Z",
+      "pushed_at": "2026-08-09T21:26:21Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 4,
+        "prev_score": 86.2,
+        "delta_rank": 1,
+        "delta_score": 2,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "2026-07-14 생성 · 27일차 신상 · 최근 7일 +110★ = 누적 616★의 18% · 커뮤니티 1개 출처(hn) · 언급 1건 · 토론 engagement 합계 166 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "clawkwork/clawk",
+      "name": "clawk",
+      "owner": "clawkwork",
+      "title_ko": "clawk — 에이전트에게 일회용 리눅스 VM",
+      "official_url": "https://github.com/clawkwork/clawk",
+      "repo_url": "https://github.com/clawkwork/clawk",
+      "homepage": null,
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 4,
+      "score": 87,
+      "trend_score": 87,
+      "stars": 951,
+      "velocity_7d": 64,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "hn"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48892859",
+          "label": "HN 프론트페이지 226pts / 159 comments — \"Show HN: Clawk\" (2026-07-13)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/clawkwork/clawk",
+          "label": "2026-07-06 생성 35일차 · 최근 7일 +64★ (누적 951★) · Apache-2.0"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "전부 승인하거나 전부 포기하거나, 그 사이의 세 번째 선택지",
+      "summary_ko": "코딩 에이전트에 실제 권한을 주려면 몇 초마다 명령을 승인하거나 --dangerously-skip-permissions로 내 노트북을 통째로 맡기는 두 가지 나쁜 선택지뿐이었다. clawk은 저장소에서 clawk만 치면 일회용 리눅스 VM이 뜨고 그 안에서 Claude Code(또는 Codex, 셸)가 코드만 마운트한 채 root로 동작한다. 게스트가 자체 커널을 돌리므로 호스트 파일시스템은 거부 규칙 뒤에 숨겨진 게 아니라 애초에 마운트되지 않았고, 아웃바운드는 허용목록 기반이며 ssh-agent만 포워딩해 키가 VM에 들어가지 않은 채로 git push가 된다. VM을 망가뜨려도 clawk destroy && clawk으로 새로 띄우고 --resume으로 대화를 되살린다. 다만 저자는 허용목록이 막는 것은 \"모르는\" 서버로의 연결이지 이미 허용한 곳(github.com 등)이 아니므로, 에이전트가 읽을 수 있는 것은 밖으로 내보낼 수도 있다고 한계를 명시한다. macOS 14+ Apple Silicon 기준이고 Linux는 firecracker 기반 실험 단계이며, 1.0 이전이라 릴리스 간 파괴적 변경이 있을 수 있다고 안내한다.",
+      "key_features": [
+        "Dockerfile·devcontainer 없이 명령 한 번 — 임의 OCI 이미지를 rootfs로 쓰고 게스트에서 root 권한",
+        "하이퍼바이저 경계 격리 + 아웃바운드 허용목록, ssh-agent 포워딩으로 키 없이 git push",
+        "프로젝트·티켓별 샌드박스 병렬 실행, 멀티 레포 티켓은 레포마다 worktree, 유휴 VM은 메모리 반납 후 디스크 서스펜드"
+      ],
+      "use_case": "에이전트에게 패키지 설치·백그라운드 서비스 기동·미검증 빌드 실행까지 맡기되 호스트는 내주기 싫을 때. 프로세스 샌드박스가 방해하는 Docker/Kind 워크플로가 필요할 때(하드웨어 조건부 옵트인).",
+      "install_hint": "brew install clawkwork/tap/clawk  (macOS 14+ Apple Silicon, Linux는 실험 단계)",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "agent",
+        "샌드박스",
+        "microvm",
+        "보안",
+        "macos"
+      ],
+      "thumbnail_url": "https://github.com/clawkwork.png",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-06T21:30:38Z",
+      "pushed_at": "2026-08-05T12:44:43Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 3,
+        "prev_score": 88.5,
+        "delta_rank": -1,
+        "delta_score": -1.5,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "2026-07-06 생성 · 35일차 · 최근 7일 +64★ (누적 951★) · 커뮤니티 1개 출처(hn) · 언급 1건 · 토론 engagement 합계 385 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영) · 31~59일 사각지대 확장 규칙으로 Rising 배정",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "YoanWai/agent-manager",
+      "name": "agent-manager",
+      "owner": "YoanWai",
+      "title_ko": "agent-manager — 에이전트 관제 TUI",
+      "official_url": "https://github.com/YoanWai/agent-manager",
+      "repo_url": "https://github.com/YoanWai/agent-manager",
+      "homepage": "https://agent-manager.dev",
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 5,
+      "score": 86.4,
+      "trend_score": 86.4,
+      "stars": 286,
+      "velocity_7d": 38,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "hn"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49107749",
+          "label": "HN 98pts / 79 comments — \"A Tmux TUI for Running Claude Code, Codex and OpenCode\" (2026-07-30)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/YoanWai/agent-manager",
+          "label": "2026-07-15 생성 26일차 · 최근 7일 +38★ (누적 286★) · 컨트리뷰터 7명"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "터미널 탭 뒤지지 않고 한 목록에서 6종 CLI 세션 상태 확인",
+      "summary_ko": "Claude Code·OpenCode·Codex·Grok Build·Gemini CLI·Pi를 각각 별도 tmux 세션으로 띄우고 한 목록에서 관리하는 TUI다. 이미 설치된 CLI를 그대로 실행하는 얇은 층이라 로그인·구독·설정 파일·MCP 서버·각 도구 고유 기능이 평소 터미널과 동일하게 동작한다. 어느 에이전트가 끝났고 어느 쪽이 막혔는지 실시간 상태로 보이며 접었다 펼 수 있는 프로젝트 트리로 묶인다. 세션에 붙지 않고도 space로 프롬프트를 밀어 넣거나 선택한 그룹에 새 에이전트를 띄울 수 있고, 죽은 세션은 v로 자기 대화를 그대로 이어 부활한다. ctrl+r은 에이전트가 바꾼 내용을 문법 강조된 전체 파일 diff로 열어 주고 줄에 남긴 코멘트를 C로 한 번에 리뷰 프롬프트로 보낸다. 세션은 agentmgr라는 전용 tmux 서버에서 돌아 사용자의 tmux와 섞이지 않는다. 비용 추적, 마우스 조작, 에이전트 간 대화는 아직 없다고 README가 직접 밝힌다.",
+      "key_features": [
+        "6종 CLI 상태 감지 + 접이식 프로젝트 트리, 죽은 세션은 자기 대화 그대로 부활(v)",
+        "ctrl+r 전체 파일 diff 리뷰 — 줄 코멘트를 모아 C로 에이전트에 리뷰 프롬프트 전달",
+        "세션별 git worktree 분리 옵션(<repo>-worktrees/<name>, 브랜치 am/<name>), 전용 tmux 서버로 격리"
+      ],
+      "use_case": "에이전트를 서너 개 동시에 굴리는데 어느 창이 승인 대기 중인지 못 찾을 때. 붙었다 떼는 반복 없이 여러 세션에 답만 넣고 싶을 때.",
+      "install_hint": "brew install yoanwai/tap/agent-manager  (또는 curl -fsSL https://raw.githubusercontent.com/YoanWai/agent-manager/main/install.sh | sh)",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "agent",
+        "tmux",
+        "tui",
+        "멀티세션",
+        "diff리뷰"
+      ],
+      "thumbnail_url": "https://github.com/YoanWai.png",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-15T16:27:33Z",
+      "pushed_at": "2026-08-09T15:46:35Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "2026-07-15 생성 · 26일차 신상 · 최근 7일 +38★ (누적 286★) · 커뮤니티 1개 출처(hn) · 언급 1건 · 최근 14일 언급 1건 · 토론 engagement 합계 177 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "veedstudio/open-edit",
+      "name": "open-edit",
+      "owner": "veedstudio",
+      "title_ko": "OpenEdit — 코딩 에이전트로 영상 편집",
+      "official_url": "https://github.com/veedstudio/open-edit",
+      "repo_url": "https://github.com/veedstudio/open-edit",
+      "homepage": null,
+      "category": "agent",
+      "category_confidence": "medium",
+      "rank": 6,
+      "score": 83.7,
+      "trend_score": 83.7,
+      "stars": 237,
+      "velocity_7d": 87,
+      "source_count": 3,
+      "sources": [
+        "github",
+        "hn",
+        "reddit"
+      ],
+      "evidence": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49169818",
+          "label": "HN 11pts / 7 comments — \"Show HN: OpenEdit\" (2026-08-04)"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1vh2onq/openedit_claude_code_can_now_edit_videos_open/",
+          "label": "r/ClaudeCode 37 upvotes / 12 comments (2026-08-06)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/veedstudio/open-edit",
+          "label": "2026-07-22 생성 19일차 · 최근 7일 +87★ = 누적 237★의 37%"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "GUI도 타임라인도 없이 \"자막 넣어줘\" 한 마디로 렌더까지",
+      "summary_ko": "VEED가 공개한 에이전트 주도 영상 편집 파이프라인이다. GUI도 타임라인도 없고 전부 코딩 에이전트로 지시한다 — 클립 편집·컷·리프레이밍, 모션 그래픽과 시각 요소 레이어, 슬라이드나 웹사이트를 영상으로 변환, 웹페이지 캡처, 필요하면 외부 영상·이미지 생성 서비스나 MCP 서버를 끌어다 쓰는 것까지 포함한다. 원본 영상이 없어도 스틸·슬라이드·생성 미디어·순수 모션 그래픽만으로 만들 수 있다. \"이 영상에 자막 넣어줘\"라고 하면 전사 → 트랜스크립트 분석 → 디자인 설계 → 번인 렌더까지 1~3분 만에 끝내고 미리보기를 띄운 뒤 최종 MP4 위치를 알려 준다. 이후 \"노란색 말고 더 어둡게\", \"'now'를 강조해줘\" 같은 후속 지시와 레퍼런스 이미지 기반 스타일 복제도 받는다. HTML 렌더러는 VEED의 클로즈드 소스이지만 무료로 쓸 수 있고, Apple Silicon + macOS Tahoe 26.0 전용이며 Intel Mac과 이전 macOS는 미지원, Windows·Linux는 수요에 따른 계획 단계다.",
+      "key_features": [
+        "자연어 지시 → 전사·자막 디자인·번인 렌더까지 1~3분, 이후 대화로 수정 반복",
+        "레퍼런스 이미지를 주면 그 스타일로 자막 디자인 복제, 슬라이드·웹페이지도 영상 소재로",
+        "Claude Code·Codex·Gemini 공용 스킬 + AGENTS.md 구조, Fal 등 외부 생성 서비스·MCP 연동"
+      ],
+      "use_case": "홍보·데모 영상 자막과 모션 그래픽을 편집기 없이 대화로 반복 수정하고 싶을 때(Apple Silicon macOS 26 한정).",
+      "install_hint": "npx skills add veedstudio/open-edit",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "agent",
+        "영상편집",
+        "자막",
+        "remotion대안",
+        "macos"
+      ],
+      "thumbnail_url": "https://github.com/veedstudio.png",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-22T12:22:15Z",
+      "pushed_at": "2026-08-07T10:56:44Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "2026-07-22 생성 · 19일차 신상 · 최근 7일 +87★ = 누적 237★의 37% · 커뮤니티 2개 출처 교차검증(hn/reddit) · 언급 4건 · 최근 14일 언급 4건 · 토론 engagement 합계 90 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general,x — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "blitzdotdev/blitzos",
+      "name": "blitzos",
+      "owner": "blitzdotdev",
+      "title_ko": "BlitzOS — 클라우드 에이전트용 컨텍스트 레포",
+      "official_url": "https://github.com/blitzdotdev/blitzos",
+      "repo_url": "https://github.com/blitzdotdev/blitzos",
+      "homepage": "https://blitzos.com",
+      "category": "skill",
+      "category_confidence": "medium",
+      "rank": 7,
+      "score": 75.9,
+      "trend_score": 75.9,
+      "stars": 176,
+      "velocity_7d": 5,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "reddit"
+      ],
+      "evidence": [
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1vbvcyk/your_claude_subscription_includes_cloud_computers/",
+          "label": "r/ClaudeAI 150 upvotes / 48 comments — 클라우드 컴퓨터 활용 스레드 내 언급(전용 게시글 아님, 2026-07-31)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/blitzdotdev/blitzos",
+          "label": "2026-07-13 생성 28일차 · 최근 7일 +5★ (누적 176★) · 마지막 커밋 2026-07-31"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "노트북 닫아도 되게, 새 VM이 내 레포 지도를 알고 부팅한다",
+      "summary_ko": "Claude 구독에 포함된 클라우드 컴퓨터(claude.ai/code에서 시작하는 클라우드 에이전트)는 매번 아무것도 모르는 새 VM으로 부팅된다 — 어느 레포끼리 한 묶음인지, 서로 어떤 관계인지, 우리 팀 컨벤션이 뭔지, 직전 에이전트가 뭘 했는지 모른다. BlitzOS는 사용자 소유의 비공개 GitHub 저장소 하나를 \"컨텍스트 레포\"로 만들어 이 문제를 메운다. 그 안에 레포 지도·관계·컨벤션·작업 루프를 담은 CLAUDE.md, 참조로만 고정한 멤버 레포(.gitmodules), 클라우드 에이전트가 남긴 세션 기록이 들어간다. 이후 원클릭 링크로 컨텍스트 레포와 작업 레포가 전부 선택된 채 VM이 뜨고, 에이전트는 CLAUDE.md와 이전 에이전트 기록을 읽고 곧바로 일을 시작한다. 기본 경로는 Anthropic의 네이티브 GitHub 레일을 그대로 타서 자격증명이 필요 없고, 소스 코드는 컨텍스트 레포로 복사되지도 BlitzOS 서버에 닿지도 않는다. 브라우저·로컬 스킬·자체 Cloudflare 계정 셀프호스팅 세 경로가 있다.",
+      "key_features": [
+        "컨텍스트 레포 = CLAUDE.md 지도 + 참조로 고정한 멤버 레포 + sessions/ 작업 로그",
+        "원클릭 다중 레포 실행 링크 — Anthropic 네이티브 GitHub 레일 사용, 기본 경로 토큰 0",
+        "blitzos.com 피드에서 클라우드 에이전트 상태(작업 중·조용·완료)를 기기 무관 확인"
+      ],
+      "use_case": "여러 레포에 걸친 작업을 클라우드 에이전트에 맡기고 노트북을 닫아 두고 싶을 때. 새 클라우드 세션마다 프로젝트 배경을 다시 붙여넣고 있을 때.",
+      "install_hint": "git clone https://github.com/blitzdotdev/blitzos.git && cd blitzos && ./install.sh → claude \"set up blitzos\"  (Claude Code·git·gh·jq·Node 18+ 필요)",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "skill",
+        "클라우드에이전트",
+        "컨텍스트",
+        "github",
+        "세션기록"
+      ],
+      "thumbnail_url": "https://github.com/blitzdotdev.png",
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-07-13T23:44:04Z",
+      "pushed_at": "2026-07-31T17:15:01Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "2026-07-13 생성 · 28일차 신상 · 최근 7일 +5★ (누적 176★) · 커뮤니티 1개 출처(reddit) · 언급 1건 · 최근 14일 언급 1건 · 토론 engagement 합계 198 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "Prism-Shadow/penguin-harness",
+      "name": "penguin-harness",
+      "owner": "Prism-Shadow",
+      "title_ko": "PenguinHarness — 자동 에이전트 빌더",
+      "official_url": "https://github.com/Prism-Shadow/penguin-harness",
+      "repo_url": "https://github.com/Prism-Shadow/penguin-harness",
+      "homepage": "https://penguin.ooo/",
+      "category": "harness",
+      "category_confidence": "medium",
+      "rank": 8,
+      "score": 70.6,
+      "trend_score": 70.6,
+      "stars": 1083,
+      "velocity_7d": 829,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "hn"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Prism-Shadow/penguin-harness",
+          "label": "2026-07-19 생성 22일차 · 최근 7일 +829★ = 누적 1,083★의 77% · 컨트리뷰터 9명"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49015242",
+          "label": "HN 제출 2pts / 0 comments (2026-07-23) — 토론은 형성되지 않음"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "한 문장으로 RAG 앱 하나, DeepSeek V4 Pro 토큰 $0.02",
+      "summary_ko": "데스크톱이나 서버에서 도는 자동 에이전트 빌더다. 한 문장을 입력하면 에이전트가 스캐폴드·코드·실행 방법까지 갖춘 에이전트 앱을 통째로 만들어 준다. README 예시는 Claude Code 문서를 수집해 출처를 인용하며 답하는 RAG 앱을 만드는 것으로, DeepSeek V4 Pro에서 토큰 비용이 $0.02였다고 밝힌다. 저수준 인터페이스 위에 의도적으로 최소한의 툴셋만 올려 호출 수와 토큰을 줄였고 DeepSeek 같은 오픈 모델에 맞춰 튜닝했다고 설명한다. Skills를 이용해 에이전트가 스스로 벤치마크를 돌리고 잃은 점수를 찾아 다음 버전을 내는 자기개선 루프가 있으며 라운드마다 스냅샷과 Trace 관찰이 남는다. 오피스 생산성·소프트웨어 개발·AI 앱 개발·에이전트 튜닝 네 개 스킬 그룹이 기본 탑재되고, DeepSeek V4·Kimi K3·GLM 5.2·Qwen·GPT·Gemini·Claude 등 OpenAI 프로토콜 엔드포인트면 무엇이든 연결된다. 데이터 분석 스위트에서 Claude Code의 1/70 비용으로 최고 정확도를 냈다는 비교는 제작사 자체 벤치마크다.",
+      "key_features": [
+        "한 문장 → 에이전트 앱 전체(스캐폴드·코드·실행법) 자동 생성",
+        "Skills 기반 자기개선 루프: 벤치마크 실행 → 감점 지점 탐색 → 다음 버전, 라운드별 스냅샷·Trace",
+        "데스크톱 앱과 CLI가 같은 ~/.penguin/data를 공유, OpenAI 프로토콜 엔드포인트면 모두 연결"
+      ],
+      "use_case": "DeepSeek·Kimi·GLM 같은 오픈 모델로 저비용 에이전트를 조립해 돌려 보고 싶을 때. 에이전트 품질을 벤치마크-수정 루프로 반복 개선하고 싶을 때.",
+      "install_hint": "curl -fsSL https://penguin.ooo/install.sh | sh → penguin web  (http://127.0.0.1:7364, 데스크톱 앱은 penguin.ooo/download)",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "harness",
+        "에이전트빌더",
+        "deepseek",
+        "자기개선",
+        "데스크톱앱"
+      ],
+      "thumbnail_url": "https://github.com/Prism-Shadow.png",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-19T03:15:21Z",
+      "pushed_at": "2026-08-07T15:06:48Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "2026-07-19 생성 · 22일차 신상 · 최근 7일 +829★ = 누적 1,083★의 77% · 커뮤니티 1개 출처(hn) · 언급 1건 · 토론 engagement 합계 2 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [],
+      "curator_note": "커뮤니티 신호가 얇다(HN 제출 2pts). 순위는 주간 +829★(누적의 77%)가 대부분을 만들었고, 성능·비용 비교는 전부 제작사 자체 측정치다."
+    },
+    {
+      "id": "Vincentwei1021/video-shotcraft",
+      "name": "video-shotcraft",
+      "owner": "Vincentwei1021",
+      "title_ko": "video-shotcraft — 제품 홍보 영상 스킬",
+      "official_url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "repo_url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "homepage": "https://vincentwei1021.github.io/video-shotcraft/",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 9,
+      "score": 69.8,
+      "trend_score": 69.8,
+      "stars": 4325,
+      "velocity_7d": 1059,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft",
+          "label": "2026-07-19 생성 22일차 · 최근 7일 +1,059★ = 누적 4,325★의 24% · 마지막 커밋 1일 전"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/Axel_bitblaze69/status/2082487199765844066",
+          "label": "X 소개 게시글 2건 (2026-07-27 / 07-30, engagement 미수집)"
+        }
+      ],
+      "status": "rising",
+      "catchphrase": "샷 레시피 152장 · 모션 프리뷰 209개로 프로모 영상 제작",
+      "summary_ko": "Claude Code나 Codex를 모션 디자인 스튜디오로 바꾸는 에이전트 스킬이다. 제품을 가리키면 Remotion으로 스토리보드를 짜고 애니메이션과 사운드 디자인까지 붙여 프로모·마케팅·런칭·데모 영상을 만든다. 실제 페이지 캡처, 2.5D 카메라 무브, 비트에 맞춘 컷, 영화급 SFX가 포함된다. 2026-08 업데이트로 샷 레시피 카드가 104장에서 152장, 모션 프리뷰는 209개로 늘었고, 209개 후보 모션을 레퍼런스 영상과 여덟 차례 프레임 단위 대조해 추린 결과라고 밝힌다. 카드는 모두 브랜드 요소를 뺀 중립 카피와 교체 가능한 ACCENT 색 변수 하나로 정리돼 있으며 각각 결정적으로 렌더되는 Remotion 네이티브 컴포넌트를 동반한다. 검증된 완성 템플릿 Ink Press(36.2초·1920×1080·30fps·10샷)를 지정하면 자기 제품의 스크린샷과 카피만 갈아끼워 같은 품질을 재현할 수 있다. 갤러리 인트로 38초 영상 자체가 이 스킬로 제작됐다.",
+      "key_features": [
+        "샷 레시피 카드 152장 / 모션 프리뷰 209개 — 갤러리에서 검색·필터 후 카드 이름으로 지정",
+        "Remotion 네이티브 컴포넌트(정규화 진행값 t 기반 결정적 렌더)로 재현 가능한 모션",
+        "완성 템플릿 Ink Press(36.2초·1080p·30fps·10샷) + 16개 카테고리 149개 SFX 라이브러리"
+      ],
+      "use_case": "제품 런칭·데모 영상을 편집자 없이 에이전트로 만들 때. 원하는 모션 레퍼런스를 먼저 고르고 그대로 구현시키고 싶을 때.",
+      "install_hint": "npx skills add Vincentwei1021/video-shotcraft  (또는 에이전트에 저장소 링크를 주고 \"이 스킬 설치해줘\")",
+      "badge": "🔥 Rising",
+      "badges": [
+        "🔥 Rising"
+      ],
+      "tags": [
+        "skill",
+        "remotion",
+        "영상제작",
+        "모션그래픽",
+        "프로모"
+      ],
+      "thumbnail_url": "https://github.com/Vincentwei1021.png",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-19T11:44:41Z",
+      "pushed_at": "2026-08-09T10:25:47Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 6,
+        "prev_score": 76.5,
+        "delta_rank": -3,
+        "delta_score": -6.7,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "2026-07-19 생성 · 22일차 신상 · 최근 7일 +1,059★ = 누적 4,323★의 24% · 커뮤니티 1개 출처(x) · 언급 2건 · 최근 14일 언급 2건 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 4323,
+          "actual": 4325,
+          "delta": 2,
+          "action": "corrected"
+        }
+      ]
+    }
+  ],
+  "classic": [
+    {
+      "id": "anthropics/claude-code",
+      "name": "claude-code",
+      "owner": "anthropics",
+      "title_ko": "Claude Code — 공식 터미널 코딩 에이전트",
+      "official_url": "https://github.com/anthropics/claude-code",
+      "repo_url": "https://github.com/anthropics/claude-code",
+      "homepage": "https://code.claude.com/docs/en/overview",
+      "category": "harness",
+      "category_confidence": "high",
+      "rank": 1,
+      "score": 97.7,
+      "trend_score": 97.7,
+      "stars": 140835,
+      "velocity_7d": 810,
+      "source_count": 7,
+      "sources": [
+        "anthropic",
+        "clien",
+        "devto",
+        "github",
+        "reddit",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1vio0w9/claude_code_your_sessions_can_now_message_each/",
+          "label": "r/ClaudeAI 390 upvotes / 49 comments — \"sessions can now message each other\" 이번 주 최대 반응 (2026-08-08)"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1v6y5q2/claude_code_has_a_hardcoded_instruction_telling/",
+          "label": "r/ClaudeCode 396 upvotes / 134 comments — 서브에이전트 하드코딩 지시 논쟁 (2026-07-26)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/anthropics/claude-code",
+          "label": "누적 140,835★ · 534일차인데 주간 +810★ · 마지막 커밋 2026-08-08"
+        },
+        {
+          "source": "devto",
+          "url": "https://dev.to/yan_gao_3ad90a90b26925538/claude-code-21226-vs-21225-what-actually-changed-1app",
+          "label": "dev.to 릴리스 diff 분석 — v2.1.226 vs v2.1.225 (2026-08-08)"
+        },
+        {
+          "source": "clien",
+          "url": "https://www.clien.net/service/board/news/19039505",
+          "label": "클리앙 한국어 뉴스 — Claude Code 자동화 보안 리뷰 (2026-02-05)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "08-14부터 Auto mode가 기본 권한 모드로 바뀐다",
+      "summary_ko": "터미널에 상주하며 코드베이스를 이해하고, 자연어 명령으로 루틴 작업 실행·복잡한 코드 설명·git 워크플로 처리를 맡는 Anthropic 공식 에이전트 CLI다. 터미널과 IDE에서 쓰거나 GitHub에서 @claude를 태그해 부를 수 있다. 이번 주 제품 맥락은 셋이다 — Pro·Max·Team 플랜에서 Auto mode가 기본 권한 모드가 되고(공지 2026-08-07, 적용 08-14), 자체 컴퓨트에서 세션을 실행하는 기능이 08-06에 공개됐으며, MCP 2026-07-28 스펙이 나왔다. 커뮤니티에서는 세션끼리 서로 메시지를 보낼 수 있게 된 변경이 이번 주 최대 반응을 얻었다(r/ClaudeAI 390 upvotes / 49 comments, 08-08). 설치는 스크립트·Homebrew·WinGet이 권장 경로이며 npm 설치는 deprecated 처리됐다. 저장소에는 커스텀 커맨드와 에이전트를 추가하는 공식 플러그인들이 plugins/ 아래에 함께 들어 있다.",
+      "key_features": [
+        "터미널·IDE·GitHub(@claude 태그) 어디서든 같은 에이전트 사용",
+        "설치 스크립트 / Homebrew --cask / WinGet 지원, npm 전역 설치는 deprecated",
+        "저장소 plugins/ 디렉터리에 커맨드·에이전트를 추가하는 공식 플러그인 동봉"
+      ],
+      "use_case": "터미널에서 코드베이스 전체 맥락을 쥔 채 리팩터링·테스트·PR 작업을 시킬 때. 이 사이트가 다루는 스킬·플러그인 대부분의 실행 기반.",
+      "install_hint": "curl -fsSL https://claude.ai/install.sh | bash  (Windows: irm https://claude.ai/install.ps1 | iex)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "harness",
+        "공식",
+        "cli",
+        "anthropic",
+        "auto-mode"
+      ],
+      "thumbnail_url": "https://github.com/anthropics.png",
+      "language": "Python",
+      "license": null,
+      "created_at": "2025-02-22T17:41:21Z",
+      "pushed_at": "2026-08-08T02:48:04Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 2,
+        "prev_score": 95.5,
+        "delta_rank": 1,
+        "delta_score": 2.2,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 140,834★ · 2025-02-22 생성 534일차 · 주간 +810★ · 최근 커밋 2일 전 · 커뮤니티 6개 출처 교차검증(anthropic/clien/devto/reddit/velog/x) · 언급 27건 · 최근 14일 언급 14건 · 토론 engagement 합계 890 · 인플루언서 언급 14건 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영) · 한국어 커뮤니티 언급 5건",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 140834,
+          "actual": 140835,
+          "delta": 1,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "obra/superpowers",
+      "name": "superpowers",
+      "owner": "obra",
+      "title_ko": "Superpowers — 개발 방법론을 스킬로",
+      "official_url": "https://github.com/obra/superpowers",
+      "repo_url": "https://github.com/obra/superpowers",
+      "homepage": null,
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 2,
+      "score": 96.7,
+      "trend_score": 96.7,
+      "stars": 269726,
+      "velocity_7d": 4573,
+      "source_count": 7,
+      "sources": [
+        "devto",
+        "geeknews",
+        "github",
+        "hn",
+        "reddit",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/obra/superpowers",
+          "label": "누적 269,726★ · 305일차인데 주간 +4,573★ · 마지막 커밋 2026-08-08"
+        },
+        {
+          "source": "velog",
+          "url": "https://velog.io/@takuya/claude-code-superpowers-guide",
+          "label": "velog 한국어 체험기 8 likes (2026-01-29) — 한국어 후기 2건 확인"
+        },
+        {
+          "source": "geeknews",
+          "url": "https://news.hada.io/topic?id=29552",
+          "label": "GeekNews 한국어 사용기 (2026-06-20)"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/dr_cintas/status/2076739540094427218",
+          "label": "X 소개 게시글 2건 (2026-06-29 / 07-19, engagement 미수집)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "바로 코드로 뛰어들지 않고 \"뭘 만들려는 건지\"부터 되묻는다",
+      "summary_ko": "조합 가능한 스킬 묶음과 초기 지시문으로 코딩 에이전트에 소프트웨어 개발 방법론 전체를 얹는 프로젝트다. 에이전트가 뭔가를 만들려는 낌새를 보이는 순간부터 개입한다 — 곧장 코드를 쓰는 대신 한 발 물러나 실제 목표를 되묻고, 대화에서 뽑아낸 스펙을 실제로 읽고 소화할 만한 분량으로 잘라 보여준다. 설계에 서명하고 나면 판단력도 프로젝트 맥락도 테스트 습관도 없는 의욕만 앞선 주니어가 따라할 수 있을 만큼 구체적인 구현 계획을 만들고, 진짜 red/green TDD와 YAGNI·DRY를 강조한다. \"go\"라고 하면 서브에이전트 주도 개발로 넘어가 태스크를 하나씩 처리하고 결과를 검사·검토하며 전진하는데, 계획을 벗어나지 않고 두 시간씩 자율 작업하는 일도 드물지 않다는 것이 저자 설명이다. 스킬이 자동 발동해 별도로 호출할 필요가 없고, Claude Code·Antigravity·Codex 앱/CLI·Cursor·Factory Droid·Gemini CLI·Copilot CLI·Kimi Code·OpenCode·Pi 등 하네스마다 따로 설치한다. 269,000여 stars로 이 사이트가 추적하는 항목 중 최대 규모다.",
+      "key_features": [
+        "브레인스토밍 → 스펙 합의 → 구현 계획 → 서브에이전트 실행까지 스킬이 자동 발동",
+        "계획 단계에서 red/green TDD·YAGNI·DRY를 명시적으로 요구",
+        "Anthropic 공식 마켓플레이스 포함 11개 하네스 각각에 별도 설치"
+      ],
+      "use_case": "에이전트에게 기능 단위 작업을 맡기되 스펙 합의와 계획 검토를 건너뛰지 않게 하고 싶을 때. 장시간 자율 실행이 필요한 작업에.",
+      "install_hint": "/plugin install superpowers@claude-plugins-official  (Anthropic 공식 마켓플레이스)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "개발방법론",
+        "tdd",
+        "서브에이전트",
+        "스펙주도"
+      ],
+      "thumbnail_url": "https://github.com/obra.png",
+      "language": "Shell",
+      "license": "MIT",
+      "created_at": "2025-10-09T19:45:18Z",
+      "pushed_at": "2026-08-08T01:45:49Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 1,
+        "prev_score": 98.8,
+        "delta_rank": -1,
+        "delta_score": -2.1,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 269,721★ · 2025-10-09 생성 305일차 · 주간 +4,573★ · 최근 커밋 2일 전 · 커뮤니티 6개 출처 교차검증(devto/geeknews/hn/reddit/velog/x) · 언급 17건 · 최근 14일 언급 5건 · 토론 engagement 합계 351 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영) · 한국어 커뮤니티 언급 5건 · ※ 미검색 소스 reddit_arcticshift_60d,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 269721,
+          "actual": 269726,
+          "delta": 5,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "ayghri/i-have-adhd",
+      "name": "i-have-adhd",
+      "owner": "ayghri",
+      "title_ko": "i-have-adhd — 답부터 말하게 만드는 스킬",
+      "official_url": "https://github.com/ayghri/i-have-adhd",
+      "repo_url": "https://github.com/ayghri/i-have-adhd",
+      "homepage": null,
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 3,
+      "score": 96.3,
+      "trend_score": 96.3,
+      "stars": 18780,
+      "velocity_7d": 3096,
+      "source_count": 4,
+      "sources": [
+        "github",
+        "hn",
+        "reddit",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/ayghri/i-have-adhd",
+          "label": "누적 18,780★ · 89일차 · 주간 +3,096★ · 마지막 커밋 2026-08-06"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1vefyfi/attention_control_ihaveadhd_meets_asdste100/",
+          "label": "r/ClaudeCode 8 upvotes / 6 comments — ASD-STE100 결합 실험 (2026-08-03, 서브레딧 3곳 동시 게시)"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49023671",
+          "label": "HN 제출 2건 각 2pts (2026-05-18 / 07-23)"
+        },
+        {
+          "source": "x",
+          "url": null,
+          "label": "GitHub·HN·Reddit·X 4개 출처 교차검증 · 언급 12건 · 최근 14일 5건"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "\"Great question!\" 없이 명령어·경로·스니펫부터 내놓게",
+      "summary_ko": "코딩 어시스턴트가 답을 서두 아래 파묻지 않게 하는 출력 규칙 스킬이다. 규칙은 열 개다 — 다음 행동부터 말하기, 여러 단계는 번호 매기기, 마지막은 구체적인 다음 한 걸음으로, 곁길 억제, 매 턴 진행 상태 재진술, \"조금\"이 아니라 분 단위 시간 추정, 성과 가시화, 담담한 오류 보고, 목록은 5개까지, 서두·요약·맺음말 금지. README의 before/after 예시에서는 \"Great question! Let me think about this…\"로 시작하던 한 문단짜리 답이 npm install jsonwebtoken@latest 실행 후 src/auth.ts:42 수정이라는 세 줄 절차로 바뀐다. ADHD 진단이 필요한 스킬은 아니며, 성인 ADHD 워크북을 사람이 하루를 조직하는 방식이 아니라 LLM이 응답해야 하는 방식으로 각색했다고 밝힌다. 규칙 전문은 SKILL.md 한 장에 들어 있어 포크해 고친 뒤 자기 사본으로 갈아끼울 수 있다. 한국어 포함 6개 언어 README를 제공하며, 지난주 rising에서 이번 주 classic으로 올라왔다(점수 +13.7).",
+      "key_features": [
+        "출력 규칙 10개(행동 우선·번호 매기기·목록 5개 제한·서두와 맺음말 금지)를 SKILL.md 한 장으로",
+        "Claude Code·Antigravity·Copilot·Pi 등 하네스별 설치 문서 + 선택형 always-on 프롬프트 블록",
+        "포크해서 SKILL.md만 고쳐 자기 사본으로 교체 가능"
+      ],
+      "use_case": "에이전트 답변에서 실제로 실행할 명령을 찾으려 매번 스크롤을 내리고 있을 때. 팀 공용 응답 포맷을 고정하고 싶을 때.",
+      "install_hint": "claude plugin marketplace add ayghri/i-have-adhd → claude plugin install i-have-adhd@i-have-adhd",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "skill",
+        "출력포맷",
+        "가독성",
+        "생산성",
+        "멀티하네스"
+      ],
+      "thumbnail_url": "https://github.com/ayghri.png",
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-05-13T20:42:06Z",
+      "pushed_at": "2026-08-06T18:19:11Z",
+      "rank_change": {
+        "prev_section": "rising",
+        "prev_rank": 5,
+        "prev_score": 82.6,
+        "delta_rank": null,
+        "delta_score": 13.7,
+        "note": "rising → classic 섹션 이동"
+      },
+      "why_trending": "누적 18,780★ · 2026-05-13 생성 89일차 · 주간 +3,096★ · 최근 커밋 4일 전 · 커뮤니티 3개 출처 교차검증(hn/reddit/x) · 언급 12건 · 최근 14일 언급 5건 · 토론 engagement 합계 42 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "stablyai/orca",
+      "name": "orca",
+      "owner": "stablyai",
+      "title_ko": "Orca — 병렬 에이전트용 데스크톱 ADE",
+      "official_url": "https://github.com/stablyai/orca",
+      "repo_url": "https://github.com/stablyai/orca",
+      "homepage": "https://onOrca.dev",
+      "category": "harness",
+      "category_confidence": "high",
+      "rank": 4,
+      "score": 88.5,
+      "trend_score": 88.5,
+      "stars": 40819,
+      "velocity_7d": 5045,
+      "source_count": 4,
+      "sources": [
+        "geeknews",
+        "github",
+        "hn",
+        "web"
+      ],
+      "evidence": [
+        {
+          "source": "geeknews",
+          "url": "https://news.hada.io/topic?id=32253",
+          "label": "GeekNews 15pts / 7 comments — \"여러 병렬 코딩 에이전트를 위한 오픈소스 ADE\" (2026-08-08)"
+        },
+        {
+          "source": "github",
+          "url": "https://github.com/stablyai/orca",
+          "label": "누적 40,819★ · 146일차 · 주간 +5,045★ · 마지막 커밋 당일"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47549197",
+          "label": "HN 21pts / 10 comments — \"Open Source Conductor + Ghostty\" 스레드 내 언급 (2026-03-27)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "프롬프트 하나를 다섯 에이전트에 뿌리고 이긴 워크트리만 머지",
+      "summary_ko": "Codex·Claude Code·OpenCode·Pi를 각각 격리된 git worktree에서 나란히 돌리고 한 곳에서 추적하는 데스크톱 ADE(에이전트 개발 환경)다. 프롬프트 하나를 여러 에이전트에 팬아웃해 결과를 비교하고 이긴 것만 머지할 수 있다. 터미널은 Ghostty급 WebGL 렌더링에 무한 분할과 재시작 후에도 남는 스크롤백을 제공하고, 디자인 모드는 실제 Chromium 창에서 UI 요소를 클릭하면 그 HTML·CSS와 크롭 스크린샷을 곧장 프롬프트로 넣어 준다. GitHub·Linear가 앱 안에 붙어 PR·이슈·프로젝트 보드를 보고 태스크에서 바로 워크트리를 열 수 있으며, SSH 워크트리로 성능 좋은 원격 머신에서 파일 편집·git·터미널을 자동 재연결과 포트 포워딩까지 붙여 쓴다. iOS·Android 모바일 컴패니언으로 에이전트 완료 알림을 받고 후속 지시를 보낼 수 있다. MIT 라이선스, macOS·Windows·Linux 데스크톱 앱이며 한국어 README를 포함한다.",
+      "key_features": [
+        "프롬프트 팬아웃 → 에이전트별 격리 worktree → 결과 비교 후 승자 머지",
+        "디자인 모드: Chromium에서 클릭한 요소의 HTML·CSS·크롭 스크린샷을 프롬프트로 주입",
+        "SSH 원격 워크트리(자동 재연결·포트 포워딩) + iOS/Android 컴패니언 알림·후속 지시"
+      ],
+      "use_case": "같은 작업을 여러 모델·에이전트에 동시에 시켜 가장 나은 결과를 고르고 싶을 때. 자리를 비운 사이 에이전트 상태를 휴대폰으로 확인해야 할 때.",
+      "install_hint": "brew install --cask stablyai/orca/orca  (또는 onorca.dev/download에서 dmg/exe/AppImage)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "harness",
+        "병렬에이전트",
+        "worktree",
+        "데스크톱앱",
+        "모바일"
+      ],
+      "thumbnail_url": "https://github.com/stablyai.png",
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-03-17T03:28:57Z",
+      "pushed_at": "2026-08-10T00:44:25Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 3,
+        "prev_score": 85.9,
+        "delta_rank": -1,
+        "delta_score": 2.6,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 40,811★ · 2026-03-17 생성 146일차 · 주간 +5,045★ · 최근 커밋 0일 전 · 커뮤니티 3개 출처 교차검증(geeknews/hn/web) · 언급 3건 · 최근 14일 언급 2건 · 토론 engagement 합계 70 · 한국어 커뮤니티 언급 1건 · ※ 미검색 소스 reddit_arcticshift_60d,x — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 40811,
+          "actual": 40819,
+          "delta": 8,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/hermes-agent",
+      "name": "hermes-agent",
+      "owner": "NousResearch",
+      "title_ko": "Hermes Agent — 자기개선형 상주 에이전트",
+      "official_url": "https://github.com/NousResearch/hermes-agent",
+      "repo_url": "https://github.com/NousResearch/hermes-agent",
+      "homepage": "https://hermes-agent.nousresearch.com",
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 5,
+      "score": 87.1,
+      "trend_score": 87.1,
+      "stars": 227936,
+      "velocity_7d": 4155,
+      "source_count": 3,
+      "sources": [
+        "github",
+        "hn",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "label": "누적 227,936★ · 384일차인데 주간 +4,155★ · 마지막 커밋 당일"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48187581",
+          "label": "HN 8pts / 1 comment — 표절 주장 이슈 편집 관련 스레드 (2026-05-19)"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47264225",
+          "label": "HN 소개 스레드 4pts / 3 comments (2026-03-05)"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/mikenevermiss/status/2065083227069349901",
+          "label": "X 관련 레포 큐레이션 스레드 내 언급 (2026-07-04)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "$5 VPS에 올려 두고 텔레그램으로 지시하는 상주 에이전트",
+      "summary_ko": "Nous Research가 만든 자기개선형 에이전트다. 경험에서 스킬을 만들어 사용 도중 개선하고, 지식을 남기라고 자신을 주기적으로 자극하며, 과거 대화를 FTS5로 검색하고 세션을 넘어 사용자 모델을 쌓아 간다. 노트북에 묶이지 않아 클라우드 VM에서 돌리며 텔레그램으로 말을 걸 수 있고, Discord·Slack·WhatsApp·Signal·CLI를 게이트웨이 프로세스 하나로 처리하며 음성 메모 전사와 플랫폼 간 대화 연속성을 지원한다. 모델은 Nous Portal·OpenRouter·OpenAI·자체 엔드포인트 등 원하는 것을 쓰고 hermes model 명령으로 코드 변경 없이 교체한다. 터미널 백엔드는 local·Docker·SSH·Singularity·Modal·Daytona·Vercel Sandbox 7종이며 Daytona와 Modal은 유휴 시 환경이 동면했다 요청 시 깨어나 대기 비용이 거의 들지 않는다. 내장 크론으로 일일 리포트·야간 백업 같은 무인 작업을 자연어로 걸고, 서브에이전트를 띄워 병렬 작업을 시킬 수 있다. agentskills.io 개방 표준과 호환된다. HN에는 표절 주장 관련 이슈 처리를 문제 삼는 스레드도 올라와 있다.",
+      "key_features": [
+        "복잡한 작업 후 스킬 자동 생성 + 사용 중 자체 개선, Honcho 기반 사용자 모델링과 세션 검색",
+        "Telegram·Discord·Slack·WhatsApp·Signal·CLI를 게이트웨이 하나로 — 음성 메모 전사, 대화 연속성",
+        "터미널 백엔드 7종(local·Docker·SSH·Singularity·Modal·Daytona·Vercel Sandbox), 유휴 시 동면"
+      ],
+      "use_case": "노트북이 아니라 서버에 상주시키고 메신저로 지시하는 개인 에이전트를 원할 때. 반복 작업을 크론으로 무인 실행하고 싶을 때.",
+      "install_hint": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash → hermes  (Windows: iex (irm https://hermes-agent.nousresearch.com/install.ps1))",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "agent",
+        "자기개선",
+        "메신저연동",
+        "크론",
+        "nous-research"
+      ],
+      "thumbnail_url": "https://github.com/NousResearch.png",
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-07-22T22:22:28Z",
+      "pushed_at": "2026-08-10T00:31:02Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 227,930★ · 2025-07-22 생성 384일차 · 주간 +4,155★ · 최근 커밋 0일 전 · 커뮤니티 2개 출처 교차검증(hn/x) · 언급 6건 · 최근 14일 언급 1건 · 토론 engagement 합계 27 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 227930,
+          "actual": 227936,
+          "delta": 6,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "Graphify-Labs/graphify",
+      "name": "graphify",
+      "owner": "Graphify-Labs",
+      "title_ko": "graphify — 코드베이스를 지식 그래프로",
+      "official_url": "https://github.com/Graphify-Labs/graphify",
+      "repo_url": "https://github.com/Graphify-Labs/graphify",
+      "homepage": "https://www.graphify.com",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 6,
+      "score": 81.7,
+      "trend_score": 81.7,
+      "stars": 104620,
+      "velocity_7d": 3533,
+      "source_count": 3,
+      "sources": [
+        "github",
+        "hn",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "label": "누적 104,620★ · 129일차 · 주간 +3,533★ · 마지막 커밋 1일 전"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49217306",
+          "label": "HN 제출 3건 각 2~3pts (2026-07-29 / 08-06 / 08-07) — 토론은 얇음"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/Sanemavcil/status/2063282763734622235",
+          "label": "X 소개 게시글 2건 (2026-06-12 / 07-02, engagement 미수집)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "grep 대신 질의 — tree-sitter 로컬 파싱, 벡터 스토어 없음",
+      "summary_ko": "AI 코딩 어시스턴트에서 /graphify를 치면 코드·문서·SQL 스키마·설정·PDF·이미지·영상까지 프로젝트 전체를 질의 가능한 지식 그래프로 만든다. 코드는 tree-sitter AST로 결정적으로 파싱해 LLM 없이 전부 로컬에서 처리하고, 문서·PDF·미디어의 의미 분석 단계만 어시스턴트 모델이나 설정한 API 키를 쓴다. 임베딩도 벡터 스토어도 없는 실제 그래프라 두 대상 사이의 경로를 추적하거나 개념 하나를 설명시킬 수 있다. 모든 엣지에 EXTRACTED(원문에 명시)와 INFERRED(graphify가 해석) 태그가 붙어 읽은 것과 추론한 것을 구분한다. 산출물은 브라우저에서 클릭·필터·검색이 되는 graph.html, 핵심 개념과 의외의 연결·추천 질문을 담은 GRAPH_REPORT.md, 다시 파일을 읽지 않고 질의할 수 있는 graph.json 세 개다. 약 40개 언어에서 calls·imports·inherits·mixes_in을 파일을 넘어 해석하고, # NOTE: / # WHY: 주석과 ADR/RFC 인용을 1급 노드로 끌어올린다. Claude Code·Cursor·Codex·Gemini CLI·Copilot 등 15종 이상을 지원하며 한국어 README를 포함한다.",
+      "key_features": [
+        "tree-sitter AST 로컬 결정적 파싱 — 임베딩·벡터 스토어 없이 실제 그래프를 순회",
+        "엣지마다 EXTRACTED/INFERRED 태그로 근거와 추론 구분, graphify path/explain/query로 질의",
+        "코드 외 문서·PDF·이미지·영상도 같은 그래프에, 산출물은 graph.html·GRAPH_REPORT.md·graph.json"
+      ],
+      "use_case": "처음 보는 대형 코드베이스에서 무엇이 무엇을 호출하는지 grep으로 훑고 있을 때. 에이전트에게 구조 맥락을 한 번에 쥐여주고 싶을 때.",
+      "install_hint": "uv tool install graphifyy && graphify install → 에이전트에서 /graphify .",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "skill",
+        "지식그래프",
+        "tree-sitter",
+        "코드검색",
+        "yc"
+      ],
+      "thumbnail_url": "https://github.com/Graphify-Labs.png",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2026-04-03T15:49:07Z",
+      "pushed_at": "2026-08-09T22:25:00Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 104,615★ · 2026-04-03 생성 129일차 · 주간 +3,533★ · 최근 커밋 1일 전 · 커뮤니티 2개 출처 교차검증(hn/x) · 언급 6건 · 최근 14일 언급 3건 · 토론 engagement 합계 9 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 104615,
+          "actual": 104620,
+          "delta": 5,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "diegosouzapw/OmniRoute",
+      "name": "OmniRoute",
+      "owner": "diegosouzapw",
+      "title_ko": "OmniRoute — 무료 티어 통합 AI 게이트웨이",
+      "official_url": "https://github.com/diegosouzapw/OmniRoute",
+      "repo_url": "https://github.com/diegosouzapw/OmniRoute",
+      "homepage": "https://omniroute.online",
+      "category": "mcp",
+      "category_confidence": "low",
+      "rank": 7,
+      "score": 79.7,
+      "trend_score": 79.7,
+      "stars": 44283,
+      "velocity_7d": 6399,
+      "source_count": 4,
+      "sources": [
+        "github",
+        "hn",
+        "reddit",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "label": "누적 44,283★ · 178일차 · 주간 +6,399★ · 마지막 커밋 당일"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/AI_Agents/comments/1vi7l7o/omniroute_setup_guide_and_how_to_not_waste_your/",
+          "label": "r/AI_Agents 셋업 가이드 1pt / 1 comment (2026-08-07)"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/VaibhavSisinty/status/2083514195107348539",
+          "label": "X 소개 게시글 — 레이트 리밋 회피 용도로 언급 (2026-08-02)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "한 엔드포인트 뒤에 291개 프로바이더, 한도 차면 자동 폴백",
+      "summary_ko": "Claude Code·Codex·Cursor·Cline·Copilot·OpenCode 같은 도구가 그대로 붙는 로컬 AI 게이트웨이다. 엔드포인트 하나 뒤에 291개 프로바이더(90여 곳은 무료 티어)를 두고, 쿼터를 인지해 한도에 걸리면 다음 프로바이더로 자동 폴백하며 19개 라우팅 전략을 제공한다. 문서화된 무료 티어를 43개 프로바이더 풀 / 516개 모델 기준으로 합산해 월 약 15.3억 토큰이라는 값을 대시보드에서 실시간으로 보여 주는데, 공유 풀은 한 번만 세는 중복 제거 방식이고 2주마다 재감사해 값이 오르내린다고 스스로 명시한다. RTK와 Caveman을 겹쳐 쓰는 7단계 압축 파이프라인으로 토큰을 15~95% 줄인다고 밝힌다. 로컬 프로세스로만 돌고 기본 텔레메트리가 없으며 자격증명은 AES-256-GCM으로 암호화 저장하고 감사 로그는 자체 SQLite에 남는다. MIT이며 npm 전역 설치·Docker·Electron 데스크톱·Termux(안드로이드)·PWA·OpenCode 플러그인으로 설치된다.",
+      "key_features": [
+        "쿼터 인지 자동 폴백 + 19개 라우팅 전략 — 엔드포인트 하나로 291개 프로바이더 / 516개 모델",
+        "RTK+Caveman 스택 압축(7단계 파이프라인)으로 토큰 15~95% 절감(제작사 표기)",
+        "로컬 전용·기본 텔레메트리 없음·자격증명 AES-256-GCM 암호화, npm/Docker/데스크톱/Termux/PWA"
+      ],
+      "use_case": "구독 한도에 자주 걸려 작업이 끊길 때. 여러 프로바이더 키를 도구마다 따로 꽂아 관리하고 있을 때.",
+      "install_hint": "npm install -g omniroute  (또는 docker run -d -p 127.0.0.1:20128:20128 diegosouzapw/omniroute:latest)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "mcp",
+        "게이트웨이",
+        "토큰절감",
+        "무료티어",
+        "프록시"
+      ],
+      "thumbnail_url": "https://github.com/diegosouzapw.png",
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-02-13T12:38:31Z",
+      "pushed_at": "2026-08-10T00:40:34Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 44,279★ · 2026-02-13 생성 178일차 · 주간 +6,399★ · 최근 커밋 1일 전 · 커뮤니티 3개 출처 교차검증(hn/reddit/x) · 언급 4건 · 최근 14일 언급 3건 · 토론 engagement 합계 4 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 44279,
+          "actual": 44283,
+          "delta": 4,
+          "action": "corrected"
+        }
+      ],
+      "curator_note": "분석기 분류는 mcp지만 README 자기소개는 \"The Free AI Gateway\"(로컬 프록시)이고 MCP/A2A는 부가 기능이다. 무료 티어 토큰량·압축률은 전부 제작사 자체 공표 수치다."
+    },
+    {
+      "id": "Panniantong/Agent-Reach",
+      "name": "Agent-Reach",
+      "owner": "Panniantong",
+      "title_ko": "Agent Reach — 에이전트에 인터넷을 붙인다",
+      "official_url": "https://github.com/Panniantong/Agent-Reach",
+      "repo_url": "https://github.com/Panniantong/Agent-Reach",
+      "homepage": null,
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 8,
+      "score": 79.5,
+      "trend_score": 79.5,
+      "stars": 69731,
+      "velocity_7d": 5042,
+      "source_count": 4,
+      "sources": [
+        "devto",
+        "github",
+        "hn",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "label": "누적 69,731★ · 167일차 · 주간 +5,042★ · 마지막 커밋 2026-08-06"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49207806",
+          "label": "HN 4pts / 4 comments — \"gives AI agents access to the internet\" (2026-08-07)"
+        },
+        {
+          "source": "devto",
+          "url": "https://dev.to/creeta/agent-reach-absorbed-bilibilis-412s-your-agent-kept-working-14ej",
+          "label": "dev.to — 빌리빌리 412 차단 우회 전환 사례 (2026-08-04)"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/PrajwalTomar_/status/2071571642057359766",
+          "label": "X 소개 게시글 (2026-07-16)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "트위터·Reddit·YouTube·빌리빌리를 API 비용 없이 읽는 CLI",
+      "summary_ko": "코딩 에이전트가 웹에서 뭘 좀 찾아오게 만드는 CLI 묶음이다. 웹페이지 읽기, YouTube 자막과 영상 검색, RSS, 전문 검색, GitHub, 트위터/X, Reddit, 샤오홍슈, 빌리빌리를 하나의 명령줄 도구로 묶는다. 유료 API·IP 차단·로그인 요구·HTML 정제 같은 플랫폼별 장벽을 미리 넘겨 두었고, 설치는 에이전트에 설치 문서 URL을 붙여 넣는 것으로 끝난다. 플랫폼마다 \"우선 + 대체\" 다중 백엔드 라우팅을 두어 접근 경로가 막히면 다음 것으로 갈아탄다 — README가 드는 사례는 2026-06 yt-dlp가 빌리빌리 리스크 컨트롤에 막히자 bili-cli로 전환했고 사용자 조작은 필요 없었다는 것이다. 도구는 모두 오픈소스이고 API는 무료이며 유일하게 돈이 들 수 있는 것은 서버 프록시(월 $1 수준)로 로컬 PC에는 필요 없다고 밝힌다. 쿠키는 로컬에만 저장한다. agent-reach doctor 한 줄로 어느 경로가 살아 있는지 진단한다. README 본문은 중국어이며 한국어·영어·일본어 번역이 제공된다.",
+      "key_features": [
+        "YouTube 자막·X·Reddit·샤오홍슈·빌리빌리·GitHub·RSS·웹 읽기·전문 검색을 CLI 하나로",
+        "플랫폼별 \"우선+대체\" 다중 백엔드 라우팅 — 접근 경로가 막히면 사용자 조작 없이 교체",
+        "agent-reach doctor 진단 명령, 쿠키 로컬 보관, 명령줄을 쓸 수 있는 에이전트면 모두 호환"
+      ],
+      "use_case": "에이전트에게 커뮤니티 반응이나 영상 내용 조사를 시키려는데 403과 로그인 벽에 막힐 때. 여러 플랫폼 스크래핑 도구를 각각 설정하기 귀찮을 때.",
+      "install_hint": "에이전트에 설치 문서 URL 전달: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "agent",
+        "웹수집",
+        "cli",
+        "스크래핑",
+        "멀티플랫폼"
+      ],
+      "thumbnail_url": "https://github.com/Panniantong.png",
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-02-24T02:10:24Z",
+      "pushed_at": "2026-08-06T12:09:49Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 69,720★ · 2026-02-24 생성 167일차 · 주간 +5,042★ · 최근 커밋 4일 전 · 커뮤니티 3개 출처 교차검증(devto/hn/x) · 언급 4건 · 최근 14일 언급 3건 · 토론 engagement 합계 13 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 69720,
+          "actual": 69731,
+          "delta": 11,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "oraios/serena",
+      "name": "serena",
+      "owner": "oraios",
+      "title_ko": "Serena — 에이전트에 IDE급 심볼 조작",
+      "official_url": "https://github.com/oraios/serena",
+      "repo_url": "https://github.com/oraios/serena",
+      "homepage": "https://oraios.github.io/serena",
+      "category": "mcp",
+      "category_confidence": "high",
+      "rank": 9,
+      "score": 79.2,
+      "trend_score": 79.2,
+      "stars": 27782,
+      "velocity_7d": 359,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "reddit"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/oraios/serena",
+          "label": "누적 27,782★ · 505일차 · 주간 +359★ · 마지막 커밋 1일 전"
+        },
+        {
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6n33i/llamacpp_now_has_full_mcp_support/",
+          "label": "r/LocalLLaMA 365 upvotes / 59 comments — MCP 스레드 내 언급(전용 게시글 아님, 2026-07-25)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "줄 번호 대신 심볼 단위 — 40여 개 언어 LSP를 MCP로",
+      "summary_ko": "코딩 에이전트에 IDE에 준하는 의미 기반 코드 검색·편집·리팩터링·디버깅 도구를 MCP로 붙여 주는 툴킷이다. 줄 번호나 원시 검색 패턴 같은 저수준 개념에 기대는 접근과 달리 심볼 단위로 동작하고 관계 구조를 활용하기 때문에, 크고 복잡한 코드베이스일수록 에이전트가 더 빠르고 안정적으로 움직인다는 것이 설계 주장이다. 언어 서버(LSP) 백엔드로 40개 이상 언어를 지원하고 JetBrains 백엔드도 선택할 수 있다. MCP를 지원하는 클라이언트면 어디든 붙는다 — Claude Code·Codex·OpenCode·Gemini CLI 같은 터미널 클라이언트, VSCode·Cursor·JetBrains 플러그인, Claude Desktop·Codex 앱 같은 데스크톱 클라이언트. 저장소에는 에이전트가 약 20개 일상 코딩 과제를 수행하게 한 뒤 스스로 가치를 평가하게 하는 편향 배제 평가 프롬프트와 그 결과·방법론이 함께 공개돼 있다. 저자는 MCP나 플러그인 마켓플레이스 경유 설치가 오래된 명령을 담고 있으니 쓰지 말고 uv로 설치하라고 못 박는다.",
+      "key_features": [
+        "심볼 단위 검색·편집·리팩터링 — 교차 파일 이름 변경·이동·참조 조회를 원자적 호출로",
+        "LSP 백엔드로 40개 이상 언어 지원, JetBrains 백엔드 선택 가능(serena init -b JetBrains)",
+        "MCP 표준이라 터미널 CLI·IDE 플러그인·데스크톱 클라이언트 어디에나 연결"
+      ],
+      "use_case": "대형·다중 언어 저장소에서 에이전트가 텍스트 치환으로 리팩터링을 망칠 때. 참조 추적과 교차 파일 이동을 정확히 시켜야 할 때.",
+      "install_hint": "uv tool install -p 3.13 serena-agent → serena init  (마켓플레이스 경유 설치는 저자가 명시적으로 비권장)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "mcp",
+        "lsp",
+        "리팩터링",
+        "심볼검색",
+        "ide"
+      ],
+      "thumbnail_url": "https://github.com/oraios.png",
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-03-23T22:35:24Z",
+      "pushed_at": "2026-08-09T18:37:45Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 27,782★ · 2025-03-23 생성 505일차 · 주간 +359★ · 최근 커밋 1일 전 · 커뮤니티 1개 출처(reddit) · 언급 1건 · 토론 engagement 합계 424 · HN/Reddit 프론트페이지 이력 보유(7일 밖 → buzz 보너스에만 반영)",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "Yeachan-Heo/oh-my-claudecode",
+      "name": "oh-my-claudecode",
+      "owner": "Yeachan-Heo",
+      "title_ko": "oh-my-claudecode — 팀 오케스트레이션",
+      "official_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "repo_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "homepage": "https://oh-my-claudecode.dev",
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 10,
+      "score": 78.7,
+      "trend_score": 78.7,
+      "stars": 38456,
+      "velocity_7d": 193,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "velog"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+          "label": "누적 38,456★ · 213일차 · 주간 +193★ · 마지막 커밋 1일 전"
+        },
+        {
+          "source": "velog",
+          "url": "https://velog.io/@sammy0329/Claude-Code%EB%A5%BC-200-%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-spec-kit-Everything-Claude-Code-Oh-My-ClaudeCode-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C",
+          "label": "velog 한국어 가이드 6 likes (2026-02-02) — 확인된 커뮤니티 언급은 이 1건"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "Claude Code를 배우지 말고 /autopilot 한 줄로 시킨다",
+      "summary_ko": "Claude Code용 멀티에이전트 오케스트레이션 플러그인이다. 한국인 메인테이너가 이끄는 프로젝트로 한국어를 포함해 7개 언어 README를 제공한다. v4.1.7부터 team이 정식 오케스트레이션 표면이며 team-plan → team-prd → team-exec → team-verify → team-fix 루프의 단계형 파이프라인으로 돈다. 표면이 둘로 나뉘는데, 세션 안에서 /team 3:executor \"fix all TypeScript errors\"처럼 쓰면 Claude Code 네이티브 팀 워크플로가 돌고, 터미널에서 omc team 2:codex …로 쓰면 claude·codex·gemini 패널이 실제 tmux 워커로 뜬다. 요구사항이 흐릿할 때는 /deep-interview가 소크라테스식 질문으로 숨은 가정을 드러내고 가중 지표로 명확도를 재고 나서 실행으로 넘긴다. /autopilot은 ralplan·execution·ralph·qa 조합의 스테이지 프로파일을 설정 파일로 지정할 수 있는데, 명명 프로파일은 flock이 있는 Linux에서만 동작한다고 문서가 명시한다. 네이티브 팀 기능은 settings.json에서 CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS를 켜야 하고, 꺼져 있으면 경고 후 비팀 실행으로 폴백한다.",
+      "key_features": [
+        "Team 파이프라인(plan→prd→exec→verify→fix) — 세션 내 네이티브 팀과 tmux CLI 워커 두 런타임 분리",
+        "/deep-interview 소크라테스식 요구사항 정제 후 /autopilot으로 자동 실행",
+        "claude·codex·gemini·antigravity·grok·cursor를 조언자로 호출하는 /ask, omc ask 이중 표면"
+      ],
+      "use_case": "기능 하나를 계획·실행·QA 역할로 쪼개 자동으로 굴리고 싶을 때. Claude Code 설정을 깊게 파지 않고 워크플로부터 쓰고 싶을 때.",
+      "install_hint": "/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode → /plugin install oh-my-claudecode → /setup",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "agent",
+        "멀티에이전트",
+        "오케스트레이션",
+        "한국발",
+        "tmux"
+      ],
+      "thumbnail_url": "https://github.com/Yeachan-Heo.png",
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-01-09T03:36:29Z",
+      "pushed_at": "2026-08-09T22:01:11Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 38,456★ · 2026-01-09 생성 213일차 · 주간 +193★ · 최근 커밋 1일 전 · 커뮤니티 1개 출처(velog) · 언급 1건 · 토론 engagement 합계 6 · 한국어 커뮤니티 언급 1건",
+      "needs_review": false,
+      "audit_log": []
+    },
+    {
+      "id": "can1357/oh-my-pi",
+      "name": "oh-my-pi",
+      "owner": "can1357",
+      "title_ko": "oh-my-pi(omp) — IDE 내장 코딩 에이전트",
+      "official_url": "https://github.com/can1357/oh-my-pi",
+      "repo_url": "https://github.com/can1357/oh-my-pi",
+      "homepage": "https://omp.sh",
+      "category": "agent",
+      "category_confidence": "high",
+      "rank": 11,
+      "score": 75.2,
+      "trend_score": 75.2,
+      "stars": 23304,
+      "velocity_7d": 2023,
+      "source_count": 3,
+      "sources": [
+        "github",
+        "hn",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "label": "누적 23,304★ · 222일차 · 주간 +2,023★ · 마지막 커밋 당일"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48850500",
+          "label": "HN 제출 2건 각 1~2pts (2026-01-18 / 07-09) — 토론은 얇음"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/composio/status/2085330847951970801",
+          "label": "X — 4개 하네스 DeepSeek V4 Flash 비교 게시글에 포함 (2026-08-05)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "편집 포맷을 바꾸자 Grok Code Fast 1이 6.7% → 68.3%",
+      "summary_ko": "@mariozechner의 Pi를 포크해 만든 터미널 코딩 에이전트다. 프로바이더 60여 곳, 내장 툴 31개, LSP 오퍼레이션 14개, DAP(디버그) 오퍼레이션 28개를 기본 제공하며 코어는 Rust 약 8만 줄이다. 특징은 도구 표면을 모델별로 계속 다듬은 것으로, 편집 포맷을 바꾸자 Grok Code Fast 1의 통과율이 6.7%에서 68.3%로 올랐고 Gemini 3 Flash는 str_replace 대비 +5pp, Grok 4 Fast는 잘못된 diff에 대한 재시도 루프가 사라지며 출력 토큰이 61% 줄었고 MiniMax는 통과율이 2.1배가 됐다는 자체 측정치를 제시한다. read는 파일 내용을 통째로 쏟는 대신 요약 스니펫을 주고, lsp는 IDE가 아는 것을 에이전트도 알게 하며, 프롬프트는 모델마다 따로 조정된다. TypeScript와 Rust로 짜였고 Bun 런타임에서 돌며 macOS·Linux·Windows를 지원한다. CLI 메타데이터에서 셸 자동완성을 직접 생성해 실제 명령과 어긋나지 않게 한다.",
+      "key_features": [
+        "LSP 14 + DAP 28 오퍼레이션 내장 — 심볼 이해와 디버깅을 에이전트 툴로 노출",
+        "모델별 편집 포맷·프롬프트 튜닝(자체 측정: Grok Code Fast 1 6.7%→68.3%, Grok 4 Fast 토큰 -61%)",
+        "프로바이더 60종+, 요약형 read와 고속 grep, 라이브 CLI 메타데이터 기반 셸 자동완성"
+      ],
+      "use_case": "저가·오픈 모델로도 편집 성공률을 끌어올리고 싶을 때. 디버거까지 에이전트에 물려 쓰고 싶을 때.",
+      "install_hint": "curl -fsSL https://omp.sh/install | sh  (또는 brew install can1357/tap/omp / bun install -g @oh-my-pi/pi-coding-agent)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "agent",
+        "lsp",
+        "dap",
+        "터미널",
+        "rust"
+      ],
+      "thumbnail_url": "https://github.com/can1357.png",
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2025-12-31T14:01:28Z",
+      "pushed_at": "2026-08-09T23:56:18Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 5,
+        "prev_score": 80.2,
+        "delta_rank": -6,
+        "delta_score": -5,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 23,302★ · 2025-12-31 생성 222일차 · 주간 +2,023★ · 최근 커밋 1일 전 · 커뮤니티 2개 출처 교차검증(hn/x) · 언급 4건 · 최근 14일 언급 1건 · 토론 engagement 합계 3 · 인플루언서 언급 1건 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 23302,
+          "actual": 23304,
+          "delta": 2,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "addyosmani/agent-skills",
+      "name": "agent-skills",
+      "owner": "addyosmani",
+      "title_ko": "Agent Skills — 개발 수명주기 8개 커맨드",
+      "official_url": "https://github.com/addyosmani/agent-skills",
+      "repo_url": "https://github.com/addyosmani/agent-skills",
+      "homepage": "https://skills.addy.ie",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 12,
+      "score": 75,
+      "trend_score": 75,
+      "stars": 85136,
+      "velocity_7d": 3766,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "hn"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "label": "누적 85,136★ · 176일차 · 주간 +3,766★ · 마지막 커밋 2026-08-08"
+        },
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49202129",
+          "label": "HN 제출 2건 각 1~2pts (2026-04-07 / 08-06) — 토론은 얇음"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "스펙→계획→구현→테스트→리뷰→배포를 8개 슬래시 커맨드로",
+      "summary_ko": "Addy Osmani가 정리한 프로덕션급 엔지니어링 스킬 모음이다. 시니어 엔지니어가 쓰는 워크플로·품질 게이트·모범 사례를 에이전트가 매번 같은 방식으로 따르도록 패키징했다. 개발 수명주기에 대응하는 슬래시 커맨드 8개(/spec, /plan, /build, /test, /review, /webperf, /code-simplify, /ship)가 있고 각각이 필요한 스킬을 자동으로 켠다. 명시적으로 부르지 않아도 상황에 따라 발동하는데, API를 설계하면 api-and-interface-design이, UI를 만들면 frontend-ui-engineering이 붙는 식이다. /build auto는 스펙이 있는 상태에서 계획 생성과 전 태스크 구현을 승인 한 번으로 이어 붙이되 검증을 생략하지는 않는다 — 태스크마다 테스트 주도로 개별 커밋하고 실패나 위험한 단계에서는 멈춘다. 설치는 skills CLI 한 줄로 24개 스킬 전체를 70여 개 에이전트에 넣거나 개별 스킬만 고를 수 있는데, 개별 설치 시 저장소 수준 references/ 디렉터리가 따라오지 않아 공유 체크리스트 경로가 끊긴다는 한계를 이슈로 공개해 두었다.",
+      "key_features": [
+        "수명주기 8개 슬래시 커맨드 + 작업 맥락에 따른 스킬 자동 발동",
+        "/build auto — 승인 1회로 계획 생성부터 전 태스크 구현, 태스크별 테스트·커밋, 실패 시 정지",
+        "skills CLI로 24개 스킬을 70여 개 에이전트에 설치(개별 설치 시 references/ 미포함 한계 명시)"
+      ],
+      "use_case": "에이전트 작업 흐름을 스펙 → 계획 → 구현 → 검증 순서로 고정하고 싶을 때. 팀 공통 품질 게이트를 스킬로 배포할 때.",
+      "install_hint": "npx skills add addyosmani/agent-skills  (Claude Code: /plugin marketplace add addyosmani/agent-skills → /plugin install agent-skills@addy-agent-skills)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "개발수명주기",
+        "코드리뷰",
+        "tdd",
+        "슬래시커맨드"
+      ],
+      "thumbnail_url": "https://github.com/addyosmani.png",
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-02-15T20:20:26Z",
+      "pushed_at": "2026-08-08T21:05:57Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 8,
+        "prev_score": 70.5,
+        "delta_rank": -4,
+        "delta_score": 4.5,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 85,128★ · 2026-02-15 생성 176일차 · 주간 +3,766★ · 최근 커밋 2일 전 · 커뮤니티 1개 출처(hn) · 언급 2건 · 최근 14일 언급 1건 · 토론 engagement 합계 3 · ※ 미검색 소스 geeknews_google,reddit_arcticshift_60d,velog,web_general — 부재 아님(불확실)",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 85128,
+          "actual": 85136,
+          "delta": 8,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "name": "claude-mem",
+      "owner": "thedotmack",
+      "title_ko": "claude-mem — 세션 간 컨텍스트 압축 저장",
+      "official_url": "https://github.com/thedotmack/claude-mem",
+      "repo_url": "https://github.com/thedotmack/claude-mem",
+      "homepage": "https://claude-mem.ai",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 13,
+      "score": 74.3,
+      "trend_score": 74.3,
+      "stars": 90216,
+      "velocity_7d": 873,
+      "source_count": 3,
+      "sources": [
+        "github",
+        "velog",
+        "x"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "label": "누적 90,216★ · 344일차 · 주간 +873★ · 마지막 커밋 당일 · Awesome Claude Code 등재"
+        },
+        {
+          "source": "x",
+          "url": "https://x.com/aakashgupta/status/2043719893217128839",
+          "label": "X 소개 게시글 (2026-06-15)"
+        },
+        {
+          "source": "velog",
+          "url": "https://velog.io/@strurao/%EC%86%8C%EC%86%8C%ED%95%9C-Claude-Code-%EC%82%AC%EC%9A%A9-%EA%B7%BC%ED%99%A9",
+          "label": "velog 한국어 사용 근황 글 내 언급(전용 글 아님, 3 likes, 2026-04-12)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "툴 사용 관찰을 요약해 다음 세션 시작 때 자동으로 되돌린다",
+      "summary_ko": "Claude Code를 위해 만든 영속 메모리 압축 시스템이다. 세션 동안의 툴 사용 관찰을 자동으로 캡처해 의미 요약을 만들고, 다음 세션에 관련 컨텍스트를 다시 넣어 준다. 세션이 끝나거나 재접속해도 프로젝트에 대한 지식이 이어진다는 것이 목표다. 계층형 회수(progressive disclosure)로 토큰 비용을 보여 주며 단계적으로 꺼내고, mem-search 스킬로 프로젝트 히스토리를 질의하며, 워커 시작 시 출력되는 URL에서 실시간 메모리 스트림을 웹 뷰어로 확인한다. <private> 태그로 민감한 내용을 저장에서 제외하고 어떤 컨텍스트를 주입할지 세밀하게 설정할 수 있으며, 과거 관찰을 ID로 인용할 수 있다. Claude Code 외에 OpenCode·Antigravity CLI·OpenClaw 게이트웨이 설치 경로가 각각 있고, npm 전역 설치는 SDK/라이브러리만 깔려 훅과 워커가 등록되지 않으니 npx claude-mem install이나 /plugin 명령을 쓰라고 문서가 못 박는다. Apache-2.0이며 한국어 포함 30여 개 언어 README를 제공한다.",
+      "key_features": [
+        "툴 사용 관찰 자동 캡처 → AI 요약 압축 → 다음 세션에 관련 컨텍스트 자동 주입",
+        "토큰 비용이 보이는 계층형 회수 + mem-search 스킬 질의, 관찰 ID 인용",
+        "<private> 태그로 저장 제외, 실시간 웹 뷰어, OpenCode·Antigravity·OpenClaw 설치 경로"
+      ],
+      "use_case": "세션을 새로 열 때마다 프로젝트 배경을 다시 설명하고 있을 때. 지난주에 왜 그렇게 정했는지 근거를 되짚어야 할 때.",
+      "install_hint": "npx claude-mem install  (npm -g 전역 설치는 SDK만 깔리므로 비권장)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🏆 awesome",
+        "🇰🇷 한국어"
+      ],
+      "tags": [
+        "skill",
+        "메모리",
+        "컨텍스트",
+        "세션연속성",
+        "awesome-list"
+      ],
+      "thumbnail_url": "https://github.com/thedotmack.png",
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "created_at": "2025-08-31T20:50:03Z",
+      "pushed_at": "2026-08-09T22:59:03Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 9,
+        "prev_score": 69.8,
+        "delta_rank": -4,
+        "delta_score": 4.5,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 90,215★ · 2025-08-31 생성 344일차 · 주간 +873★ · 최근 커밋 1일 전 · 커뮤니티 2개 출처 교차검증(velog/x) · 언급 2건 · 토론 engagement 합계 3 · 한국어 커뮤니티 언급 1건",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 90215,
+          "actual": 90216,
+          "delta": 1,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "JuliusBrussee/caveman",
+      "name": "caveman",
+      "owner": "JuliusBrussee",
+      "title_ko": "caveman — 에이전트 말투를 원시인으로",
+      "official_url": "https://github.com/JuliusBrussee/caveman",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "homepage": "https://caveman.so/",
+      "category": "skill",
+      "category_confidence": "high",
+      "rank": 14,
+      "score": 74.1,
+      "trend_score": 74.1,
+      "stars": 97076,
+      "velocity_7d": 1797,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "velog"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "label": "누적 97,076★ · 128일차 · 주간 +1,797★ · 마지막 커밋 2026-08-08"
+        },
+        {
+          "source": "velog",
+          "url": "https://velog.io/@strurao/%EC%86%8C%EC%86%8C%ED%95%9C-Claude-Code-%EC%82%AC%EC%9A%A9-%EA%B7%BC%ED%99%A9",
+          "label": "velog 한국어 사용 근황 글 내 언급(전용 글 아님, 3 likes, 2026-04-12)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "산문 출력 토큰 65% 절감, 코드·명령어는 바이트 단위 보존",
+      "summary_ko": "에이전트가 군더더기를 버리고 원시인처럼 짧게 답하게 만드는 스킬/플러그인이다. 코드·명령어·에러 메시지는 바이트 단위로 그대로 두고 설명 문장만 압축해 출력 토큰을 아낀다. 흥미로운 건 저자가 유리한 숫자만 걸어 두지 않았다는 점이다 — 산문 응답 기준 출력 토큰 65% 절감, 기술적 정확도 100%, 입력 토큰 절감 0%라고 함께 표기하고, 출력 대부분이 코드와 툴 호출인 장시간 에이전트 실행에서는 JetBrains의 독립 측정 86개 과제 기준 8.5%로 떨어진다는 사실도 같은 문서에 적어 뒀다. \"두뇌를 줄이는 게 아니라 입을 줄인다\"가 설계 의도다. Claude Code·Codex·Gemini·Cursor·Windsurf·Cline·Copilot 등 30개 이상 에이전트를 설치 스크립트가 한 번에 찾아 각각 설치한다. 참고로 rising 1위 ponytail의 벤치마크에서는 대조군으로 쓰여 코드량은 20% 줄었지만 토큰·비용·시간은 오히려 소폭 늘었다.",
+      "key_features": [
+        "산문 출력 토큰 -65%(자체 측정) / 장시간 에이전트 실행 -8.5%(JetBrains 독립 측정 86과제)",
+        "코드·명령어·에러는 그대로 두고 설명 문장만 축약, 입력 토큰은 줄지 않음을 명시",
+        "설치 스크립트 한 번으로 머신에 있는 30여 개 에이전트를 찾아 전부 설치, 강도 레벨 선택"
+      ],
+      "use_case": "출력 토큰 비용이 부담되거나 답변이 길어 읽기 힘들 때. 정확도는 유지하면서 응답 길이만 줄이고 싶을 때.",
+      "install_hint": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash  (Windows: irm .../install.ps1 | iex)",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic"
+      ],
+      "tags": [
+        "skill",
+        "토큰절감",
+        "출력압축",
+        "멀티하네스",
+        "벤치마크공개"
+      ],
+      "thumbnail_url": "https://github.com/JuliusBrussee.png",
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-04-04T10:03:00Z",
+      "pushed_at": "2026-08-08T11:05:00Z",
+      "rank_change": {
+        "prev_section": null,
+        "note": "신규 진입(전주 미발행)"
+      },
+      "why_trending": "누적 97,074★ · 2026-04-04 생성 128일차 · 주간 +1,797★ · 최근 커밋 2일 전 · 커뮤니티 1개 출처(velog) · 언급 1건 · 토론 engagement 합계 3 · 한국어 커뮤니티 언급 1건",
+      "needs_review": false,
+      "audit_log": [
+        {
+          "field": "stars",
+          "claimed": 97074,
+          "actual": 97076,
+          "delta": 2,
+          "action": "corrected"
+        }
+      ]
+    },
+    {
+      "id": "mksglu/context-mode",
+      "name": "context-mode",
+      "owner": "mksglu",
+      "title_ko": "Context Mode — MCP 툴 출력 샌드박싱",
+      "official_url": "https://github.com/mksglu/context-mode",
+      "repo_url": "https://github.com/mksglu/context-mode",
+      "homepage": "https://context-mode.com",
+      "category": "mcp",
+      "category_confidence": "high",
+      "rank": 15,
+      "score": 73.3,
+      "trend_score": 73.3,
+      "stars": 19749,
+      "velocity_7d": 181,
+      "source_count": 2,
+      "sources": [
+        "github",
+        "velog"
+      ],
+      "evidence": [
+        {
+          "source": "github",
+          "url": "https://github.com/mksglu/context-mode",
+          "label": "누적 19,749★ · 168일차 · 주간 +181★ · 마지막 커밋 1일 전"
+        },
+        {
+          "source": "velog",
+          "url": "https://velog.io/@strurao/%EC%86%8C%EC%86%8C%ED%95%9C-Claude-Code-%EC%82%AC%EC%9A%A9-%EA%B7%BC%ED%99%A9",
+          "label": "velog 한국어 사용 근황 글 내 언급(전용 글 아님, 3 likes, 2026-04-12)"
+        }
+      ],
+      "status": "classic",
+      "catchphrase": "Playwright 스냅샷 56KB가 컨텍스트를 먹기 전에 가둔다",
+      "summary_ko": "MCP 툴 호출이 원시 데이터를 컨텍스트 창에 그대로 쏟는 문제를 겨냥한 MCP 서버다. README는 Playwright 스냅샷 56KB, GitHub 이슈 20건 59KB, 액세스 로그 45KB 같은 예를 들며 30분이면 컨텍스트의 40%가 사라진다고 진단한다. 해법은 네 갈래다 — 샌드박스 툴이 원시 데이터를 컨텍스트 밖에 두어 315KB를 5.4KB로(98% 감소) 만들고, 파일 편집·git 작업·태스크·에러·사용자 결정을 SQLite에 기록한 뒤 대화가 압축될 때 그것을 통째로 되붓지 않고 FTS5 인덱스에서 BM25로 관련된 것만 꺼내 이어붙이며, 코드로 사고하게 하고, 출력 쪽 군더더기도 줄인다. --continue를 쓰지 않으면 이전 세션 데이터는 즉시 삭제돼 새 세션은 백지에서 시작한다. Claude Code는 플러그인 마켓플레이스로 완전 자동 설치되고 훅이 없는 플랫폼은 라우팅 파일을 한 번 복사하며, 총 17개 플랫폼에 MCP와 훅으로 라우팅을 강제한다. 라이선스는 ELv2다.",
+      "key_features": [
+        "MCP 툴 출력 샌드박싱 — README 사례 기준 315KB → 5.4KB(98% 감소)",
+        "SQLite + FTS5/BM25 이벤트 인덱싱으로 압축 이후에도 편집 중이던 파일·진행 태스크 복원",
+        "17개 플랫폼에 MCP + 훅으로 라우팅 강제, ctx-doctor 진단 명령으로 설치 검증"
+      ],
+      "use_case": "MCP 툴을 여러 개 붙였더니 컨텍스트가 금방 차 버릴 때. 자동 압축 이후 에이전트가 하던 일을 잊을 때.",
+      "install_hint": "/plugin marketplace add mksglu/context-mode → /plugin install context-mode@context-mode → /context-mode:ctx-doctor",
+      "badge": "⭐ Classic",
+      "badges": [
+        "⭐ Classic",
+        "🔌 MCP"
+      ],
+      "tags": [
+        "mcp",
+        "컨텍스트최적화",
+        "토큰절감",
+        "세션연속성",
+        "sqlite"
+      ],
+      "thumbnail_url": "https://github.com/mksglu.png",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2026-02-23T05:56:28Z",
+      "pushed_at": "2026-08-09T18:06:56Z",
+      "rank_change": {
+        "prev_section": "classic",
+        "prev_rank": 10,
+        "prev_score": 68.8,
+        "delta_rank": -5,
+        "delta_score": 4.5,
+        "note": "동일 섹션 내 순위 변동"
+      },
+      "why_trending": "누적 19,749★ · 2026-02-23 생성 168일차 · 주간 +181★ · 최근 커밋 1일 전 · 커뮤니티 1개 출처(velog) · 언급 1건 · 토론 engagement 합계 3 · 한국어 커뮤니티 언급 1건",
+      "needs_review": false,
+      "audit_log": []
+    }
+  ]
+}

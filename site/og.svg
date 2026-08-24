@@ -16,7 +16,7 @@
   <!-- Version pill (right side) -->
   <g transform="translate(940, 64)">
     <rect x="0" y="0" width="200" height="36" rx="18" fill="#f2efe5"/>
-    <text x="100" y="23" font-size="13" font-weight="600" fill="#0e0e0e" text-anchor="middle">📅 2026.08.10 · v2026.08.10</text>
+    <text x="100" y="23" font-size="13" font-weight="600" fill="#0e0e0e" text-anchor="middle">📅 2026.08.24 · v2026.08.24</text>
   </g>
 
   <!-- Main title -->
@@ -27,38 +27,38 @@
   
     <g transform="translate(60, 290)">
       <rect x="0" y="0" width="347" height="280" rx="20" fill="#ffeca0" stroke="#0e0e0e" stroke-width="1.5"/>
-      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#01 · SKILL</text>
-      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Ponytail — 코드를 …</text>
-      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">실측 12개 과제 LOC -54%, 안전 가드는 100% 유지</text>
-      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">안전 가드는 100% 유지</text>
+      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#01 · MCP</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Graft — 코드베이스를 …</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">SWE-bench Verified 54% → 66%, 토큰 42% …</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">토큰 42% 절감</text>
 
       <g transform="translate(24, 220)">
-        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">DietrichGebert/ponytail</text>
-        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 99k</text>
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">NanoNets/Graft</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 4.5k</text>
       </g>
     </g>
     <g transform="translate(427, 290)">
       <rect x="0" y="0" width="347" height="280" rx="20" fill="#d8edd0" stroke="#0e0e0e" stroke-width="1.5"/>
-      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#02 · HARNESS</text>
-      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">qm — 회사 단위 멀티플레…</text>
-      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">개인 비서가 아니라 회사용 — 사람·채널마다 권한과 샌드박스가 다르다</text>
-      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85"></text>
+      <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#02 · SKILL</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">Autoprompt — 목표…</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">Terminal-Bench 67.4% → 82.0%, 실패 45% …</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">실패 45% 감소</text>
 
       <g transform="translate(24, 220)">
-        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">yc-software/qm</text>
-        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 13k</text>
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">Spielewoy/autoprompt-sk…</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 769</text>
       </g>
     </g>
     <g transform="translate(794, 290)">
       <rect x="0" y="0" width="347" height="280" rx="20" fill="#ffd8bd" stroke="#0e0e0e" stroke-width="1.5"/>
       <text x="24" y="40" font-size="11" font-weight="700" fill="#0e0e0e" letter-spacing="2">#03 · AGENT</text>
-      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">deja — 이미 쌓인 세션…</text>
-      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">설치 전 몇 달치 대화까지 색인, 3.5GB를 중앙값 1.5ms에 …</text>
-      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">3.5GB를 중앙값 1.5ms에 검색</text>
+      <text x="24" y="92" font-size="28" font-weight="700" fill="#0e0e0e" letter-spacing="-0.5">smol — 오후 한 나절에…</text>
+      <text x="24" y="138" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">시스템 프롬프트 없음, 도구 하나, 파일 하나</text>
+      <text x="24" y="172" font-size="14" font-weight="500" fill="#0e0e0e" opacity="0.85">도구 하나, 파일 하나</text>
 
       <g transform="translate(24, 220)">
-        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">vshulcz/deja-vu</text>
-        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 616</text>
+        <text x="0" y="0" font-size="12" font-weight="600" fill="#0e0e0e" opacity="0.7">smol-env/smol</text>
+        <text x="0" y="22" font-size="14" font-weight="700" fill="#0e0e0e">★ 122</text>
       </g>
     </g>
 
